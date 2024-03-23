@@ -1,0 +1,90 @@
+{
+  "name": "kcd-romania",
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Victor Varza <victor.varza@gmail.com>",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.6.0"
+  },
+  "scripts": {
+    "start": "npm run develop",
+    "develop": "gatsby develop -H 0.0.0.0",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write --ignore-path .gitignore .",
+    "lint": "npm run lint:js & npm run lint:md",
+    "lint:fix": "npm run lint:js:fix & npm run lint:md:fix",
+    "lint:js": "eslint --ext .js,.jsx --ignore-path .gitignore .",
+    "lint:js:fix": "eslint --fix --ext .js,.jsx --ignore-path .gitignore .",
+    "lint:md": "markdownlint --ignore-path .gitignore .",
+    "lint:md:fix": "markdownlint --fix --ignore-path .gitignore .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "clsx": "^1.2.1",
+    "copy-to-clipboard": "^3.3.3",
+    "framer-motion": "^7.10.3",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-canonical-urls": "^5.13.1",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-mdx": "^5.13.1",
+    "lodash": "^4.17.21",
+    "lodash.get": "^4.4.2",
+    "path": "^0.12.7",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-share": "^4.4.1",
+    "remark-gfm": "^3.0.1",
+    "slugify": "^1.6.6",
+    "swiper": "^9.4.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
+    "@svgr/webpack": "^6.5.1",
+    "autoprefixer": "^10.4.19",
+    "babel-loader": "^9.1.3",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gatsby-alias-imports": "^1.0.6",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-plugin-svgr-svgo": "^2.0.0",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.3.0",
+    "markdownlint-cli": "^0.32.2",
+    "postcss": "^8.4.38",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss-safe-area": "^0.2.2"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "tailwind"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixel-point/gatsby-tailwind-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/pixel-point/gatsby-tailwind-starter/issues"
+  }
+}
