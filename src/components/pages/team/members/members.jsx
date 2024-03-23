@@ -85,7 +85,7 @@ const ORGANIZERS = [
     url: 'https://www.linkedin.com/in/bogdanlucaciu/',
   },
   {
-    name: 'Ionu Bradatan',
+    name: 'Ionut Bradatan',
     position: 'Senior UX Designer at Visma',
     photo: IonutBradatanPhoto,
     url: 'https://www.linkedin.com/in/bradatanionut/',
