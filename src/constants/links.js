@@ -22,15 +22,6 @@ export default {
     id: getAnchor('Speakers'),
     homeTo: '/speakers',
   },
-  workshops: {
-    to: '/workshops',
-    id: getAnchor('Workshops'),
-    homeTo: '/workshops',
-  },
-  archive: {
-    to: '/archive',
-    homeTo: '/archive',
-  },
   proposal: {
     to: `/#${getAnchor('Call for Proposal')}`,
     id: getAnchor('Call for Proposal'),
@@ -67,20 +58,20 @@ export default {
 
   // Social-links
   linkedin: {
-    to: 'https://www.linkedin.com/company/cloudnativenl/',
+    to: 'https://www.linkedin.com/company/kcd-romania/',
     target: '_blank',
   },
   // Social-links
   photos: {
-    to: 'https://drive.google.com/drive/u/0/folders/1xE6quWLHGXHmXLb8L5ZZn7oMtcb0vyfV',
+    to: 'https://drive.google.com/drive',
     target: '_blank',
   },
   survey: {
-    to: 'https://docs.google.com/forms/d/e/1FAIpQLSepVSp3ijXIy_hHdsrpJEQQbCpaqIuD3sdrEO-3wW8_OdPWYQ/viewform',
+    to: 'https://docs.google.com/forms',
     target: '_blank',
   },
   twitter: {
-    to: 'https://twitter.com/cloudnativeams',
+    to: 'https://twitter.com/kcdromania',
     target: '_blank',
   },
   googlemaps: {

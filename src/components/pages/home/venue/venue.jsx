@@ -19,7 +19,7 @@ const Venue = () => (
         from all levels and backgrounds to learn, network, and share their knowledge on all things
         cloud native.
       </p>
-      <p className="mt-7 mb-0">
+      <p className="mb-0 mt-7">
         <span className="font-bold">Date:</span> April 25th, 2024
       </p>
       <p className="mt-0">
@@ -29,9 +29,10 @@ const Venue = () => (
         </Link>
         , for parking info view
         <Link {...LINKS.parkingInfo}>
-          <u>Parking Bucharest</u>
+          <u> Parking Bucharest</u>
         </Link>
       </p>
+      <br />
       <img src={RoutePic} alt="Route to event" className="rounded-[4px]" />
       {/* <p className="mt-7">
         Watch all the speakers’ sessions videos from December 1, 2024 on{' '}
