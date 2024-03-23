@@ -2,7 +2,6 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
-import EvolveMedia from './images/evolvemedia.png';
 import KubeCareers from './images/kube-careers.png';
 import KubeEvents from './images/kubevents.svg';
 import TheBucharestHackaton from './images/the-bucharest-hackaton.png';
