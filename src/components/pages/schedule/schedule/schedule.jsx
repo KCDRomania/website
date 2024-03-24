@@ -5,41 +5,37 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
-// import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
-// import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
+import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
+import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import AlexRaiuPhoto from './images/alex-raiu-photo.png';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpeg';
-// import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
-// import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
+import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
+import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
+import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
 import AndreiPitisPhoto from './images/andrei-pitis-photo.jpg';
-// import AndreiaIrinaOcanoaiaPhoto from './images/andreia-irina-ocanoaia-photo.jpg';
+import AndreiaIrinaOcanoaiaPhoto from './images/andreia-irina-ocanoaia-photo.jpg';
 import CarmenBobeiPhoto from './images/carmen-bobei-photo.jpg';
 import ClaudiuHobjilaPhoto from './images/claudiu-hobjila-photo.jpg';
-// import FlorinLoghiadePhoto from './images/florin-loghiade-photo.jpg';
+import FlorinLoghiadePhoto from './images/florin-loghiade-photo.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
 import GeorgeHantzarasPhoto from './images/george-hantzaras-photo.jpeg';
-// import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
+import GeorgeTudureanPhoto from './images/george-tudurean-photo.jpg';
+import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import JosephSandovalPhoto from './images/joseph-sandoval-photo.jpg';
-// import KatharinaSickPhoto from './images/katharina-sick-photo.jpg';
-// import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
+import KatharinaSickPhoto from './images/katharina-sick-photo.jpg';
+import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
 import MatthiasBertschyPhoto from './images/matthias-bertschy-photo.jpeg';
-// import MihaiGoguPhoto from './images/mihai-gogu-photo.png';
+import MihaiGoguPhoto from './images/mihai-gogu-photo.png';
 import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo.jpg';
 import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
-// import OvidiuValeanuPhoto from './images/ovidiu-valeanu-photo.jpg';
+import OvidiuValeanuPhoto from './images/ovidiu-valeanu-photo.jpg';
+import RaduZamfirPhoto from './images/radu-zamfir-photo.jpg';
 import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
 import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
 import TimothyMamoPhoto from './images/timothy-mamo-photo.jpg';
-// import VincenzoScamporlinoPhoto from './images/vincenzo-scamporlino-photo.jpeg';
+import VincenzoScamporlinoPhoto from './images/vincenzo-scamporlino-photo.jpeg';
 import YujinKimPhoto from './images/yujin-kim-photo.jpg';
-
-// import AlexandruDejanuPhoto from './images/adrian-vladu-photo.jpg';
-// import AndreiStefaniePhoto from './images/adrian-vladu-photo.jpg';
-// import GeorgeCiobanPhoto from './images/adrian-vladu-photo.jpg';
-// import MohammedAboullaitePhoto from './images/adrian-vladu-photo.jpg';
-// import SorinDumitrescuPhoto from './images/adrian-vladu-photo.jpg';
-// import ThomasLabarussiasPhoto from './images/adrian-vladu-photo.jpg';
 
 // GenericSpeakerPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
@@ -228,75 +224,270 @@ const ITEMS = [
     },
   },
   {
+    id: '051',
+    time: '12:30',
+    title: 'Efficiency in Engineering: The Game-Changing Role of Developer Portals',
+    duration: '25 min',
+    speakers: [
+      {
+        id: '9',
+        name: 'Vincenzo Scamporlino',
+        company: 'Spotify',
+        photo: VincenzoScamporlinoPhoto,
+      },
+    ],
+    presentation:
+      'Developer Experience is all about the process of software creation. Currently, developers are forced to navigate through an array of tools, APIs, frameworks, and languages, which, over time, can hamper their pace.' +
+      '<br/><br/>' +
+      'A few years ago, Spotify faced and resolved this issue by integrating all the tools into a unified interface. This was achieved through the creation of Backstage, a Developer Portal which, in 2020, was open-sourced and donated to the CNCF, thus becoming a framework for building Developer Portals. Today, Backstage is adopted by over 2.5k companies, boosting productivity and tackling issues such as Discoverability, System Ownership, Fragmentation, Duplication, and Context Switching.' +
+      '<br/><br/>' +
+      'In this talk, we will explore the benefits a developer portal can bring to your organization, explaining how you can build your own Developer Portal using Backstage. We will also share insights into how Spotify uses Backstage and provide the latest tips from hundreds of Backstage adopters.',
+
+    secondTrack: {
+      id: '052',
+      time: '12:30',
+      title: 'The Daemonset in the Details - Pitfalls of OpenTelemetry Collector Deployments',
+      duration: '25 min',
+      speakers: [
+        {
+          id: '14',
+          name: 'Christopher Olsen',
+          company: 'Adobe',
+          photo: GenericSpeakerPhoto,
+        },
+      ],
+      presentation:
+        "It's easy to run Otel collectors on K8S. But it's hard to observe engineering principles without faith and manual validation. Why is that so? I'll explain as I walk through my experiences deploying Otel collectors with the Otel Operator with complex configurations." +
+        '<br/><br/>' +
+        "This talk is about Unit-Testing. It's specific to Helm, K8S and Otel but it should have lessons for anyone doing SRE. It is a lesson of why you must learn the language of the technology you are using to be able to do your job effectively." +
+        '<br/><br/>' +
+        'The setting:' +
+        '<br/>' +
+        'Your company has hundreds of K8s clusters, deployed with ArgoCD using Helm charts. You are responsible for deploying Otel collectors on all clusters. You use the Otel Operator. You ARE the Otel Operator.' +
+        '<br/><br/>' +
+        "I'll walk through 4 days of your life, 3 ending in failure with demos and code. Each failure shows the dangers that await you and I'll show working code how to protect yourself." +
+        '<br/><br/>' +
+        'This talk is a plea for better unit tests, a rant about Helm and an ode to the Otel engineers.',
+    },
+
+    thirdTrack: {
+      id: '053',
+      time: '12:30',
+      title: 'Future-Proof Your Platform’s CI/CD Without Developers Noticing a Thing',
+      duration: '25 min',
+      speakers: [
+        {
+          id: '15',
+          name: 'Márk Sági-Kazár',
+          company: 'OpenMeter',
+          photo: MarkSagiKazarPhoto,
+        },
+      ],
+      presentation:
+        "You've just perfected CI and/or CD for your organization, again. It was a huge, frustrating effort, and learning another proprietary DSL or YAML didn't deliver the promised tenfold increase in release frequency. It wasn't the first re-platform and it won’t be the last. Now that things have calmed down, there must be a way to prepare, to future-proof your CI/CD and protect developers, the business, and your sanity." +
+        '<br/><br/>' +
+        'In this talk we’ll demonstrate how to use abstraction, containerization, DAGs, and general-purpose programming languages that your team already knows to create portable CI/CD workflows that can run anywhere without rewriting everything. We’ll also highlight how this approach has additional benefits like composability, reuse, testing of CI/CD code itself, and fast feedback loops for developers (since you can run these pipelines locally). This talk is aimed at anyone who is expecting to have to re-platform CI/CD again in the future (that’s you) and just wants the pain to stop.',
+    },
+  },
+  {
     time: '13:00',
     title: ' Lunch Break',
     duration: '1 hour',
   },
   {
     id: '061',
-    time: '11:45',
-    title: 'Introducing Timoni the Next-Gen Package Manager for Kubernetes',
+    time: '14:00',
+    title:
+      'Dynamic Large Scale Spark on Kubernetes:Empowering the Community with Argo Workflows and Argo Events',
     duration: '25 min',
     speakers: [
       {
-        id: '5',
-        name: 'Stefan Prodan',
-        company: 'ControlPlane',
-        photo: StefanProdanPhoto,
+        id: '16',
+        name: 'Ovidiu Valeanu',
+        company: 'Amazon Web Services',
+        photo: OvidiuValeanuPhoto,
       },
     ],
     presentation:
-      'In this session, Stefan will introduce a new open source tool called Timoni.' +
-      '<br/>' +
-      'Stefan will tell the story how he discovered CUE, a novel language, with a rich set of APIs which has the potential to revolutionise the way we think about configuration.' +
+      'Are you eager to build and manage large-scale Spark clusters on Kubernetes for powerful data processing? Whether you are starting from scratch or considering migrating Spark workloads from existing Hadoop clusters to Kubernetes, the challenges of configuring storage, compute, networking, and optimizing job scheduling can be daunting. Join us as we unveil the best practices to construct a scalable Spark clusters on Kubernetes, with a special emphasis on leveraging Argo Workflows and Argo Events.' +
       '<br/><br/>' +
-      'He will explain how Timoni leverages CUE to offer a better experience of creating, packaging and delivering apps to Kubernetes.' +
-      '<br/><br/>' +
-      ' Finally, Stefan will demonstrate how Timoni can be used together with CNCF Flux and how Timoni overcomes the limitations of Helm and Kustomize.',
+      'In this talk, we will guide you through the journey of building highly scalable Spark clusters on Kubernetes, using the most popular open-source tools. We will showcase how to harness the potential of Argo Workflows and Argo Events for event-driven job scheduling, enabling efficient resource utilization and seamless scalability. By integrating these powerful tools, you will gain better control and flexibility for executing Spark jobs on Kubernetes.',
+
     secondTrack: {
       id: '062',
-      time: '11:45',
-      title: 'Cloud native for governmental workloads: Challenges & Lesson Learned',
+      time: '14:00',
+      title: 'Closing the Loop: Applying Least Privilege and Ensuring We Did It Well',
       duration: '25 min',
       speakers: [
         {
-          id: '11',
-          name: 'Mihai Mihalcea',
-          company: 'STS',
-          photo: MihalceaMihaiAlexandruPhoto,
-        },
-        {
-          id: '12',
-          name: 'Octavian Petre',
-          company: 'STS',
-          photo: OctavianPetrePhoto,
+          id: '17',
+          name: 'Katharina Sick',
+          company: 'Dynatrace',
+          photo: KatharinaSickPhoto,
         },
       ],
       presentation:
-        "Although the current market shift inclines towards public cloud adoption, how can you manage the situation if your business model requires your product to operate with citizens' data and state-level affairs?" +
-        '<br/>' +
-        'Well, the straightforward answer will be on-prem infrastructure, and what doesn’t work better with on-prem infrastructure than open-source technologies? We will see how this approach has been working for us so far.' +
-        '<br/>' +
-        'At STS we provide secure networks, IT&C services and support for the Romanian public government authorities and institutions.' +
-        '<br/>' +
-        'During this talk, we will outline the implementation of specific operations on our on-premises K8s infrastructure, along with the challenges that arise. Our focus will be primarily on the adoption process of the GitOps concept, the implementation of the Continuous Delivery ecosystem across multiple projects, and the networking challenges at the container level. We will also delve into the processes encountered within a self-managed infrastructure.',
+        'According to OWASP, insecure workload configuration is the top security problem in Kubernetes. With the shift to Platform engineering, minimizing the attack surface of our Kubernetes clusters becomes even more critical.' +
+        '<br/><br/>' +
+        "This talk will cover the Principle of Least Privilege and how it can be applied to balance robust security and a good experience for users and administrators. Moreover, we'll see how to use Falco to observe if we did well and detect suspicious events that may happen in our clusters anyway." +
+        '<br/><br/>' +
+        'Join us to discover how the Principle of Least Privilege, Falco and observability empower you to safeguard your Kubernetes ecosystem without making yourself and your users suffer.',
     },
+
     thirdTrack: {
       id: '063',
-      time: '11:45',
-      title: 'Who the Helm Owns this YAML?!',
+      time: '14:00',
+      title: 'Bare metal Kubernetes on mixed x64 and ARM64',
       duration: '25 min',
       speakers: [
         {
-          id: '13',
-          name: 'Matthias Bertschy',
-          photo: MatthiasBertschyPhoto,
+          id: '18',
+          name: 'Alessandro Pilotti',
+          company: 'Cloudbase Solutions',
+          photo: AlessandroPilottiPhoto,
+        },
+        {
+          id: '19',
+          name: 'Adrian Vladu',
+          company: 'Cloudbase Solutions',
+          photo: AdrianVladuPhoto,
         },
       ],
       presentation:
-        'Security scanners are great, by catching important security issues and misconfigurations before they reach production. But sometimes, they actually flag security issues in your production runtime––and then things start to get sketchy.' +
+        'This session goes through the lifecycle of an automated Kubernetes deployment on bare metal platforms, both ARM64 and X64 servers. The focus is on full automation, scalability, repeatability of the deployment, leveraging ArgoCD, Cluster API and Tinkerbell stack.' +
         '<br/><br/>' +
-        "Who owns this YAML? Who needs to fix it? How do I propagate this fix to my hundreds of clusters in production?! Enter ArgoCD + Helm. In this talk we'll share how to track ownership of resources using ArgoCD's powerful GitOps capabilities, and propagating fixes to multiple locations through a single source using Helm. We'll demonstrate how these tools together can provide greater governance without losing control.",
+        'The end result of the automation is a production grade Kubernetes cluster that has BGP networking using Cilium, Ceph hyperconverged storage using Rook and even a VM control plane with Kubevirt. As for observability, Prometheus/Grafana and Sentry are a given.' +
+        '<br/><br/>' +
+        'From the perspective of the underlying operating systems, generic ones like Ubuntu and Mariner, or container native like Flatcar -- all are supported via the extendability of Cluster API.',
+    },
+  },
+  {
+    id: '071',
+    time: '14:45',
+    title: 'CD and GitOps with flux @AdoreMe',
+    duration: '25 min',
+    speakers: [
+      {
+        id: '20',
+        name: 'Mihai Gogu',
+        company: 'AdoreMe',
+        photo: MihaiGoguPhoto,
+      },
+    ],
+    presentation:
+      'The session is about how we handle gitops with flux at AdoreMe.' +
+      '<br/><br/>' +
+      'The presentation will touch subjects like: what is gitops, what are the advantages of it, how we chose flux and how it helps us managing multiple clusters and continous delivery for our microservices.',
+
+    secondTrack: {
+      id: '072',
+      time: '14:45',
+      title: "Mastering Cloud Kubernetes: Navigating Azure's Kubernetes Service Maze",
+      duration: '25 min',
+      speakers: [
+        {
+          id: '8',
+          name: 'Florin Loghiade',
+          company: 'UiPath',
+          photo: FlorinLoghiadePhoto,
+        },
+      ],
+      presentation:
+        "Containers are easy; orchestrating them is the issue. We have cloud providers which offer 'managed' Kubernetes offerings that provide a no-headache experience. Are they actually? What are cloud providers actually offering?" +
+        '<br/><br/>' +
+        "We have multiple and even 'serverless' options when looking at cloud offerings for Kubernetes. Take Azure with their AKS offering, not fully managed; AWS with their EKS, not fully managed; the same thing goes with GCP." +
+        '<br/><br/>' +
+        'Picking your poison has meaning when coming to cloud offerings, and this session will cover pain points, issues and other caveats while deploying your services on Azure Kubernetes-managed offering while finding tips & tricks on making your life easier.',
+    },
+
+    thirdTrack: {
+      id: '073',
+      time: '14:45',
+      title: 'Using Unikernels to deploy real-world apps',
+      duration: '25 min',
+      speakers: [
+        {
+          id: '21',
+          name: 'Andreia-Irina Ocanoaia',
+          company: 'Genezio',
+          photo: AndreiaIrinaOcanoaiaPhoto,
+        },
+      ],
+      presentation:
+        'Andreia joined Genezio, bringing along a lot of enthusiasm and passion for open-source software development. Since then, she has been involved in developing major features on the main product and helped grow the ecosystem around it by writing tutorials and examples for newcomers. ' +
+        '<br/><br/>' +
+        'Before joining Genezio, Andreia worked in academia, contributing to and improving the usability of open-source security tools.',
+    },
+  },
+
+  {
+    id: '081',
+    time: '15:30',
+    title: 'Challenges of Migrating a High Traffic Mobile Game to Kubernetes',
+    duration: '25 min',
+    speakers: [
+      {
+        id: '22',
+        name: 'Andrei Petrescu',
+        company: 'CloudHero',
+        photo: AndreiPetrescuPhoto,
+      },
+    ],
+    presentation:
+      'Migrating high-traffic applications is not easy, more so when you are constrained to do the migration within a reasonable time frame. Add to mix fundamental changes to the platform (Kubernetes instead of VMs, different cloud providers, different database versions), things can get tricky.' +
+      '<br/><br/>' +
+      "Join Andrei Petrescu, who leads the DevOps department at CloudHero, in a presentation about how he an his team planned and executed the migration of one of their customer's most popular game from VMs on Digital Ocean to Kubernetes on AWS." +
+      '<br/><br/>' +
+      'Andrei will go through the migration plan, setting up replication of the data, observability, developer productivity and security improvements of the new platform. Some of the technologies discussed are: MySQL, GitHub Actions, Jenkins, ArgoCD, Kubernetes (EKS), Redis / KeyDB, PHP-FPM.',
+
+    secondTrack: {
+      id: '082',
+      time: '15:30',
+      title: 'From Code to Cluster: Orchestrating 10,000+ Kubernetes deployments with 1 pipeline',
+      duration: '25 min',
+      speakers: [
+        {
+          id: '23',
+          name: 'Andrada Raducanu',
+          company: 'ING Hubs Romania',
+          photo: AndradaRaducanuPhoto,
+        },
+      ],
+      presentation:
+        'There is a sea of tools one can use for the critical phase of Deployment during your SDLC. To keep our environment secure and reliable, ING chose to work with Kubernetes and Azure DevOps.' +
+        '<br/><br/>' +
+        'In this talk, we will share the success story of how 700 in-house developed APIs reached 10 000+ Production deployments in half a year, using one single pipeline.' +
+        '<br/>' +
+        'In order to stay in control, we use Open Policy Agent. To ensure the reliability and the resilience of the APIs, we use tools like: QuotaAutoscaler (ING open source CRD) and HorizontalPodAustoscaler, native rollback mechanisms with Helm, automatic certificates using CertManager and Prometheus monitoring.' +
+        '<br/><br/>' +
+        'The pipeline deploys code in Azure Kubernetes Service and on-prem Kubernetes clusters.' +
+        '<br/>' +
+        'This solution was built as a platform, designed to be agnostic to the target system, reducing the cognitive load on the teams and allowing them to focus on the application development.' +
+        '<br/>' +
+        'We call this The Kingsroad.',
+    },
+
+    thirdTrack: {
+      id: '083',
+      time: '15:30',
+      title: 'Histology Augmentation: Scaling Federated Learning Solutions with Kubernetes',
+      duration: '25 min',
+      speakers: [
+        {
+          id: '24',
+          name: 'Iulian Taiatu',
+          company: 'Adobe',
+          photo: IulianTaiatuPhoto,
+        },
+      ],
+      presentation:
+        'This paper presents a novel approach to augmenting histological image datasets for colorectal cancer using an Auxiliary Classifier Generative Adversarial Network (ACGAN) model within a Federated Learning (FL) framework.' +
+        '<br/><br/>' +
+        'The primary objective of this project is to enhance the dataset by generating synthetic images through the ACGAN model while preserving data privacy via FL. Different CNN and Vision Transformer-based models are employed to capture intrinsic data patterns.' +
+        '<br/><br/>' +
+        'Evaluation metrics include comparing classifier performance before and after augmentation, t-SNE plots to assess data structure similarity, FID scores for image quality comparison, and GradCAM analysis to visualize classifier focus areas.' +
+        '<br/><br/>' +
+        'The implementation leverages Kubernetes clusters to simulate FL, with each client represented as a namespace (e.g., hospital) to ensure data privacy. A dedicated namespace serves as the server for aggregating local client models into a global model for subsequent FL rounds.',
     },
   },
   {
@@ -385,16 +576,22 @@ const ITEMS = [
     duration: '5 min',
     speakers: [
       {
-        id: '31',
+        id: '29',
         name: 'Radu Zamfir',
+        company: 'dvloper.io',
+        photo: RaduZamfirPhoto,
       },
       {
-        id: '32',
+        id: '30',
         name: 'Andrei Cioc',
+        company: 'dvloper.io',
+        photo: AndreiCiocPhoto,
       },
       {
-        id: '33',
+        id: '31',
         name: 'George Tudurean',
+        company: 'dvloper.io',
+        photo: GeorgeTudureanPhoto,
       },
     ],
     presentation:
