@@ -1,23 +1,23 @@
 import React from 'react';
 
-import Button from 'components/shared/button';
-import LINKS from 'constants/links.js';
+// import Button from 'components/shared/button';
+// import LINKS from 'constants/links.js';
 
 const TITLE = 'Schedule for <time class="text-blue-1 xs:block">25 April, 2024</time>';
-const DESCRIPTION =
-  'We hope you had a great time attending this event. Please fill in the survey and have a look at the photos using the links below.';
+// const DESCRIPTION =
+//   'We hope you had a great time attending this event. Please fill in the survey and have a look at the photos using the links below.';
 
 const Hero = () => (
-  <section className="safe-paddings pt-24 pb-10 lg:pt-[4.5rem] md:pt-16 md:pb-4 sm:py-8">
+  <section className="safe-paddings pb-10 pt-24 lg:pt-[4.5rem] md:pb-4 md:pt-16 sm:py-8">
     <div className="container mt-4 text-center text-primary-1 sm:px-7">
       <h1
         className="text-6xl font-bold leading-denser tracking-[-0.01em] md:text-4xl"
         dangerouslySetInnerHTML={{ __html: TITLE }}
       />
-      <p className="mx-auto mt-9 max-w-[865px] text-2xl leading-normal md:mt-6 md:text-xl sm:text-lg">
+      {/* <p className="mx-auto mt-9 max-w-[865px] text-2xl leading-normal md:mt-6 md:text-xl sm:text-lg">
         {DESCRIPTION}
-      </p>
-      <Button
+      </p> */}
+      {/* <Button
         className="mt-10 shadow-xl hover:bg-blue-2 hover:shadow-[0px_15px_30px_#adadad] md:mt-8 xs:mt-7 xs:w-full"
         size="lg"
         theme="blue"
@@ -32,7 +32,7 @@ const Hero = () => (
         {...LINKS.survey}
       >
         Survey
-      </Button>
+      </Button> */}
     </div>
   </section>
 );
