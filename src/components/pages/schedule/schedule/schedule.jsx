@@ -120,6 +120,25 @@ const ITEMS = [
         'That sounds great! Almost too good to be true? What are the trade-offs that they bring? Do they truly prevent vendor lock-in? ' +
         'And what are you loosing by not making full use of what your cloud vendor has to offer?',
     },
+    coincidedEvent: {
+      id: '17',
+      time: '10:20',
+      title: 'Test Victor ',
+      duration: '35 min',
+      speakers: [
+        {
+          id: '4',
+          name: 'Nico Krijnen',
+          photo: NicoKrijnenPhoto,
+        },
+      ],
+      presentation:
+        "In today's rapidly evolving technological landscape, organizations are increasingly adopting cloud computing as a means to enhance scalability and flexibility. " +
+        'However, multi-cloud makes this a complex decision process. ' +
+        'Tools like Kubernetes, Terraform, Dapr and Wing simplify multi-cloud by providing a unified programming model that work seamlessly across different clouds. ' +
+        'That sounds great! Almost too good to be true? What are the trade-offs that they bring? Do they truly prevent vendor lock-in? ' +
+        'And what are you loosing by not making full use of what your cloud vendor has to offer?',
+    },
   },
   {
     time: '10:55',
@@ -463,7 +482,7 @@ const Schedule = ({ location }) => {
   }, [location]);
 
   return (
-    <section className="safe-paddings pt-9 pb-48 lg:px-8 lg:pb-44 md:px-5 md:pb-40 sm:pb-24 sm:pt-10 xs:px-0">
+    <section className="safe-paddings pb-48 pt-9 lg:px-8 lg:pb-44 md:px-5 md:pb-40 sm:pb-24 sm:pt-10 xs:px-0">
       <ul className="mx-auto w-[1072px] max-w-full rounded-[10px] border border-primary-2 shadow-lg">
         {ITEMS.map(({ id, time, title, duration, isKeynote, speakers, coincidedEvent }, index) => {
           const isEven = index % 2 === 1;
@@ -527,7 +546,7 @@ const Schedule = ({ location }) => {
                       {duration}
                     </span>
                     {speakers && speakers.length > 0 && (
-                      <ul className="relative inline-flex columns-3 gap-x-5 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                      <ul className="relative inline-flex columns-3 gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
                         {speakers.map(({ name, photo }, index) => (
                           <li className="w-full" key={index}>
                             <figure className="flex items-center gap-x-2">
@@ -554,7 +573,7 @@ const Schedule = ({ location }) => {
                 {coincidedEvent && (
                   <div
                     className={clsx(
-                      'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-t sm:border-l-0 sm:px-5 sm:pb-4',
+                      'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-l-0 sm:border-t sm:px-5 sm:pb-4',
                       isKeynote ? 'sm:pt-2' : 'sm:pt-3'
                     )}
                   >
@@ -586,7 +605,67 @@ const Schedule = ({ location }) => {
                         {coincidedEvent.duration}
                       </span>
                       {coincidedEvent.speakers && coincidedEvent.speakers.length > 0 && (
-                        <ul className="relative inline-flex gap-x-5 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                        <ul className="relative inline-flex gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                          {coincidedEvent.speakers.map(({ name, photo }, index) => (
+                            <li className="" key={index}>
+                              <figure className="flex items-center gap-x-2">
+                                <img
+                                  className="h-7 w-7 rounded-full"
+                                  src={photo || UserPhoto}
+                                  width={28}
+                                  height={28}
+                                  alt={`${name} photo`}
+                                  loading="lazy"
+                                />
+                                {speakers.length < 3 && (
+                                  <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
+                                    {name}
+                                  </figcaption>
+                                )}
+                              </figure>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                )}
+                {coincidedEvent && (
+                  <div
+                    className={clsx(
+                      'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-l-0 sm:border-t sm:px-5 sm:pb-4',
+                      isKeynote ? 'sm:pt-2' : 'sm:pt-3'
+                    )}
+                  >
+                    <h3 className="inline-flex items-center gap-x-3">
+                      {coincidedEvent.id ? (
+                        <Button
+                          className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
+                          theme="link-primary"
+                          onClick={() => {
+                            handleModalShow(index);
+                            setIsCoincidedEvent(true);
+                          }}
+                        >
+                          {coincidedEvent.title}
+                        </Button>
+                      ) : (
+                        <span className="text-lg font-semibold leading-snug tracking-tight text-primary-1 md:text-base">
+                          {coincidedEvent.title}
+                        </span>
+                      )}
+                      {coincidedEvent.isKeynote && (
+                        <span className="rounded-full bg-blue-1 px-4 py-2 text-xs font-semibold leading-none tracking-tighter text-white sm:hidden">
+                          Keynote
+                        </span>
+                      )}
+                    </h3>
+                    <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
+                      <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
+                        {coincidedEvent.duration}
+                      </span>
+                      {coincidedEvent.speakers && coincidedEvent.speakers.length > 0 && (
+                        <ul className="relative inline-flex gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
                           {coincidedEvent.speakers.map(({ name, photo }, index) => (
                             <li className="" key={index}>
                               <figure className="flex items-center gap-x-2">
