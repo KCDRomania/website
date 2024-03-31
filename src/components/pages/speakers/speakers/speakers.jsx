@@ -9,7 +9,8 @@ import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import AlexRaiuPhoto from './images/alex-raiu-photo.png';
-import AndraSomesanPhoto from './images/andra-somesan-photo.jpeg';
+import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
+import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
 import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
@@ -31,19 +32,11 @@ import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo
 import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
 import OvidiuValeanuPhoto from './images/ovidiu-valeanu-photo.jpg';
 import RaduZamfirPhoto from './images/radu-zamfir-photo.jpg';
-import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
 import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
 import TimothyMamoPhoto from './images/timothy-mamo-photo.jpg';
 import VincenzoScamporlinoPhoto from './images/vincenzo-scamporlino-photo.jpeg';
 import YujinKimPhoto from './images/yujin-kim-photo.jpg';
 import ChevronDown from './svg/arrow-down.inline.svg';
-
-// import AlexandruDejanuPhoto from './images/adrian-vladu-photo.jpg';
-// import AndreiStefaniePhoto from './images/adrian-vladu-photo.jpg';
-// import GeorgeCiobanPhoto from './images/adrian-vladu-photo.jpg';
-// import MohammedAboullaitePhoto from './images/adrian-vladu-photo.jpg';
-// import SorinDumitrescuPhoto from './images/adrian-vladu-photo.jpg';
-// import ThomasLabarussiasPhoto from './images/adrian-vladu-photo.jpg';
 
 const TITLE = 'Speakers';
 const ITEMS = [
@@ -53,10 +46,15 @@ const ITEMS = [
     position: 'Founder & CEO at Genezio',
     content:
       'With a remarkable journey over 30 years in the IT industry across Romania and the United States, Andrei is an example of innovation and entrepreneurship in the tech landscape.' +
+      '<br/><br/>' +
       "In 2022, Andrei, along with Bogdan Ripa, Paula Cionca, and Bogdan Vlad, co-founded Genezio, a scalable type-safe backend framework that connects seamlessly with many frontend technologies. Genezio's clients range from web and mobile to web3 and AI app developers." +
+      '<br/><br/>' +
       'Alumnus of Politehnica University of Bucharest, Andrei embarked on his career in software early, founding a Silicon Valley-based startup in his 20s.' +
+      '<br/><br/>' +
       'In his career journey, he shifted from founding startups to managing major corporations. He held the position of Romania Country Manager at IXIA for more than 5 years.' +
+      '<br/><br/>' +
       'Afterwards, he founded and successfully exited Vector Watch, followed by a 4-year tenure as VP Product and Head of European Development Centers la Fitbit.' +
+      '<br/><br/>' +
       "Andrei's dedication to the tech community is evident through his roles as ANIS President, and co-founder of Tech Angels and Innovation Labs, nurturing the next generation of tech entrepreneurs.",
     photo: AndreiPitisPhoto,
     twitterUrl: '',
@@ -76,6 +74,7 @@ const ITEMS = [
       'Principal Product Manager at Adobe & Member of CNCF End User Technical Advisory Board',
     content:
       'Serving as the Principal Product Manager for Platform Engineering at Adobe & member of Cloud Native Computing Foundation (CNCF) End User Technical Advisory Board (TAB), Joseph is not only a respected upstream #kubernetes contributor, but also holds the distinction of being part of six Kubernetes release teams.' +
+      '<br/><br/>' +
       "His commitment extends beyond his contributions; he's dedicated to guiding new talents eager to make their mark in the #opensource community.",
     photo: JosephSandovalPhoto,
     twitterUrl: '',
@@ -90,24 +89,6 @@ const ITEMS = [
   },
   {
     id: '3',
-    name: 'Sarah Gruneisen',
-    position: 'Director of Engineering at Novoda',
-    content:
-      'Sarah G., with her roles as Director of Engineering at Novoda and Founder of Avagasso Coaching, brings a wealth of experience centered around trust, authenticity, and empathy. Her aim is to empower everyone to discover and pursue their unique paths and passions.' +
-      "Sarah is passionate about inspiring you to chase your dreams with authenticity, striving to make a positive difference in the community. Join us for a session with Sarah, where you'll begin a transformative journey fueled by your inner passion.",
-    photo: SarahGruneisenPhoto,
-    twitterUrl: '',
-    linkedInUrl: 'https://www.linkedin.com/in/sgruneisen/',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '17:15',
-    title: 'Keynote: Empowerment Through Adversity: Leading with Personal Dragons',
-    duration: '30 min',
-  },
-  {
-    id: '4',
     name: 'Claudiu Hobjila',
     position: 'Customer Engineer at Google Cloud',
     content:
@@ -125,24 +106,24 @@ const ITEMS = [
     duration: '30 min',
   },
   {
-    id: '5',
-    name: 'Stefan Prodan',
-    position: 'Flux CD core maintainer',
+    id: '4',
+    name: 'Timothy Mamo',
+    position: 'Senior Developer Advocate - DigitalOcean',
     content:
-      "Stefan is a Software Engineer and an open source contributor to cloud-native projects. He is the creator of Flagger the progressive delivery operator for Kubernetes, and a core maintainer of the CNCF's Flux project. Stefan has over 15 years of experience with software development and he enjoys programming in Go and writing about distributed systems.",
-    photo: StefanProdanPhoto,
-    twitterUrl: 'https://twitter.com/stefanprodan',
-    linkedInUrl: 'linkedin.com/in/stefanprodan',
-    githubUrl: 'https://github.com/stefanprodan',
-    communityUrl: '',
+      'Timothy Mamo loves to help growing companies make the most of the cloud by focusing on Cloud Native technologies and processes. He’s had a varied experience, from studying aerospace engineering and working in the automotive industry before moving into the world of Cloud. He enjoys working and helping others improve and understand, at times with some Mediterranean gusto.',
+    photo: TimothyMamoPhoto,
+    twitterUrl: 'https://twitter.com/timothy_mamo',
+    linkedInUrl: 'https://linkedin.com/in/timothymamo/',
+    githubUrl: '',
+    communityUrl: 'https://timothymamo.com',
     instagramUrl: '',
-    websiteUrl: 'https://stefanprodan.com',
-    time: '11:45',
-    title: 'Introducing Timoni the Next-Gen Package Manager for Kubernetes',
-    duration: '25 min',
+    websiteUrl: '',
+    time: '16:20',
+    title: 'DevOps Lessons from a Primary School Teacher',
+    duration: '30 min',
   },
   {
-    id: '6',
+    id: '5',
     name: 'Andra Somesan',
     position: 'Solutions Architect, Amazon Web Services',
     content:
@@ -156,7 +137,24 @@ const ITEMS = [
     websiteUrl: '',
     time: '11:00',
     title: 'Revolutionise your Kubernetes game with cdk8s',
-    duration: '25 min',
+    duration: '30 min',
+  },
+  {
+    id: '6',
+    name: 'Stefan Prodan',
+    position: 'Flux CD core maintainer',
+    content:
+      "Stefan is a Software Engineer and an open source contributor to cloud-native projects. He is the creator of Flagger the progressive delivery operator for Kubernetes, and a core maintainer of the CNCF's Flux project. Stefan has over 15 years of experience with software development and he enjoys programming in Go and writing about distributed systems.",
+    photo: StefanProdanPhoto,
+    twitterUrl: 'https://twitter.com/stefanprodan',
+    linkedInUrl: 'https://linkedin.com/in/stefanprodan',
+    githubUrl: 'https://github.com/stefanprodan',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: 'https://stefanprodan.com',
+    time: '11:45',
+    title: 'Introducing Timoni the Next-Gen Package Manager for Kubernetes',
+    duration: '30 min',
   },
   {
     id: '7',
@@ -173,7 +171,7 @@ const ITEMS = [
     websiteUrl: 'https://solo.io',
     time: '11.00',
     title: 'Trust no one: implementing zero trust security with Ambient Service Mesh',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '8',
@@ -192,7 +190,7 @@ const ITEMS = [
     websiteUrl: 'https://uipath.com',
     time: '14:45',
     title: "Mastering Cloud Kubernetes: Navigating Azure's Kubernetes Service Maze",
-    duration: '25 min',
+    duration: '30 min',
   },
 
   {
@@ -212,7 +210,7 @@ const ITEMS = [
     websiteUrl: 'https://backstage.spotify.com',
     time: '12:30',
     title: 'Efficiency in Engineering: The Game-Changing Role of Developer Portals',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '10',
@@ -229,12 +227,12 @@ const ITEMS = [
     websiteUrl: '',
     time: '11:00',
     title: 'Building Internal Developer Platforms with Kubernetes Operators',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '11',
     name: 'Mihai Mihalcea',
-    position: 'STS, Team Coordinator, DevOps Engineer',
+    position: 'DevOps Engineer, Team Coordinator at STS',
     content:
       "I'm Team Coordinator at STS. I'm 27 years old and have been working for 4 years and a half months in STS. I am passionate about Kubernetes and I want to integrate as many as possible cloud native techs in our workflows.",
     photo: MihalceaMihaiAlexandruPhoto,
@@ -246,12 +244,12 @@ const ITEMS = [
     websiteUrl: '',
     time: '11:45',
     title: 'Cloud native for governmental workloads: Challenges & Lesson Learned',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '12',
     name: 'Octavian Petre',
-    position: 'STS, Team Coordinator, DevOps Engineer',
+    position: 'DevOps Engineer, Team Coordinator at STS',
     content:
       "I am almost 26 y/o. I have been working at STS since 2020 as a DevOps engineer. One of the first things to grasp knowledge about at the beginning of my professional career was Kubernetes and I'd love to become as good as i can in understanding it and other CNCF projects.",
     photo: OctavianPetrePhoto,
@@ -263,7 +261,7 @@ const ITEMS = [
     websiteUrl: '',
     time: '11:45',
     title: 'Cloud native for governmental workloads: Challenges & Lesson Learned',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '13',
@@ -281,7 +279,7 @@ const ITEMS = [
     websiteUrl: '',
     time: '11:45',
     title: 'Who the Helm Owns this YAML?!',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '14',
@@ -298,7 +296,7 @@ const ITEMS = [
     websiteUrl: '',
     time: '12:30',
     title: 'The Daemonset in the Details - Pitfalls of OpenTelemetry Collector Deployments',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '15',
@@ -316,7 +314,7 @@ const ITEMS = [
     websiteUrl: 'https://openmeter.io',
     time: '12:30',
     title: "Future-Proof Your Platform's CI/CD Without Developers Noticing a Thing",
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '16',
@@ -334,7 +332,7 @@ const ITEMS = [
     time: '14:00',
     title:
       'Dynamic Large Scale Spark on Kubernetes:Empowering the Community with Argo Workflows and Argo Events',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '17',
@@ -345,14 +343,14 @@ const ITEMS = [
       "Outside of work, you'll find me hanging out in tech and sports communities, cruising on inline skates, exploring new places, or challenging myself with quizzes and games.",
     photo: KatharinaSickPhoto,
     twitterUrl: '',
-    linkedInUrl: 'linkedin.com/in/katharinasick/',
+    linkedInUrl: 'https://linkedin.com/in/katharinasick/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: 'https://ksick.dev',
     time: '14:00',
     title: 'Closing the Loop: Applying Least Privilege and Ensuring We Did It Well',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '18',
@@ -370,12 +368,12 @@ const ITEMS = [
     websiteUrl: 'https://cloudbase.it',
     time: '14:00',
     title: 'Bare metal Kubernetes on mixed x64 and ARM64',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '19',
     name: 'Adrian Vladu',
-    position: 'CEO at Cloudbase Solutions',
+    position: 'Senior Cloud Engineer @ Cloudbase Solutions',
     content:
       'Adrian Vladu has an experience of more than 6 years in the cloud computing area, with a focus on Linux and Windows inter-operability.' +
       'He leverages his knowledge and experience as a core reviewer of openstack/cloudbase-init, maintainer of lis/lis-pipeline, cloudbase/cloudbase-init-ci and cloudbase/windows-openstack-imaging-tools open source projects.' +
@@ -391,7 +389,7 @@ const ITEMS = [
     websiteUrl: 'https://cloudbase.it',
     time: '14:00',
     title: 'Bare metal Kubernetes on mixed x64 and ARM64',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '20',
@@ -408,7 +406,7 @@ const ITEMS = [
     websiteUrl: '',
     time: '14:45',
     title: 'CD and GitOps with flux @AdoreMe',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '21',
@@ -425,7 +423,7 @@ const ITEMS = [
     websiteUrl: 'https://genezio.com',
     time: '14:45',
     title: 'Using Unikernels to deploy real-world apps',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '22',
@@ -442,7 +440,7 @@ const ITEMS = [
     websiteUrl: '',
     time: '15:30',
     title: 'Challenges of Migrating a High Traffic Mobile Game to Kubernetes',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '23',
@@ -460,7 +458,7 @@ const ITEMS = [
     websiteUrl: 'https://ing.ro/ithub ',
     time: '15:30',
     title: 'From Code to Cluster: Orchestrating 10,000+ Kubernetes deployments with 1 pipeline',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '24',
@@ -480,24 +478,24 @@ const ITEMS = [
     websiteUrl: '',
     time: '15:30',
     title: 'Histology Augmentation: Scaling Federated Learning Solutions with Kubernetes',
-    duration: '25 min',
+    duration: '30 min',
   },
   {
     id: '25',
-    name: 'Timothy Mamo',
-    position: 'Senior Developer Advocate - DigitalOcean',
+    name: 'Alexandru Dejanu',
+    position: 'Site Reliability Engineer at Systematic',
     content:
-      'Timothy Mamo loves to help growing companies make the most of the cloud by focusing on Cloud Native technologies and processes. He’s had a varied experience, from studying aerospace engineering and working in the automotive industry before moving into the world of Cloud. He enjoys working and helping others improve and understand, at times with some Mediterranean gusto.',
-    photo: TimothyMamoPhoto,
-    twitterUrl: 'https://twitter.com/timothy_mamo',
-    linkedInUrl: 'https://linkedin.com/in/timothymamo/',
+      'Jack of all trades master of None. Alexandru Dejanu is a SRE @ Systematic with a strong passion for cloud-native landscape. Opinionated and tech agnostic loves helping others and sharing knowledge be it on tech stages, or StackOverflow and Medium.',
+    photo: AlexandruDejanuPhoto,
+    twitterUrl: 'https://twitter.com/dejanualex',
+    linkedInUrl: 'https://linkedin.com/in/dejanualex/',
     githubUrl: '',
-    communityUrl: 'https://timothymamo.com',
+    communityUrl: 'https://medium.com/@dejanualex',
     instagramUrl: '',
-    websiteUrl: '',
-    time: '16:20',
-    title: 'DevOps Lessons from a Primary School Teacher',
-    duration: '25 min',
+    websiteUrl: 'https://systematic.com/en-gb/',
+    time: '16:35',
+    title: "2024: I Don't Know K8S and at This Point, I'm Too Afraid To Ask",
+    duration: '30 min',
   },
   {
     id: '26',
