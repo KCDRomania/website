@@ -5,21 +5,41 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
-import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
-import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
-import JanKarremansPhoto from './images/jan-karremans-photo.jpg';
-import JanWillemPhoto from './images/jan-willem-photo.jpg';
-import KasraAmirsarvariPhoto from './images/kasra-amirsarvari-photo.jpg';
-import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
-import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
-import MaximBurgerhoutPhoto from './images/maxim-burgerhout-photo.jpg';
-import NicoKrijnenPhoto from './images/nico-krijnen-photo.jpg';
-import NiravBhadradiyaPhoto from './images/nirav-bhadradiya-photo.jpg';
-import RajalakshmiRajamuthuPhoto from './images/rajalakshmi-rajamuthu-photo.jpg';
-import SebastiaanMannemPhoto from './images/sebastiaan-mannem-photo.jpg';
-import SerdarKalayciPhoto from './images/serdar-kalayci-photo.jpg';
+import AlessandroVozzaPhoto from './images/adrian-vladu-photo.jpg';
 import UserPhoto from './images/user-photo.jpg';
-// import AndreaGiardiniPhoto from './images/william-rizzo-photo.jpg';
+// import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
+// import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
+// import AlexRaiuPhoto from './images/adrian-vladu-photo.jpg';
+// import AlexandruDejanuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndraSomesanPhoto from './images/adrian-vladu-photo.jpg';
+// import AndradaRaducanuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiPetrescuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiPitisPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiStefaniePhoto from './images/adrian-vladu-photo.jpg';
+// import IrinaOcanoaiaPhoto from './images/adrian-vladu-photo.jpg';
+// import CarmenBobeiPhoto from './images/adrian-vladu-photo.jpg';
+// import ClaudiuHobjilaPhoto from './images/adrian-vladu-photo.jpg';
+// import FlorinLoghiadePhoto from './images/adrian-vladu-photo.jpg';
+// import GeorgeCiobanPhoto from './images/adrian-vladu-photo.jpg';
+// import GeorgeHantzarasPhoto from './images/adrian-vladu-photo.jpg';
+// import IulianTaiatuPhoto from './images/adrian-vladu-photo.jpg';
+// import JosephSandovalPhoto from './images/adrian-vladu-photo.jpg';
+// import KatharinaSickPhoto from './images/adrian-vladu-photo.jpg';
+// import MarkSagiKazarPhoto from './images/adrian-vladu-photo.jpg';
+// import MatthiasBertschyPhoto from './images/adrian-vladu-photo.jpg';
+// import MihaiGoguPhoto from './images/adrian-vladu-photo.jpg';
+// import MihalceaMihaiAlexandruPhoto from './images/adrian-vladu-photo.jpg';
+// import MohammedAboullaitePhoto from './images/adrian-vladu-photo.jpg';
+// import OctavianPetrePhoto from './images/adrian-vladu-photo.jpg';
+// import OvidiuValeanuPhoto from './images/adrian-vladu-photo.jpg';
+// import SarahGruneisenPhoto from './images/adrian-vladu-photo.jpg';
+// import SorinDumitrescuPhoto from './images/adrian-vladu-photo.jpg';
+// import StefanProdanPhoto from './images/adrian-vladu-photo.jpg';
+// import ThomasLabarussiasPhoto from './images/adrian-vladu-photo.jpg';
+// import TimothyMamoPhoto from './images/adrian-vladu-photo.jpg';
+// import VincenzoScamporlinoPhoto from './images/adrian-vladu-photo.jpg';
+// import YujinKimPhoto from './images/adrian-vladu-photo.jpg';
+
 // UserPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
@@ -32,7 +52,7 @@ const ITEMS = [
       {
         id: '4',
         name: 'Nico Krijnen',
-        photo: NicoKrijnenPhoto,
+        photo: AlessandroVozzaPhoto,
       },
     ],
     presentation:
@@ -56,17 +76,17 @@ const ITEMS = [
       {
         id: '6',
         name: 'Jan Willem Van Hermon',
-        photo: JanWillemPhoto,
+        photo: AlessandroVozzaPhoto,
       },
       {
         id: '7',
         name: 'Sebastiaan Mannem',
-        photo: SebastiaanMannemPhoto,
+        photo: AlessandroVozzaPhoto,
       },
       {
         id: '8',
         name: 'Benoit Schipper',
-        photo: BenoitSchipperPhoto,
+        photo: AlessandroVozzaPhoto,
       },
     ],
     presentation:
@@ -81,7 +101,7 @@ const ITEMS = [
       {
         id: '10',
         name: 'Giuseppe Gianquitto',
-        photo: GiuseppeGianquittoPhoto,
+        photo: AlessandroVozzaPhoto,
       },
     ],
     presentation:
@@ -107,7 +127,7 @@ const ITEMS = [
       {
         id: '12',
         name: 'Maxim Burgerhout',
-        photo: MaximBurgerhoutPhoto,
+        photo: AlessandroVozzaPhoto,
       },
     ],
     presentation:
@@ -122,12 +142,12 @@ const ITEMS = [
       {
         id: '15',
         name: 'Rajalakshmi Rajamuthu',
-        photo: RajalakshmiRajamuthuPhoto,
+        photo: AlessandroVozzaPhoto,
       },
       {
         id: '16',
         name: 'Nirav Bhadradiya',
-        photo: NiravBhadradiyaPhoto,
+        photo: AlessandroVozzaPhoto,
       },
     ],
     presentation:
@@ -147,7 +167,7 @@ const ITEMS = [
       {
         id: '18',
         name: 'Kasra Amirsarvari',
-        photo: KasraAmirsarvariPhoto,
+        photo: AlessandroVozzaPhoto,
       },
     ],
     presentation:
@@ -162,22 +182,22 @@ const ITEMS = [
       {
         id: '22',
         name: 'Marco Verleun',
-        photo: MarcoVerleunPhoto,
+        photo: AlessandroVozzaPhoto,
       },
       {
         id: '23',
         name: 'Louëlla Creemers',
-        photo: LouellaCreemersPhoto,
+        photo: AlessandroVozzaPhoto,
       },
       {
         id: '24',
         name: 'Serdar Kalaycı',
-        photo: SerdarKalayciPhoto,
+        photo: AlessandroVozzaPhoto,
       },
       {
         id: '25',
         name: 'Jan Karremans',
-        photo: JanKarremansPhoto,
+        photo: AlessandroVozzaPhoto,
       },
     ],
     presentation:
@@ -297,7 +317,7 @@ const Schedule = ({ location }) => {
                       {duration}
                     </span>
                     {speakers && speakers.length > 0 && (
-                      <ul className="relative inline-flex columns-3 gap-x-5 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                      <ul className="relative inline-flex columns-3 gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
                         {speakers.map(({ name, photo }, index) => (
                           <li className="w-full" key={index}>
                             <figure className="flex items-center gap-x-2">
@@ -324,7 +344,7 @@ const Schedule = ({ location }) => {
                 {coincidedEvent && (
                   <div
                     className={clsx(
-                      'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-t sm:border-l-0 sm:px-5 sm:pb-4',
+                      'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-l-0 sm:border-t sm:px-5 sm:pb-4',
                       isKeynote ? 'sm:pt-2' : 'sm:pt-3'
                     )}
                   >
@@ -356,7 +376,7 @@ const Schedule = ({ location }) => {
                         {coincidedEvent.duration}
                       </span>
                       {coincidedEvent.speakers && coincidedEvent.speakers.length > 0 && (
-                        <ul className="relative inline-flex gap-x-5 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                        <ul className="relative inline-flex gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
                           {coincidedEvent.speakers.map(({ name, photo }, index) => (
                             <li className="" key={index}>
                               <figure className="flex items-center gap-x-2">

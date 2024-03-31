@@ -3,125 +3,76 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
-import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
-import CarlosMestrePhoto from './images/carlos-mestre-photo.jpeg';
+import AndreiPietricicaPhoto from './images/andrei-pietricica-photo.png';
+import BogdanLucaciuPhoto from './images/bogdan-lucaciu-photo.png';
 import CatalinJoraPhoto from './images/catalin-jora-photo.png';
-import FahdEkadioinPhoto from './images/fahd-ekadioin-photo.png';
-import KarlaFeijooPhoto from './images/karla-feijoo-photo.png';
-import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
-import MarcelKerkerPhoto from './images/marcel-kerker-photo.png';
-import MatteoBianchiPhoto from './images/matteo-bianchi-photo.png';
-import MegStefouliPhoto from './images/meg-stefouli-photo.png';
-import PabloMusaPhoto from './images/pablo-musa-photo.png';
-import PavelChunyayevPhoto from './images/pavel-chunyayev-photo.png';
-import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
-import RonaldKersPhoto from './images/ronald-kers-photo.png';
-import SaifeddineRajhiPhoto from './images/saifeddine-rajhi-photo.png';
-import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
-import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
-import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
+import ElifSamedinPhoto from './images/elif-samedin-photo.png';
+import IonMeitoiuPhoto from './images/ion-meitoiu-photo.png';
+import IonutBradatanPhoto from './images/ionut-bradatan-photo.png';
+import RominaDrutaPhoto from './images/romina-druta-photo.png';
+import VictorVarzaPhoto from './images/victor-varza-photo.png';
+import VladFratilaPhoto from './images/vlad-fratila-photo.png';
+import WouterLigtenbergPhoto from './images/wouter-ligtenberg-photo.png';
 
 const ITEMS = [
   {
-    name: 'Alessandro Vozza',
+    name: 'Andrei Pietricica',
     position: 'Developer relations at Solo.io',
-    photo: AlessandroVozzaPhoto,
+    photo: AndreiPietricicaPhoto,
     url: 'https://www.linkedin.com/in/alessandrovozza/',
   },
   {
-    name: 'William Rizzo',
+    name: 'Bogdan Lucaciu',
     position: 'Lead architect at SUSE',
-    photo: WilliamRizzoPhoto,
+    photo: BogdanLucaciuPhoto,
     url: 'https://www.linkedin.com/in/william-rizzo/',
-  },
-  {
-    name: 'Pablo Musa',
-    position: 'Curriculum Developer at Sysdig',
-    photo: PabloMusaPhoto,
-    url: 'https://www.linkedin.com/in/pmusa/',
-  },
-  {
-    name: 'Luca Camphuisen',
-    position: 'Owner at Logic Shift',
-    photo: LucaCamphuisenPhoto,
-    url: 'https://www.linkedin.com/in/luca-camphuisen/',
-  },
-  {
-    name: 'Matteo Bianchi',
-    position: 'Independent',
-    photo: MatteoBianchiPhoto,
-    url: 'https://www.linkedin.com/in/mbianchidev/',
-  },
-  {
-    name: 'Rajesh Gunasekaran',
-    position: 'DevOps Engineer at Cognizant',
-    photo: RajeshGunasekaranPhoto,
-    url: 'https://www.linkedin.com/in/rajesh-gunasekaran-4a146224/',
-  },
-  {
-    name: 'Marcel Kerker',
-    position: 'Sr. Platform Engineer at HCS Company',
-    photo: MarcelKerkerPhoto,
-    url: 'https://www.linkedin.com/in/mkerker/',
-  },
-  {
-    name: 'Serkan Capkan',
-    position: 'Solutions Architect at Cloutive',
-    photo: SerkanCapkanPhoto,
-    url: 'https://www.linkedin.com/in/serkancapkan/',
-  },
-  {
-    name: 'Carlos Mestre del Pino',
-    position: 'Platform Engineering Consultant at ITQ',
-    photo: CarlosMestrePhoto,
-    url: 'https://www.linkedin.com/in/mestredelpino/',
-  },
-  {
-    name: 'Meg Stefouli',
-    position: 'CNCF Student and KCD Organizer',
-    photo: MegStefouliPhoto,
-    url: 'https://www.linkedin.com/in/megstefuli/',
-  },
-  {
-    name: 'Fahd Ekadioin',
-    position: 'Partner Engineer at Google',
-    photo: FahdEkadioinPhoto,
-    url: 'https://www.linkedin.com/in/fahdekadioin/',
-  },
-  {
-    name: 'Pavel Chunyayev',
-    position: 'Head of Engineering at 2Solar',
-    photo: PavelChunyayevPhoto,
-    url: 'https://www.linkedin.com/in/pavelchunyayev/',
-  },
-  {
-    name: 'Sevi Karakulak',
-    position: 'Engineering Lead at Container Solutions',
-    photo: SeviKarakulakPhoto,
-    url: 'https://www.linkedin.com/in/sevikarakulak/',
-  },
-  {
-    name: 'Ronald Kers',
-    position: 'Content Creator at ACC ICT',
-    photo: RonaldKersPhoto,
-    url: 'https://www.linkedin.com/in/ronaldkers/',
-  },
-  {
-    name: 'Karla Valeria Feijoo',
-    position: 'Sr. Field Marketing Manager at Isovalent',
-    photo: KarlaFeijooPhoto,
-    url: 'https://www.linkedin.com/in/karla-valeria-feijoo-54934422/',
-  },
-  {
-    name: 'Saifeddine Rajhi',
-    position: 'Sr. SRE engineer at Takeaway.com JET',
-    photo: SaifeddineRajhiPhoto,
-    url: 'https://www.linkedin.com/in/rajhi-saif/',
   },
   {
     name: 'Catalin Jora',
     position: 'Cloud Consultant at FikaWorks',
     photo: CatalinJoraPhoto,
+    url: 'https://www.linkedin.com/in/jocatalin/',
+  },
+  {
+    name: 'Elif Samedin',
+    position: 'Owner at Logic Shift',
+    photo: ElifSamedinPhoto,
+    url: 'https://www.linkedin.com/in/luca-camphuisen/',
+  },
+  {
+    name: 'Ion Meitoiu',
+    position: 'Independent',
+    photo: IonMeitoiuPhoto,
+    url: 'https://www.linkedin.com/in/mbianchidev/',
+  },
+  {
+    name: 'Ionu Bradatan',
+    position: 'DevOps Engineer at Cognizant',
+    photo: IonutBradatanPhoto,
+    url: 'https://www.linkedin.com/in/rajesh-gunasekaran-4a146224/',
+  },
+  {
+    name: 'Romina Druta',
+    position: 'Sr. Platform Engineer at HCS Company',
+    photo: RominaDrutaPhoto,
+    url: 'https://www.linkedin.com/in/mkerker/',
+  },
+  {
+    name: 'Victo rVarza',
+    position: 'Solutions Architect at Cloutive',
+    photo: VictorVarzaPhoto,
+    url: 'https://www.linkedin.com/in/serkancapkan/',
+  },
+  {
+    name: 'Vlad Fratila',
+    position: 'Platform Engineering Consultant at ITQ',
+    photo: VladFratilaPhoto,
+    url: 'https://www.linkedin.com/in/mestredelpino/',
+  },
+  {
+    name: 'Wouter Ligtenberg',
+    position: 'Cloud Consultant at FikaWorks',
+    photo: WouterLigtenbergPhoto,
     url: 'https://www.linkedin.com/in/jocatalin/',
   },
 ];
