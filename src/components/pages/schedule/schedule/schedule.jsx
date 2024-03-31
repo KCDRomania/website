@@ -45,6 +45,16 @@ import UserPhoto from './images/user-photo.jpg';
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
+    title: 'Atlas 1',
+    isHeader: true,
+    coincidedEvent: {
+      title: 'Atlas 2',
+    },
+    thirdEvent: {
+      title: 'Merope',
+    },
+  },
+  {
     time: '8:30',
     title: 'Welcome',
     duration: '30 min',
@@ -128,24 +138,19 @@ const ITEMS = [
         'That sounds great! Almost too good to be true? What are the trade-offs that they bring? Do they truly prevent vendor lock-in? ' +
         'And what are you loosing by not making full use of what your cloud vendor has to offer?',
     },
-    coincidedEvent: {
-      id: '17',
+    thirdEvent: {
+      id: '31',
       time: '10:20',
-      title: 'Test Victor ',
-      duration: '35 min',
+      title: 'third event in the list? ',
+      duration: '30 min',
       speakers: [
         {
-          id: '4',
-          name: 'Nico Krijnen',
+          id: '5',
+          name: 'Sohan Maheshwar',
           photo: SarahGruneisenPhoto,
         },
       ],
-      presentation:
-        "In today's rapidly evolving technological landscape, organizations are increasingly adopting cloud computing as a means to enhance scalability and flexibility. " +
-        'However, multi-cloud makes this a complex decision process. ' +
-        'Tools like Kubernetes, Terraform, Dapr and Wing simplify multi-cloud by providing a unified programming model that work seamlessly across different clouds. ' +
-        'That sounds great! Almost too good to be true? What are the trade-offs that they bring? Do they truly prevent vendor lock-in? ' +
-        'And what are you loosing by not making full use of what your cloud vendor has to offer?',
+      presentation: 'Showing third event in the schedule',
     },
   },
   {
@@ -203,6 +208,7 @@ const ITEMS = [
     id: '06',
     time: '12:05',
     title: 'Cilium: divide et impera the networking stack',
+    room: 'Atlas 1',
     duration: '35 min',
     speakers: [
       {
@@ -458,6 +464,7 @@ const ITEMS = [
 const Schedule = ({ location }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isCoincidedEvent, setIsCoincidedEvent] = useState(false);
+  const [isThirdEvent, setIsThirdEvent] = useState(false);
   const [modalDataId, setModalDataId] = useState(0);
 
   const handleModalShow = (id) => {
@@ -470,6 +477,7 @@ const Schedule = ({ location }) => {
     document.body.classList.remove('overflow-hidden');
     setIsModalVisible(false);
     setIsCoincidedEvent(false);
+    setIsThirdEvent(false);
     setModalDataId(0);
   };
 
@@ -486,146 +494,113 @@ const Schedule = ({ location }) => {
       if (state?.isCoincidedEvent) {
         setIsCoincidedEvent(true);
       }
+      if (state?.isThirdEvent) {
+        setIsThirdEvent(true);
+      }
     }
   }, [location]);
 
   return (
     <section className="safe-paddings pb-48 pt-9 lg:px-8 lg:pb-44 md:px-5 md:pb-40 sm:pb-24 sm:pt-10 xs:px-0">
-      <ul className="mx-auto w-[1072px] max-w-full rounded-[10px] border border-primary-2 shadow-lg">
-        {ITEMS.map(({ id, time, title, duration, isKeynote, speakers, coincidedEvent }, index) => {
-          const isEven = index % 2 === 1;
+      <ul className="mx-auto w-[1600px] max-w-full rounded-[10px] border border-primary-2 shadow-lg">
+        {ITEMS.map(
+          (
+            {
+              id,
+              time,
+              title,
+              duration,
+              isKeynote,
+              speakers,
+              coincidedEvent,
+              isHeader,
+              room,
+              thirdEvent,
+            },
+            index
+          ) => {
+            const isEven = index % 2 === 1;
 
-          return (
-            <li
-              className={clsx(
-                'grid grid-cols-[114px_1fr] md:grid-cols-[106px_1fr] sm:grid-cols-1',
-                {
-                  'bg-primary-4': isEven,
-                  'bg-lightGreen': title === 'Welcome',
-                  'bg-lightYellow': title === 'Lunch',
-                  'bg-lightOrange': title === 'Drinks / networking',
-                }
-              )}
-              key={index}
-            >
-              <div className="flex items-center justify-center sm:justify-start sm:px-5 sm:pt-5">
-                <time className="mb-auto mt-7 text-[15px] font-semibold leading-none tracking-tight text-primary-1 opacity-60 md:mt-5 md:text-sm sm:my-0">
-                  {time}
-                </time>
-                {isKeynote && (
-                  <span className="ml-4 hidden rounded-full bg-blue-1 px-2 py-1.5 text-xs font-semibold leading-none tracking-tighter text-white sm:inline-flex">
-                    Keynote
-                  </span>
+            return (
+              <li
+                className={clsx(
+                  'grid grid-cols-[114px_1fr] md:grid-cols-[106px_1fr] sm:grid-cols-1',
+                  {
+                    'bg-primary-4': isEven,
+                    'bg-lightGreen': title === 'Welcome',
+                    'bg-lightYellow': title === 'Lunch',
+                    'bg-lightOrange': title === 'Drinks / networking',
+                  }
                 )}
-              </div>
-              <div
-                className={clsx('border-l border-l-primary-2 sm:border-none', {
-                  'grid grid-cols-2 sm:grid-cols-1': coincidedEvent,
-                })}
+                key={index}
               >
-                <div
-                  className={clsx(
-                    'flex flex-col gap-y-3 px-7 py-6 md:py-4 sm:gap-y-2 sm:px-5 sm:pb-4',
-                    isKeynote ? 'sm:pt-2' : 'sm:pt-3'
-                  )}
-                >
-                  <h3 className="inline-flex items-center gap-x-3">
-                    {id ? (
-                      <Button
-                        className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
-                        theme="link-primary"
-                        onClick={() => handleModalShow(index)}
-                      >
-                        {title}
-                      </Button>
-                    ) : (
-                      <span className="text-lg font-semibold leading-snug tracking-tight text-primary-1 md:text-base">
-                        {title}
-                      </span>
-                    )}
-                    {isKeynote && (
-                      <span className="rounded-full bg-blue-1 px-2 py-2 text-xs font-semibold leading-none tracking-tighter text-white sm:hidden">
-                        Keynote
-                      </span>
-                    )}
-                  </h3>
-                  <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
-                    <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
-                      {duration}
+                <div className="flex items-center justify-center sm:justify-start sm:px-5 sm:pt-5">
+                  <time className="mb-auto mt-7 text-[15px] font-semibold leading-none tracking-tight text-primary-1 opacity-60 md:mt-5 md:text-sm sm:my-0">
+                    {time}
+                  </time>
+                  {isKeynote && (
+                    <span className="ml-4 hidden rounded-full bg-blue-1 px-2 py-1.5 text-xs font-semibold leading-none tracking-tighter text-white sm:inline-flex">
+                      Keynote
                     </span>
-                    {speakers && speakers.length > 0 && (
-                      <ul className="relative inline-flex columns-3 gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
-                        {speakers.map(({ name, photo }, index) => (
-                          <li className="w-full" key={index}>
-                            <figure className="flex items-center gap-x-2">
-                              <img
-                                className="h-7 w-7 rounded-full"
-                                src={photo || UserPhoto}
-                                width={28}
-                                height={28}
-                                alt={name}
-                                loading="lazy"
-                              />
-                              {speakers.length <= 3 && (
-                                <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
-                                  {name}
-                                </figcaption>
-                              )}
-                            </figure>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                  )}
                 </div>
-                {coincidedEvent && (
+                <div
+                  className={clsx('border-l border-l-primary-2 sm:border-none', {
+                    'grid grid-cols-3 sm:grid-cols-1': coincidedEvent,
+                  })}
+                >
                   <div
                     className={clsx(
-                      'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-l-0 sm:border-t sm:px-5 sm:pb-4',
+                      'flex flex-col gap-y-3 px-7 py-6 md:py-4 sm:gap-y-2 sm:px-5 sm:pb-4',
                       isKeynote ? 'sm:pt-2' : 'sm:pt-3'
                     )}
                   >
-                    <h3 className="inline-flex items-center gap-x-3">
-                      {coincidedEvent.id ? (
-                        <Button
-                          className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
-                          theme="link-primary"
-                          onClick={() => {
-                            handleModalShow(index);
-                            setIsCoincidedEvent(true);
-                          }}
-                        >
-                          {coincidedEvent.title}
-                        </Button>
-                      ) : (
-                        <span className="text-lg font-semibold leading-snug tracking-tight text-primary-1 md:text-base">
-                          {coincidedEvent.title}
-                        </span>
-                      )}
-                      {coincidedEvent.isKeynote && (
-                        <span className="rounded-full bg-blue-1 px-4 py-2 text-xs font-semibold leading-none tracking-tighter text-white sm:hidden">
-                          Keynote
-                        </span>
-                      )}
-                    </h3>
+                    {isHeader ? (
+                      <div className="header-sticky">
+                        <h2 className="text-2xl font-bold leading-snug">{title}</h2>
+                      </div>
+                    ) : (
+                      <h3 className="inline-flex items-center gap-x-2">
+                        {id ? (
+                          <Button
+                            className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
+                            theme="link-primary"
+                            onClick={() => handleModalShow(index)}
+                          >
+                            {title}
+                          </Button>
+                        ) : (
+                          <span className="text-lg font-semibold leading-snug tracking-tight text-primary-1 md:text-base">
+                            {title}
+                          </span>
+                        )}
+                        {isKeynote && (
+                          <span className="rounded-full bg-blue-1 px-2 py-2 text-xs font-semibold leading-none tracking-tighter text-white sm:hidden">
+                            Keynote
+                          </span>
+                        )}
+                      </h3>
+                    )}
                     <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
-                      <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
-                        {coincidedEvent.duration}
-                      </span>
-                      {coincidedEvent.speakers && coincidedEvent.speakers.length > 0 && (
-                        <ul className="relative inline-flex gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
-                          {coincidedEvent.speakers.map(({ name, photo }, index) => (
-                            <li className="" key={index}>
+                      {duration && (
+                        <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
+                          {room || ITEMS[0].title} - {duration}
+                        </span>
+                      )}
+                      {speakers && speakers.length > 0 && (
+                        <ul className="relative inline-flex columns-3 gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                          {speakers.map(({ name, photo }, index) => (
+                            <li className="w-full" key={index}>
                               <figure className="flex items-center gap-x-2">
                                 <img
                                   className="h-7 w-7 rounded-full"
                                   src={photo || UserPhoto}
                                   width={28}
                                   height={28}
-                                  alt={`${name} photo`}
+                                  alt={name}
                                   loading="lazy"
                                 />
-                                {speakers.length < 3 && (
+                                {speakers.length <= 3 && (
                                   <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
                                     {name}
                                   </figcaption>
@@ -637,74 +612,162 @@ const Schedule = ({ location }) => {
                       )}
                     </div>
                   </div>
-                )}
-                {coincidedEvent && (
-                  <div
-                    className={clsx(
-                      'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-l-0 sm:border-t sm:px-5 sm:pb-4',
-                      isKeynote ? 'sm:pt-2' : 'sm:pt-3'
-                    )}
-                  >
-                    <h3 className="inline-flex items-center gap-x-3">
-                      {coincidedEvent.id ? (
-                        <Button
-                          className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
-                          theme="link-primary"
-                          onClick={() => {
-                            handleModalShow(index);
-                            setIsCoincidedEvent(true);
-                          }}
-                        >
-                          {coincidedEvent.title}
-                        </Button>
+                  {coincidedEvent && (
+                    <div
+                      className={clsx(
+                        'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-l-0 sm:border-t sm:px-5 sm:pb-4',
+                        isKeynote ? 'sm:pt-2' : 'sm:pt-3'
+                      )}
+                    >
+                      {isHeader ? (
+                        <div className="header-sticky">
+                          <h2 className="text-2xl font-bold leading-snug">
+                            {coincidedEvent.title}
+                          </h2>
+                        </div>
                       ) : (
-                        <span className="text-lg font-semibold leading-snug tracking-tight text-primary-1 md:text-base">
-                          {coincidedEvent.title}
-                        </span>
+                        <h3 className="inline-flex items-center gap-x-3">
+                          {coincidedEvent.id ? (
+                            <Button
+                              className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
+                              theme="link-primary"
+                              onClick={() => {
+                                handleModalShow(index);
+                                setIsCoincidedEvent(true);
+                              }}
+                            >
+                              {coincidedEvent.title}
+                            </Button>
+                          ) : (
+                            <span className="text-lg font-semibold leading-snug tracking-tight text-primary-1 md:text-base">
+                              {coincidedEvent.title}
+                            </span>
+                          )}
+                          {coincidedEvent.isKeynote && (
+                            <span className="rounded-full bg-blue-1 px-4 py-2 text-xs font-semibold leading-none tracking-tighter text-white sm:hidden">
+                              Keynote
+                            </span>
+                          )}
+                        </h3>
                       )}
-                      {coincidedEvent.isKeynote && (
-                        <span className="rounded-full bg-blue-1 px-4 py-2 text-xs font-semibold leading-none tracking-tighter text-white sm:hidden">
-                          Keynote
-                        </span>
-                      )}
-                    </h3>
-                    <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
-                      <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
-                        {coincidedEvent.duration}
-                      </span>
-                      {coincidedEvent.speakers && coincidedEvent.speakers.length > 0 && (
-                        <ul className="relative inline-flex gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
-                          {coincidedEvent.speakers.map(({ name, photo }, index) => (
-                            <li className="" key={index}>
-                              <figure className="flex items-center gap-x-2">
-                                <img
-                                  className="h-7 w-7 rounded-full"
-                                  src={photo || UserPhoto}
-                                  width={28}
-                                  height={28}
-                                  alt={`${name} photo`}
-                                  loading="lazy"
-                                />
-                                {speakers.length < 3 && (
-                                  <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
-                                    {name}
-                                  </figcaption>
-                                )}
-                              </figure>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
+                      <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
+                        {duration && (
+                          <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
+                            {coincidedEvent.room
+                              ? coincidedEvent.room
+                              : ITEMS[0].coincidedEvent.title}{' '}
+                            - {coincidedEvent.duration}
+                          </span>
+                        )}
+                        {coincidedEvent.speakers && coincidedEvent.speakers.length > 0 && (
+                          <ul className="relative inline-flex gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                            {coincidedEvent.speakers.map(({ name, photo }, index) => (
+                              <li className="" key={index}>
+                                <figure className="flex items-center gap-x-2">
+                                  <img
+                                    className="h-7 w-7 rounded-full"
+                                    src={photo || UserPhoto}
+                                    width={28}
+                                    height={28}
+                                    alt={`${name} photo`}
+                                    loading="lazy"
+                                  />
+                                  {speakers.length < 3 && (
+                                    <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
+                                      {name}
+                                    </figcaption>
+                                  )}
+                                </figure>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            </li>
-          );
-        })}
+                  )}
+                  {thirdEvent && (
+                    <div
+                      className={clsx(
+                        'flex flex-col gap-y-3 border-l border-primary-2 px-7 py-6 md:py-4 sm:gap-y-2 sm:border-l-0 sm:border-t sm:px-5 sm:pb-4',
+                        isKeynote ? 'sm:pt-2' : 'sm:pt-3'
+                      )}
+                    >
+                      {isHeader ? (
+                        <div className="header-sticky">
+                          <h2 className="text-2xl font-bold leading-snug">{thirdEvent.title}</h2>
+                        </div>
+                      ) : (
+                        <h3 className="inline-flex items-center gap-x-3">
+                          {thirdEvent.id ? (
+                            <Button
+                              className="!whitespace-normal !text-left text-lg !font-semibold !leading-snug tracking-tight text-primary-1 transition-colors duration-200 hover:text-blue-1 md:text-base"
+                              theme="link-primary"
+                              onClick={() => {
+                                handleModalShow(index);
+                                setIsThirdEvent(true);
+                              }}
+                            >
+                              {thirdEvent.title}
+                            </Button>
+                          ) : (
+                            <span className="text-lg font-semibold leading-snug tracking-tight text-primary-1 md:text-base">
+                              {thirdEvent.title}
+                            </span>
+                          )}
+                          {thirdEvent.isKeynote && (
+                            <span className="rounded-full bg-blue-1 px-4 py-2 text-xs font-semibold leading-none tracking-tighter text-white sm:hidden">
+                              Keynote
+                            </span>
+                          )}
+                        </h3>
+                      )}
+                      <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
+                        {duration && (
+                          <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
+                            {thirdEvent.room ? thirdEvent.room : ITEMS[0].thirdEvent.title} -{' '}
+                            {thirdEvent.duration}
+                          </span>
+                        )}
+                        {thirdEvent.speakers && thirdEvent.speakers.length > 0 && (
+                          <ul className="relative inline-flex gap-x-5 before:absolute before:-left-4 before:bottom-0 before:top-0 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
+                            {thirdEvent.speakers.map(({ name, photo }, index) => (
+                              <li className="" key={index}>
+                                <figure className="flex items-center gap-x-2">
+                                  <img
+                                    className="h-7 w-7 rounded-full"
+                                    src={photo || UserPhoto}
+                                    width={28}
+                                    height={28}
+                                    alt={`${name} photo`}
+                                    loading="lazy"
+                                  />
+                                  {speakers.length < 3 && (
+                                    <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
+                                      {name}
+                                    </figcaption>
+                                  )}
+                                </figure>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </li>
+            );
+          }
+        )}
       </ul>
       <Modal
-        modalData={isCoincidedEvent ? ITEMS[modalDataId].coincidedEvent : ITEMS[modalDataId]}
+        modalData={
+          isCoincidedEvent
+            ? ITEMS[modalDataId].coincidedEvent
+            : isThirdEvent
+            ? ITEMS[modalDataId].thirdEvent
+            : ITEMS[modalDataId]
+        }
         isVisible={isModalVisible}
         isPresentationShow
         onModalHide={handleModalHide}
