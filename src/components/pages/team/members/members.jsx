@@ -6,18 +6,27 @@ import Link from 'components/shared/link';
 
 import AlinaBratuPhoto from './images/alina-bratu-photo.jpg';
 import AndreiPietricicaPhoto from './images/andrei-pietricica-photo.png';
+import ArthurBerezinPhoto from './images/arthur-berezin-photo.jpeg';
 import BogdanLucaciuPhoto from './images/bogdan-lucaciu-photo.png';
 import BogdanPopaPhoto from './images/bogdan-popa-photo.jpg';
+import BuddhikaKandamullaPhoto from './images/buddhika-kandamulla-photo.jpeg';
 import CatalinCostrasPhoto from './images/catalin-costras-photo.png';
 import CatalinJoraPhoto from './images/catalin-jora-photo.png';
+import ClaudiaLicuPhoto from './images/claudia-licu-photo.jpeg';
+import DanielDrackPhoto from './images/daniel-drack-photo.jpeg';
 import ElifSamedinPhoto from './images/elif-samedin-photo.png';
 import IonMeitoiuPhoto from './images/ion-meitoiu-photo.png';
 import IonutBradatanPhoto from './images/ionut-bradatan-photo.png';
+import JacopoNardielloPhoto from './images/jacopo-nardiello-photo.jpeg';
+import LiviuCosteaPhoto from './images/liviu-costea-photo.jpeg';
 import MariaSecareanuPhoto from './images/maria-secareanu-photo.png';
+import MichelMurabitoPhoto from './images/michel-murabito-photo.jpeg';
 import MihaiPrunareanuPhoto from './images/mihai-prunareanu-photo.jpg';
+import OrlinVasilevPhoto from './images/orlin-vasilev-photo.jpeg';
 import RominaDrutaPhoto from './images/romina-druta-photo.png';
 import VictorVarzaPhoto from './images/victor-varza-photo.png';
 import VladFratilaPhoto from './images/vlad-fratila-photo.png';
+import WilliamRizzoPhoto from './images/william-rizzo-photo.jpeg';
 import WouterLigtenbergPhoto from './images/wouter-ligtenberg-photo.png';
 
 const ORGANIZERS = [
@@ -113,6 +122,60 @@ const VOLUNTEERS = [
     position: 'IT Service Management Engineer at ING Hubs Romania',
     photo: MihaiPrunareanuPhoto,
     url: 'https://www.linkedin.com/in/mihai-prunareanu/',
+  },
+  {
+    name: 'Claudia Licu',
+    position: 'Dev Chapter Lead at ING Hubs Romania',
+    photo: ClaudiaLicuPhoto,
+    url: 'https://www.linkedin.com/in/claudia-licu-13148610a',
+  },
+  {
+    name: 'Buddhika Kandamulla',
+    position: 'DevOps Engineer',
+    photo: BuddhikaKandamullaPhoto,
+    url: '',
+  },
+  {
+    name: 'Liviu Costea',
+    position: 'Staff Reliability Engineer at Juni',
+    photo: LiviuCosteaPhoto,
+    url: 'https://www.linkedin.com/in/liviucostea/',
+  },
+  {
+    name: 'Daniel Drack',
+    position: 'Senior DevOps Engineer at FullStackS',
+    photo: DanielDrackPhoto,
+    url: 'https://www.linkedin.com/in/drackthor/',
+  },
+  {
+    name: 'Jacopo Nardiello',
+    position: 'Founder & CEO at SIGHUP',
+    photo: JacopoNardielloPhoto,
+    url: 'https://www.linkedin.com/in/jnardiello/',
+  },
+  {
+    name: 'Michel Murabito',
+    position: 'Developer Advocate at Mia-Platform',
+    photo: MichelMurabitoPhoto,
+    url: 'https://www.linkedin.com/in/mich-murabito/',
+  },
+  {
+    name: 'Orlin Vasilev',
+    position: 'Senior Technology Evangelist at SUSE',
+    photo: OrlinVasilevPhoto,
+    url: 'https://www.linkedin.com/in/orlinvasilev/',
+  },
+  {
+    name: 'Arthur Berezin',
+    position: 'CEO, Co-Founder at StageCentral',
+    photo: ArthurBerezinPhoto,
+    url: 'https://www.linkedin.com/in/arthurberezin/',
+  },
+  {
+    name: 'William Rizzo',
+    position: 'Lead Architect Consultant at SUSE',
+    photo: WilliamRizzoPhoto,
+    url: 'https://www.linkedin.com/in/william-rizzo/',
   },
 ];
 
