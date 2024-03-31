@@ -5,33 +5,41 @@ import React, { useEffect, useState } from 'react';
 import Modal from 'components/shared/modal';
 import LINKS from 'constants/links';
 
-import AndreaGiardiniPhoto from './images/andrea-giardini.jpg';
-import AndreaSoldinoPhoto from './images/andrea-soldino.jpg';
-import BenoitSchipperPhoto from './images/benoit-schipper.jpg';
-import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto.jpg';
-import JanKarremansPhoto from './images/jan-karremans.jpg';
-import JanWillemPhoto from './images/jan-willem.jpg';
-import JohnKeatesPhoto from './images/john-keates.jpg';
-import JohnStroosnijderPhoto from './images/john-stroosnijder.jpg';
-import KasraAmirsarvariPhoto from './images/kasra-amirsarvari.jpg';
-import LouellaCreemersPhoto from './images/louella-creemers.jpg';
-import MarcelKerkerPhoto from './images/marcel-kerker.jpg';
-import MarcoVerleunPhoto from './images/marco-verleun.jpg';
-import MaximBurgerhoutPhoto from './images/maxim-burgerhout.jpg';
-import NicoKrijnenPhoto from './images/nico-krijnen.jpg';
-import NiravBhadradiyaPhoto from './images/nirav-bhadradiya.jpg';
-import PeterVanEijkPhoto from './images/peter-van-eijk.jpg';
-import RajalakshmiRajamuthuPhoto from './images/rajalakshmi-rajamuthu.jpg';
-import RemySimonsPhoto from './images/remy-simons.jpg';
-import SarahGruneisenPhoto from './images/sarah-gruneisen.jpg';
-import SebastiaanMannemPhoto from './images/sebastiaan-mannem.jpg';
-import SerdarKalayciPhoto from './images/serdar-kalayci.jpg';
-import SeviKarakulakPhoto from './images/sevi-karakulak.jpg';
-import ShwetaVohraPhoto from './images/shweta-vohra.jpg';
-import SohanMaheshwarPhoto from './images/sohan-maheshwar.jpg';
-import StefanVanGastelPhoto from './images/stefan-van-gastel.jpg';
-import WilliamRizzoPhoto from './images/william-rizzo.jpg';
+import SarahGruneisenPhoto from './images/adrian-vladu-photo.jpg';
+import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import ChevronDown from './svg/arrow-down.inline.svg';
+
+// import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
+// import AlessandroVozzaPhoto from './images/adrian-vladu-photo.jpg';
+// import AlexRaiuPhoto from './images/adrian-vladu-photo.jpg';
+// import AlexandruDejanuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndraSomesanPhoto from './images/adrian-vladu-photo.jpg';
+// import AndradaRaducanuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiPetrescuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiPitisPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiStefaniePhoto from './images/adrian-vladu-photo.jpg';
+// import IrinaOcanoaiaPhoto from './images/adrian-vladu-photo.jpg';
+// import CarmenBobeiPhoto from './images/adrian-vladu-photo.jpg';
+// import ClaudiuHobjilaPhoto from './images/adrian-vladu-photo.jpg';
+// import FlorinLoghiadePhoto from './images/adrian-vladu-photo.jpg';
+// import GeorgeCiobanPhoto from './images/adrian-vladu-photo.jpg';
+// import GeorgeHantzarasPhoto from './images/adrian-vladu-photo.jpg';
+// import IulianTaiatuPhoto from './images/adrian-vladu-photo.jpg';
+// import JosephSandovalPhoto from './images/adrian-vladu-photo.jpg';
+// import KatharinaSickPhoto from './images/adrian-vladu-photo.jpg';
+// import MarkSagiKazarPhoto from './images/adrian-vladu-photo.jpg';
+// import MatthiasBertschyPhoto from './images/adrian-vladu-photo.jpg';
+// import MihaiGoguPhoto from './images/adrian-vladu-photo.jpg';
+// import MihalceaMihaiAlexandruPhoto from './images/adrian-vladu-photo.jpg';
+// import MohammedAboullaitePhoto from './images/adrian-vladu-photo.jpg';
+// import OctavianPetrePhoto from './images/adrian-vladu-photo.jpg';
+// import OvidiuValeanuPhoto from './images/adrian-vladu-photo.jpg';
+// import SorinDumitrescuPhoto from './images/adrian-vladu-photo.jpg';
+// import StefanProdanPhoto from './images/adrian-vladu-photo.jpg';
+// import ThomasLabarussiasPhoto from './images/adrian-vladu-photo.jpg';
+// import TimothyMamoPhoto from './images/adrian-vladu-photo.jpg';
+// import VincenzoScamporlinoPhoto from './images/adrian-vladu-photo.jpg';
+// import YujinKimPhoto from './images/adrian-vladu-photo.jpg';
 
 const TITLE = 'Speakers';
 const ITEMS = [
@@ -48,13 +56,13 @@ const ITEMS = [
     websiteUrl: '',
     time: '9:40',
     title: 'Empowering The Teams, Avoiding Micromanagement: The Balance of Leadership',
-    duration: '35 min',
+    duration: '25 min',
   },
   {
     id: '2',
-    name: 'Stefan van Gastel',
+    name: 'Alessandro Pilotti',
     content: '',
-    photo: StefanVanGastelPhoto,
+    photo: AlessandroPilottiPhoto,
     twitterUrl: '',
     linkedInUrl: '',
     githubUrl: '',
@@ -63,367 +71,7 @@ const ITEMS = [
     websiteUrl: '',
     time: '10:20',
     title: 'Edge of Tomorrow',
-    duration: '35 min',
-  },
-  {
-    id: '3',
-    name: 'John Stroosnijder',
-    content: '',
-    photo: JohnStroosnijderPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '10:20',
-    title: 'Edge of Tomorrow',
-    duration: '35 min',
-  },
-  {
-    id: '4',
-    name: 'Nico Krijnen',
-    content: '',
-    photo: NicoKrijnenPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '10:20',
-    title: 'Doing Multi-Cloud the Easy Way... But should you?',
-    duration: '35 min',
-  },
-  {
-    id: '5',
-    name: 'Sohan Maheshwar',
-    content: '',
-    photo: SohanMaheshwarPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '11:25',
-    title: 'A Greener, Cost-Effective Cloud with Serverless WebAssembly',
-    duration: '35 min',
-  },
-  {
-    id: '6',
-    name: 'Jan Willem Van Hermon',
-    content: '',
-    photo: JanWillemPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '11:25',
-    title: 'Killing PETs with CPET at a Dutch government organization is central to our story.',
-    duration: '35 min',
-  },
-  {
-    id: '7',
-    name: 'Sebastiaan Mannem',
-    content: '',
-    photo: SebastiaanMannemPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '11:25',
-    title: 'Killing PETs with CPET at a Dutch government organization is central to our story.',
-    duration: '35 min',
-  },
-  {
-    id: '8',
-    name: 'Benoit Schipper',
-    content: '',
-    photo: BenoitSchipperPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '11:25',
-    title: 'Killing PETs with CPET at a Dutch government organization is central to our story.',
-    duration: '35 min',
-  },
-  {
-    id: '9',
-    name: 'Remy Simons',
-    content: '',
-    photo: RemySimonsPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '12:05',
-    title: 'Cilium: divide et impera the networking stack',
-    duration: '35 min',
-  },
-  {
-    id: '10',
-    name: 'Giuseppe Gianquitto',
-    content: '',
-    photo: GiuseppeGianquittoPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '12:05',
-    title: 'Socio-technical challenges of adopting Kubernetes',
-    duration: '35 min',
-  },
-  {
-    id: '11',
-    name: 'John Keates',
-    content: '',
-    photo: JohnKeatesPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '13:40',
-    title: 'Migration to Kubernetes at Wehkamp',
-    duration: '35 min',
-  },
-  {
-    id: '12',
-    name: 'Maxim Burgerhout',
-    content: '',
-    photo: MaximBurgerhoutPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '13:40',
-    title: 'Postgres on Kubernetes: the time is now!',
-    duration: '35 min',
-  },
-  {
-    id: '13',
-    name: 'Andrea Soldino',
-    content: '',
-    photo: AndreaSoldinoPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '14:20',
-    title: 'Getting the Most Out of Service Mesh: Our Top Tips!',
-    duration: '35 min',
-  },
-  {
-    id: '14',
-    name: 'Shweta Vohra',
-    content: '',
-    photo: ShwetaVohraPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '14:20',
-    title: 'Getting the Most Out of Service Mesh: Our Top Tips!',
-    duration: '35 min',
-  },
-  {
-    id: '15',
-    name: 'Rajalakshmi Rajamuthu',
-    content: '',
-    photo: RajalakshmiRajamuthuPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '14:20',
-    title: 'Mapping K8s migration',
-    duration: '35 min',
-  },
-  {
-    id: '16',
-    name: 'Nirav Bhadradiya',
-    content: '',
-    photo: NiravBhadradiyaPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '14:20',
-    title: 'Mapping K8s migration',
-    duration: '35 min',
-  },
-  {
-    id: '17',
-    name: 'Peter van Eijk',
-    content: '',
-    photo: PeterVanEijkPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '15:25',
-    title: 'Our journey in building a gamified cyber security platform with k8s',
-    duration: '35 min',
-  },
-  {
-    id: '18',
-    name: 'Kasra Amirsarvari',
-    content: '',
-    photo: KasraAmirsarvariPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '15:25',
-    title: 'Dev to the Future - Improving Developer Experience',
-    duration: '35 min',
-  },
-  {
-    id: '19',
-    name: 'William Rizzo',
-    content: '',
-    photo: WilliamRizzoPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:05',
-    title: 'Contributors Panel',
-    duration: '35 min',
-  },
-  {
-    id: '20',
-    name: 'Marcel Kerker',
-    content: '',
-    photo: MarcelKerkerPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:05',
-    title: 'Contributors Panel',
-    duration: '35 min',
-  },
-  {
-    id: '21',
-    name: 'Andrea Giardini',
-    content: '',
-    photo: AndreaGiardiniPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:05',
-    title: 'Contributors Panel',
-    duration: '35 min',
-  },
-  {
-    id: '22',
-    name: 'Marco Verleun',
-    content: '',
-    photo: MarcoVerleunPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:05',
-    title: 'Find CVEs with ease',
-    duration: '5 min',
-  },
-  {
-    id: '23',
-    name: 'Louëlla Creemers',
-    content: '',
-    photo: LouellaCreemersPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:05',
-    title: 'Docker & Kubernetes Unboxed',
-    duration: '5 min',
-  },
-  {
-    id: '24',
-    name: 'Serdar Kalaycı',
-    content: '',
-    photo: SerdarKalayciPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:05',
-    title: 'Back to basics: 12 Factor App in Cloud Native Era',
-    duration: '5 min',
-  },
-  {
-    id: '25',
-    name: 'Jan Karremans',
-    content: '',
-    photo: JanKarremansPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:05',
-    title: "Just don't do it - Databases in Kubernetes",
-    duration: '5 min',
-  },
-  {
-    id: '26',
-    name: 'Sevi Karakulak',
-    content: '',
-    photo: SeviKarakulakPhoto,
-    twitterUrl: '',
-    linkedInUrl: '',
-    githubUrl: '',
-    communityUrl: '',
-    instagramUrl: '',
-    websiteUrl: '',
-    time: '16:45',
-    title: 'The Power of Community: A tale about Anxiety, Ambition and Allies',
-    duration: '35 min',
+    duration: '25 min',
   },
 ];
 // TODO: replace id => index connect with only id`s
