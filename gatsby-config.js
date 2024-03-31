@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     siteTitle: 'Kubernetes Community Days Romania',
     siteDescription: 'Kubernetes Community Days Romania website',
-    siteImage: '/images/social-preview.jpg',
+    siteImage: '/images/social-preview.png',
     siteLanguage: 'en',
     siteUrl: process.env.GATSBY_DEFAULT_SITE_URL || 'http://localhost:8000',
     authorName: 'Victor Varza',
