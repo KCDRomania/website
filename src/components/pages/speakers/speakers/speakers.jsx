@@ -7,8 +7,8 @@ import LINKS from 'constants/links';
 
 import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
-import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
-import AlexRaiuPhoto from './images/alex-raiu-photo.png';
+import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
+import AlexRaiuPhoto from './images/alex-raiu-photo.jpg';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
