@@ -5,34 +5,42 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
-import AndreaGiardiniPhoto from './images/andrea-giardini-photo.jpg';
-import AndreaSoldinoPhoto from './images/andrea-soldino-photo.jpg';
-import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
-import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
-import JanKarremansPhoto from './images/jan-karremans-photo.jpg';
-import JanWillemPhoto from './images/jan-willem-photo.jpg';
-import JohnKeatesPhoto from './images/john-keates-photo.jpg';
-import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
-import KasraAmirsarvariPhoto from './images/kasra-amirsarvari-photo.jpg';
-import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
-import MarcelKerkerPhoto from './images/marcel-kerker-photo.jpg';
-import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
-import MaximBurgerhoutPhoto from './images/maxim-burgerhout-photo.jpg';
-import NicoKrijnenPhoto from './images/nico-krijnen-photo.jpg';
-import NiravBhadradiyaPhoto from './images/nirav-bhadradiya-photo.jpg';
-import PeterVanEijkPhoto from './images/peter-van-eijk-photo.jpg';
-import RajalakshmiRajamuthuPhoto from './images/rajalakshmi-rajamuthu-photo.jpg';
-import RemySimonsPhoto from './images/remy-simons-photo.jpg';
-import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
-import SebastiaanMannemPhoto from './images/sebastiaan-mannem-photo.jpg';
-import SerdarKalayciPhoto from './images/serdar-kalayci-photo.jpg';
-import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
-import ShwetaVohraPhoto from './images/shweta-vohra-photo.jpg';
-import SohanMaheshwarPhoto from './images/sohan-maheshwar-photo.jpg';
-import StefanVanGastelPhoto from './images/stefan-van-gastel-photo.jpg';
+import SarahGruneisenPhoto from './images/adrian-vladu-photo.jpg';
 import UserPhoto from './images/user-photo.jpg';
-import WilliamRizzoPhoto from './images/william-rizzo-photo.jpg';
-// import AndreaGiardiniPhoto from './images/william-rizzo-photo.jpg';
+
+// import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
+// import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
+// import AlessandroVozzaPhoto from './images/adrian-vladu-photo.jpg';
+// import AlexRaiuPhoto from './images/adrian-vladu-photo.jpg';
+// import AlexandruDejanuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndraSomesanPhoto from './images/adrian-vladu-photo.jpg';
+// import AndradaRaducanuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiPetrescuPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiPitisPhoto from './images/adrian-vladu-photo.jpg';
+// import AndreiStefaniePhoto from './images/adrian-vladu-photo.jpg';
+// import IrinaOcanoaiaPhoto from './images/adrian-vladu-photo.jpg';
+// import CarmenBobeiPhoto from './images/adrian-vladu-photo.jpg';
+// import ClaudiuHobjilaPhoto from './images/adrian-vladu-photo.jpg';
+// import FlorinLoghiadePhoto from './images/adrian-vladu-photo.jpg';
+// import GeorgeCiobanPhoto from './images/adrian-vladu-photo.jpg';
+// import GeorgeHantzarasPhoto from './images/adrian-vladu-photo.jpg';
+// import IulianTaiatuPhoto from './images/adrian-vladu-photo.jpg';
+// import JosephSandovalPhoto from './images/adrian-vladu-photo.jpg';
+// import KatharinaSickPhoto from './images/adrian-vladu-photo.jpg';
+// import MarkSagiKazarPhoto from './images/adrian-vladu-photo.jpg';
+// import MatthiasBertschyPhoto from './images/adrian-vladu-photo.jpg';
+// import MihaiGoguPhoto from './images/adrian-vladu-photo.jpg';
+// import MihalceaMihaiAlexandruPhoto from './images/adrian-vladu-photo.jpg';
+// import MohammedAboullaitePhoto from './images/adrian-vladu-photo.jpg';
+// import OctavianPetrePhoto from './images/adrian-vladu-photo.jpg';
+// import OvidiuValeanuPhoto from './images/adrian-vladu-photo.jpg';
+// import SorinDumitrescuPhoto from './images/adrian-vladu-photo.jpg';
+// import StefanProdanPhoto from './images/adrian-vladu-photo.jpg';
+// import ThomasLabarussiasPhoto from './images/adrian-vladu-photo.jpg';
+// import TimothyMamoPhoto from './images/adrian-vladu-photo.jpg';
+// import VincenzoScamporlinoPhoto from './images/adrian-vladu-photo.jpg';
+// import YujinKimPhoto from './images/adrian-vladu-photo.jpg';
+
 // UserPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
@@ -83,12 +91,12 @@ const ITEMS = [
       {
         id: '2',
         name: 'Stefan van Gastel',
-        photo: StefanVanGastelPhoto,
+        photo: SarahGruneisenPhoto,
       },
       {
         id: '3',
         name: 'John Stroosnijder',
-        photo: JohnStroosnijderPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
@@ -110,7 +118,7 @@ const ITEMS = [
         {
           id: '4',
           name: 'Nico Krijnen',
-          photo: NicoKrijnenPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -129,7 +137,7 @@ const ITEMS = [
         {
           id: '4',
           name: 'Nico Krijnen',
-          photo: NicoKrijnenPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -154,7 +162,7 @@ const ITEMS = [
       {
         id: '5',
         name: 'Sohan Maheshwar',
-        photo: SohanMaheshwarPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
@@ -169,17 +177,17 @@ const ITEMS = [
         {
           id: '6',
           name: 'Jan Willem Van Hermon',
-          photo: JanWillemPhoto,
+          photo: SarahGruneisenPhoto,
         },
         {
           id: '7',
           name: 'Sebastiaan Mannem',
-          photo: SebastiaanMannemPhoto,
+          photo: SarahGruneisenPhoto,
         },
         {
           id: '8',
           name: 'Benoit Schipper',
-          photo: BenoitSchipperPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -200,7 +208,7 @@ const ITEMS = [
       {
         id: '9',
         name: 'Remy Simons',
-        photo: RemySimonsPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
@@ -215,7 +223,7 @@ const ITEMS = [
         {
           id: '10',
           name: 'Giuseppe Gianquitto',
-          photo: GiuseppeGianquittoPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -242,7 +250,7 @@ const ITEMS = [
       {
         id: '11',
         name: 'John Keates',
-        photo: JohnKeatesPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
@@ -257,7 +265,7 @@ const ITEMS = [
         {
           id: '12',
           name: 'Maxim Burgerhout',
-          photo: MaximBurgerhoutPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -278,12 +286,12 @@ const ITEMS = [
       {
         id: '13',
         name: 'Andrea Soldino',
-        photo: AndreaSoldinoPhoto,
+        photo: SarahGruneisenPhoto,
       },
       {
         id: '14',
         name: 'Shweta Vohra',
-        photo: ShwetaVohraPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
@@ -297,12 +305,12 @@ const ITEMS = [
         {
           id: '15',
           name: 'Rajalakshmi Rajamuthu',
-          photo: RajalakshmiRajamuthuPhoto,
+          photo: SarahGruneisenPhoto,
         },
         {
           id: '16',
           name: 'Nirav Bhadradiya',
-          photo: NiravBhadradiyaPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -323,7 +331,7 @@ const ITEMS = [
       {
         id: '17',
         name: 'Peter van Eijk',
-        photo: PeterVanEijkPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
@@ -339,7 +347,7 @@ const ITEMS = [
         {
           id: '18',
           name: 'Kasra Amirsarvari',
-          photo: KasraAmirsarvariPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -360,17 +368,17 @@ const ITEMS = [
       {
         id: '19',
         name: 'William Rizzo',
-        photo: WilliamRizzoPhoto,
+        photo: SarahGruneisenPhoto,
       },
       {
         id: '20',
         name: 'Marcel Kerker',
-        photo: MarcelKerkerPhoto,
+        photo: SarahGruneisenPhoto,
       },
       {
         id: '21',
         name: 'Andrea Giardini',
-        photo: AndreaGiardiniPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation: 'Contributors Panel',
@@ -383,22 +391,22 @@ const ITEMS = [
         {
           id: '22',
           name: 'Marco Verleun',
-          photo: MarcoVerleunPhoto,
+          photo: SarahGruneisenPhoto,
         },
         {
           id: '23',
           name: 'Louëlla Creemers',
-          photo: LouellaCreemersPhoto,
+          photo: SarahGruneisenPhoto,
         },
         {
           id: '24',
           name: 'Serdar Kalaycı',
-          photo: SerdarKalayciPhoto,
+          photo: SarahGruneisenPhoto,
         },
         {
           id: '25',
           name: 'Jan Karremans',
-          photo: JanKarremansPhoto,
+          photo: SarahGruneisenPhoto,
         },
       ],
       presentation:
@@ -433,7 +441,7 @@ const ITEMS = [
       {
         id: '26',
         name: 'Sevi Karakulak',
-        photo: SeviKarakulakPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
