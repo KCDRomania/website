@@ -45,7 +45,7 @@ const TITLE = 'Speakers';
 const ITEMS = [
   {
     id: '1',
-    name: 'Sarah Gruneisen',
+    name: 'Sarahaah Gruneisen',
     content: '',
     photo: SarahGruneisenPhoto,
     twitterUrl: '',
