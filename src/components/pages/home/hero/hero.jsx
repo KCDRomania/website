@@ -8,52 +8,60 @@ import illustration from './images/romania.png';
 const TITLE = 'Kubernetes Community Days Romania';
 
 const DESCRIPTION =
-  'Thanks for attending KCD Romania 2024. We hope you enjoyed the event! Please fill in the survey and have a look at our photos.';
-
+  'The Kubernetes & Cloud Native community will gather at the Radison Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. KCD Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies. This community event is supported by the CNCF.';
 const Hero = () => (
-  <section className="safe-paddings overflow-hidden bg-[#EDC3C7] bg-opacity-10 pt-28 pb-40 lg:pb-32 md:pt-24 md:pb-[500px] sm:pb-[520px] [@media(max-width:600px)]:pb-[430px] [@media(max-width:460px)]:pb-[420px]">
-    <div className="container relative md:flex md:flex-col">
-      <div className="absolute top-0 -left-[40%] h-[566px] w-[566px] translate-x-1/2 bg-white blur-[100px] md:-left-[30%] md:h-[350px] md:w-[350px]" />
-      <div className="relative md:flex md:flex-col md:items-center md:text-center">
-        <time
-          className="rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black"
-          dateTime="2024-06-14"
-        >
-          Thanks for joining us!
-        </time>
-        <h1 className="mt-3 max-w-[570px] text-8xl font-bold leading-denser text-primary-1 lg:max-w-[500px] sm:text-7xl">
+  /*
+    const cloudsBack = {
+      animationData: cloudsAnimation, // Your back animation JSON
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice',
+      },
+    };
+  
+    const { View: View, play: playBack } = useLottie(cloudsBack);
+  
+    useEffect(() => {
+      playBack();
+    }, [playBack]);
+  
+    */
+
+  <section className="safe-paddings overflow-hidden bg-opacity-10 pt-28 md:pt-24">
+    <div className="container flex flex-row md:flex-col md:items-center md:text-center">
+      <div className="flex flex-col md:items-center md:text-center">
+        <span className="w-fit rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black">
+          APRIL 25th, 2024
+        </span>
+        <h1 className="mt-3 min-w-[38rem] max-w-[570px] text-8xl font-bold leading-denser text-primary-1 lg:max-w-[500px] md:min-w-min sm:text-7xl">
           {TITLE}
         </h1>
         <p className="mt-5 max-w-[500px] text-lg leading-normal text-primary-1 lg:max-w-[500px]">
           {DESCRIPTION}
         </p>
-        <Button
-          className="mt-7 text-white shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
-          theme="blue"
-          size="lg"
-          {...LINKS.photos}
-        >
-          Photos
-        </Button>
-        <Button
-          className="mt-7 ml-3 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
-          theme="primary"
-          size="lg"
-          {...LINKS.survey}
-        >
-          Survey
-        </Button>
+        <div style={{ marginTop: '3vh' }}>
+          <Button
+            className="border-nonemd:hidden group relative inline-flex w-fit items-center justify-center overflow-hidden"
+            theme="primary"
+            size="lg"
+            {...LINKS.tickets}
+          >
+            <span className="absolute h-full w-full bg-gradient-to-br from-[#3333ff] via-[#3333ff] to-[#3333ff] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05]" />
+            <span className="bg-gray-900 duration-400 relative rounded-md px-6 py-3 transition-all ease-out group-hover:bg-opacity-0">
+              <span className="relative font-bold text-white">Get your tickets now</span>
+            </span>
+          </Button>
+        </div>
       </div>
       <img
-        className="absolute -top-44 -left-32 translate-x-1/2 xl:-top-28 xl:-left-8 xl:w-full xl:max-w-[920px] lg:left-[38%] lg:-top-16 lg:w-[750px] lg:translate-x-1 md:top-[37%] md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2 sm:top-[27%] [@media(max-width:600px)]:top-[47%] [@media(max-width:600px)]:w-[600px] [@media(max-width:460px)]:top-[65%] [@media(max-width:460px)]:w-[490px]"
+        className="ml-[-5vw] h-[40rem] object-contain 2xl:-mt-20 md:mt-1 md:h-96"
+        style={{ marginLeft: '-5rem', width: '80%' }}
         src={illustration}
-        width={1508}
-        height="auto"
         loading="eager"
         alt="Illustration"
       />
     </div>
   </section>
 );
-
 export default Hero;
