@@ -4,28 +4,32 @@ import React from 'react';
 // import Button from 'components/shared/button';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
-import Edb from 'icons/edb.svg';
-import Fullstaq from 'icons/fullstaq.svg';
-import HcsCompany from 'icons/hcs-company.svg';
-import Isovalent from 'icons/isovalent.svg';
-import PaloAlto from 'icons/palo-alto.svg';
-import Rabobank from 'icons/rabobank.svg';
-import Rancher from 'icons/rancher.svg';
-import StackState from 'icons/stackstate.svg';
+import GoogleCloud from 'icons/edb.svg';
+import Adobe from 'icons/edb.svg';
+import IngHubs from 'icons/edb.svg';
+import CloudHero from 'icons/edb.svg';
+import AdoreMe from 'icons/edb.svg';
+import Stripe from 'icons/edb.svg';
+import Dynatrace from 'icons/edb.svg';
+import Systematic from 'icons/edb.svg';
+import VictoriaSecrets from 'icons/edb.svg';
+import Kluger from 'icons/edb.svg';
 
 const TITLE = 'Sponsors';
 
 const ITEMS = [
   {
     logos: [
-      { icon: Edb, url: 'https://www.enterprisedb.com/' },
-      { icon: Fullstaq, url: 'https://www.fullstaq.com/' },
-      { icon: HcsCompany, url: 'https://www.hcs-company.com/' },
-      { icon: Isovalent, url: 'https://isovalent.com/' },
-      { icon: PaloAlto, url: 'https://www.paloaltonetworks.com/' },
-      { icon: Rabobank, url: 'https://www.rabobank.com/' },
-      { icon: Rancher, url: 'https://www.rancher.com/' },
-      { icon: StackState, url: 'https://www.stackstate.com/' },
+      { icon: GoogleCloud, url: 'https://www.google.com/' },
+      { icon: Adobe, url: 'https://www.adobe.com/' },
+      { icon: IngHubs, url: 'https://inghubsromania.com/' },
+      { icon: CloudHero, url: 'https://cloudhero.io/' },
+      { icon: AdoreMe, url: 'https://www.adoreme.com/' },
+      { icon: Stripe, url: 'https://stripe.com' },
+      { icon: Dynatrace, url: 'https://www.dynatrace.com/' },
+      { icon: Systematic, url: 'https://systematic.com/' },
+      { icon: VictoriaSecrets, url: 'https://www.victoriassecret.com/' },
+      { icon: Kluger, url: 'https://www.kluger.ro/' },
     ],
     cardClassname:
       'min-w-[384px] min-h-[122px] sm:min-w-[320px] sm:min-h-[115px] xs:min-w-fit xs:max-w-full',
@@ -53,14 +57,14 @@ const Sponsors = () => (
         </a>{' '}
         for more information.
       </p>
-      <Button className="mt-7" to="mailto:hello@kcdromania.ro" theme="primary" size="lg">
+      <Button className="mt-7" to="mailto:kcdromania@gmail.com" theme="primary" size="lg">
         Contact us
       </Button> */}
 
       <ul className="mt-2 flex flex-col">
         {ITEMS.map(({ logos, cardClassname, iconClassname }, index) => (
           <li className="" key={index}>
-            <ul className="mt-2 mb-[70px] flex flex-wrap justify-center gap-x-8 xl:gap-y-6">
+            <ul className="mb-[70px] mt-2 flex flex-wrap justify-center gap-x-8 xl:gap-y-6">
               {logos.map(({ icon, url }, index) => (
                 <li className={clsx('flex items-center justify-center', cardClassname)} key={index}>
                   <Link

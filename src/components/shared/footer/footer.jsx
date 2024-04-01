@@ -39,13 +39,13 @@ const Footer = () => {
   };
   return (
     <footer className="safe-paddings border-t border-t-gray-10 bg-white">
-      <div className="container flex items-center justify-between pt-5 pb-5 sm:flex-col sm:justify-around">
+      <div className="container flex items-center justify-between pb-5 pt-5 sm:flex-col sm:justify-around">
         <Link className="ml-2" to="https://cncf.io">
           <CloudNative className="h-12 w-44" />
         </Link>
 
         <nav className="mt-4 flex">
-          <ul className="grid min-w-fit grid-cols-2 grid-rows-2 gap-y-4 gap-x-3 xl:gap-x-1 lg:mr-6 lg:gap-x-4 sm:mx-auto [@media(max-width:375px)]:grid-cols-1 [@media(max-width:375px)]:justify-items-center">
+          <ul className="grid min-w-fit grid-cols-2 grid-rows-2 gap-x-3 gap-y-4 xl:gap-x-1 lg:mr-6 lg:gap-x-4 sm:mx-auto [@media(max-width:375px)]:grid-cols-1 [@media(max-width:375px)]:justify-items-center">
             {MENUS.footer.map(({ text, to, target }, index) => (
               <li className="w-fit max-w-min text-sm font-semibold text-primary-1" key={index}>
                 <Button
@@ -65,9 +65,9 @@ const Footer = () => {
           <Link
             className="ml-2 font-semibold transition-colors duration-200"
             theme="primary"
-            to="mailto:hello@kcdromania.ro"
+            to="mailto:kcdromania@gmail.com"
           >
-            hello@kcdromania.ro
+            kcdromania@gmail.com
           </Link>
           <ul className="mt-4 flex min-w-fit gap-x-2.5">
             {items.map(({ icon, iconClassName, url }, index) => {
