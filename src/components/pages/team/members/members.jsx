@@ -16,6 +16,48 @@ import WouterLigtenbergPhoto from './images/wouter-ligtenberg-photo.png';
 
 const ITEMS = [
   {
+    name: 'Wouter Ligtenberg',
+    position: 'Cloud Consultant at FikaWorks',
+    photo: WouterLigtenbergPhoto,
+    url: 'https://www.linkedin.com/in/jocatalin/',
+  },
+  {
+    name: 'Vlad Fratila',
+    position: 'Platform Engineering Consultant at ITQ',
+    photo: VladFratilaPhoto,
+    url: 'https://www.linkedin.com/in/mestredelpino/',
+  },
+  {
+    name: 'Romina Druta',
+    position: 'Sr. Platform Engineer at HCS Company',
+    photo: RominaDrutaPhoto,
+    url: 'https://www.linkedin.com/in/mkerker/',
+  },
+  {
+    name: 'Victor Varza',
+    position: 'Solutions Architect at Cloutive',
+    photo: VictorVarzaPhoto,
+    url: 'https://www.linkedin.com/in/serkancapkan/',
+  },
+  {
+    name: 'Elif Samedin',
+    position: 'Owner at Logic Shift',
+    photo: ElifSamedinPhoto,
+    url: 'https://www.linkedin.com/in/luca-camphuisen/',
+  },
+  {
+    name: 'Catalin Jora',
+    position: 'Cloud Consultant at FikaWorks',
+    photo: CatalinJoraPhoto,
+    url: 'https://www.linkedin.com/in/jocatalin/',
+  },
+  {
+    name: 'Ion Meitoiu',
+    position: 'Independent',
+    photo: IonMeitoiuPhoto,
+    url: 'https://www.linkedin.com/in/mbianchidev/',
+  },
+  {
     name: 'Andrei Pietricica',
     position: 'Developer relations at Solo.io',
     photo: AndreiPietricicaPhoto,
@@ -28,52 +70,10 @@ const ITEMS = [
     url: 'https://www.linkedin.com/in/william-rizzo/',
   },
   {
-    name: 'Catalin Jora',
-    position: 'Cloud Consultant at FikaWorks',
-    photo: CatalinJoraPhoto,
-    url: 'https://www.linkedin.com/in/jocatalin/',
-  },
-  {
-    name: 'Elif Samedin',
-    position: 'Owner at Logic Shift',
-    photo: ElifSamedinPhoto,
-    url: 'https://www.linkedin.com/in/luca-camphuisen/',
-  },
-  {
-    name: 'Ion Meitoiu',
-    position: 'Independent',
-    photo: IonMeitoiuPhoto,
-    url: 'https://www.linkedin.com/in/mbianchidev/',
-  },
-  {
     name: 'Ionu Bradatan',
     position: 'DevOps Engineer at Cognizant',
     photo: IonutBradatanPhoto,
     url: 'https://www.linkedin.com/in/rajesh-gunasekaran-4a146224/',
-  },
-  {
-    name: 'Romina Druta',
-    position: 'Sr. Platform Engineer at HCS Company',
-    photo: RominaDrutaPhoto,
-    url: 'https://www.linkedin.com/in/mkerker/',
-  },
-  {
-    name: 'Victo rVarza',
-    position: 'Solutions Architect at Cloutive',
-    photo: VictorVarzaPhoto,
-    url: 'https://www.linkedin.com/in/serkancapkan/',
-  },
-  {
-    name: 'Vlad Fratila',
-    position: 'Platform Engineering Consultant at ITQ',
-    photo: VladFratilaPhoto,
-    url: 'https://www.linkedin.com/in/mestredelpino/',
-  },
-  {
-    name: 'Wouter Ligtenberg',
-    position: 'Cloud Consultant at FikaWorks',
-    photo: WouterLigtenbergPhoto,
-    url: 'https://www.linkedin.com/in/jocatalin/',
   },
 ];
 
