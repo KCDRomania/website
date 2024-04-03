@@ -62,7 +62,7 @@ const ITEMS = [
     communityUrl: '',
     instagramUrl: '',
     websiteUrl: '',
-    time: '10:05',
+    time: '10:00',
     title: 'Keynote: From Open Source Contributor to Serial Entrepreneur',
     duration: '30 min',
   },
@@ -87,7 +87,7 @@ const ITEMS = [
   },
   {
     id: '3',
-    name: 'Sarahaah Gruneisen',
+    name: 'Sarah Gruneisen',
     position: 'Director of Engineering at Novoda',
     content:
       'Sarah G., with her roles as Director of Engineering at Novoda and Founder of Avagasso Coaching, brings a wealth of experience centered around trust, authenticity, and empathy. Her aim is to empower everyone to discover and pursue their unique paths and passions.' +
