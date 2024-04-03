@@ -11,6 +11,7 @@ import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import AlexRaiuPhoto from './images/alex-raiu-photo.png';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpeg';
 import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
+import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
 import AndreiPitisPhoto from './images/andrei-pitis-photo.jpg';
 import AndreiaIrinaOcanoaiaPhoto from './images/andreia-irina-ocanoaia-photo.jpg';
@@ -19,6 +20,7 @@ import ClaudiuHobjilaPhoto from './images/claudiu-hobjila-photo.jpg';
 import FlorinLoghiadePhoto from './images/florin-loghiade-photo.jpg';
 import GenericSpeakerPhoto from './images/generic-speaker-photo.jpg';
 import GeorgeHantzarasPhoto from './images/george-hantzaras-photo.jpeg';
+import GeorgeTudureanPhoto from './images/george-tudurean-photo.jpg';
 import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import JosephSandovalPhoto from './images/joseph-sandoval-photo.jpg';
 import KatharinaSickPhoto from './images/katharina-sick-photo.jpg';
@@ -28,6 +30,7 @@ import MihaiGoguPhoto from './images/mihai-gogu-photo.png';
 import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo.jpg';
 import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
 import OvidiuValeanuPhoto from './images/ovidiu-valeanu-photo.jpg';
+import RaduZamfirPhoto from './images/radu-zamfir-photo.jpg';
 import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
 import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
 import TimothyMamoPhoto from './images/timothy-mamo-photo.jpg';
@@ -544,6 +547,54 @@ const ITEMS = [
     websiteUrl: 'https://consider-it.de/cloud/',
     time: '16:30',
     title: 'Lightning: Securing the Cluster: Navigating Kubernetes Backup and Recovery',
+    duration: '5 min',
+  },
+  {
+    id: '29',
+    name: 'Radu Zamfir',
+    position: 'Junior Full Stack Engineer at dvloper.io',
+    content: '',
+    photo: RaduZamfirPhoto,
+    twitterUrl: '',
+    linkedInUrl: 'https://www.linkedin.com/in/zsradu/',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: 'https://dvloper.io',
+    time: '16:35',
+    title: 'Lightning Talk: Forester - KubeCon Hackathon Winner',
+    duration: '5 min',
+  },
+  {
+    id: '30',
+    name: 'Andrei Cioc',
+    position: 'Junior Software Engineer at dvloper.io',
+    content: '',
+    photo: AndreiCiocPhoto,
+    twitterUrl: '',
+    linkedInUrl: '',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: 'https://dvloper.io',
+    time: '16:35',
+    title: 'Lightning Talk: Forester - KubeCon Hackathon Winner',
+    duration: '5 min',
+  },
+  {
+    id: '31',
+    name: 'George Tudurean',
+    position: 'Junior Software Developer at dvloper.io',
+    content: '',
+    photo: GeorgeTudureanPhoto,
+    twitterUrl: '',
+    linkedInUrl: '',
+    githubUrl: '',
+    communityUrl: '',
+    instagramUrl: '',
+    websiteUrl: 'https://dvloper.io',
+    time: '16:35',
+    title: 'Lightning Talk: Forester - KubeCon Hackathon Winner',
     duration: '5 min',
   },
 ];

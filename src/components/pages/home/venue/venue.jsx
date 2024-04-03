@@ -27,10 +27,15 @@ const Venue = () => (
         <Link {...LINKS.googlemaps}>
           <u>Radison Blu</u>
         </Link>
-        , for parking info view
+      </p>
+      <p className="mt-0">
+        Parking info:
         <Link {...LINKS.parkingInfo}>
           <u> Parking Bucharest</u>
         </Link>
+      </p>
+      <p className="mt-0">
+        Metro info: Piata Romana (Roman Square) and follow the Google Maps route.
       </p>
       <br />
       <img src={RoutePic} alt="Route to event" className="rounded-[4px]" />
