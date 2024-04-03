@@ -2,7 +2,7 @@ import { m, LazyMotion, domAnimation, useAnimation } from 'framer-motion';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import links from 'constants/links';
+// import links from 'constants/links';
 import MENUS from 'constants/menus';
 import useScrollOverflow from 'hooks/use-scroll-overflow';
 
@@ -39,7 +39,7 @@ const MobileMenu = ({ isOpen, onButtonClick }) => {
   return (
     <LazyMotion features={domAnimation}>
       <m.nav
-        className="safe-paddings fixed inset-0 z-[-1] mt-[70px] hidden overflow-x-hidden overflow-y-hidden bg-white px-8 pt-[72px] pb-5 lg:flex lg:flex-col lg:justify-between"
+        className="safe-paddings fixed inset-0 z-[-1] mt-[70px] hidden overflow-x-hidden overflow-y-hidden bg-white px-8 pb-5 pt-[72px] lg:flex lg:flex-col lg:justify-between"
         initial="from"
         animate={controls}
         variants={variants}
@@ -60,12 +60,12 @@ const MobileMenu = ({ isOpen, onButtonClick }) => {
             ))}
           </ul>
         </div>
-        <Button className="mt-7 text-white" theme="blue" size="lg" {...links.photos}>
+        {/* <Button className="mt-7 text-white" theme="blue" size="lg" {...links.photos}>
           Photos
         </Button>
         <Button className="mt-7 text-white" theme="blue" size="lg" {...links.survey}>
           Survey
-        </Button>
+        </Button> */}
       </m.nav>
     </LazyMotion>
   );
