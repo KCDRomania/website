@@ -3,7 +3,7 @@ import React from 'react';
 import Button from 'components/shared/button';
 import LINKS from 'constants/links.js';
 
-import illustration from './images/romania.png';
+import illustration from './images/romania.svg';
 
 const TITLE = 'Kubernetes Community Days Romania';
 
