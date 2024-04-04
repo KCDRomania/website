@@ -2,14 +2,18 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import EvolveMedia from './images/evolvemedia.png';
 import KubeCareers from './images/kube-careers.png';
 import KubeEvents from './images/kubevents.svg';
+import TheBucharestHackaton from './images/the-bucharest-hackaton.png';
 
 const TITLE = 'Community & Media Partners';
 
 const ITEMS = [
   { icon: KubeCareers, url: 'https://kube.careers/' },
   { icon: KubeEvents, url: 'https://kube.events/' },
+  { icon: TheBucharestHackaton, url: 'https://thebucharesthackathon.com/' },
+  { icon: EvolveMedia, url: 'https://evolvemedia.co/' },
 ];
 
 const Partners = () => (
