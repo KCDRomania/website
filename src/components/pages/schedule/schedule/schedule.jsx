@@ -9,7 +9,8 @@ import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import AlexRaiuPhoto from './images/alex-raiu-photo.png';
-import AndraSomesanPhoto from './images/andra-somesan-photo.jpeg';
+import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
+import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
 import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
@@ -31,7 +32,6 @@ import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo
 import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
 import OvidiuValeanuPhoto from './images/ovidiu-valeanu-photo.jpg';
 import RaduZamfirPhoto from './images/radu-zamfir-photo.jpg';
-import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
 import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
 import TimothyMamoPhoto from './images/timothy-mamo-photo.jpg';
 import VincenzoScamporlinoPhoto from './images/vincenzo-scamporlino-photo.jpeg';
@@ -104,10 +104,10 @@ const ITEMS = [
     id: '031',
     time: '11:00',
     title: 'Revolutionise your Kubernetes game with cdk8s',
-    duration: '25 min',
+    duration: '30 min',
     speakers: [
       {
-        id: '6',
+        id: '5',
         name: 'Andra Somesan',
         company: 'Amazon Web Services',
         photo: AndraSomesanPhoto,
@@ -119,7 +119,7 @@ const ITEMS = [
       id: '032',
       time: '11:00',
       title: 'Trust no one: implementing zero trust security with Ambient Service Mesh',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '7',
@@ -139,7 +139,7 @@ const ITEMS = [
       id: '033',
       time: '11:00',
       title: 'Building Internal Developer Platforms with Kubernetes Operators',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '10',
@@ -160,10 +160,10 @@ const ITEMS = [
     id: '041',
     time: '11:45',
     title: 'Introducing Timoni the Next-Gen Package Manager for Kubernetes',
-    duration: '25 min',
+    duration: '30 min',
     speakers: [
       {
-        id: '5',
+        id: '6',
         name: 'Stefan Prodan',
         company: 'ControlPlane',
         photo: StefanProdanPhoto,
@@ -181,7 +181,7 @@ const ITEMS = [
       id: '042',
       time: '11:45',
       title: 'Cloud native for governmental workloads: Challenges & Lesson Learned',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '11',
@@ -209,7 +209,7 @@ const ITEMS = [
       id: '043',
       time: '11:45',
       title: 'Who the Helm Owns this YAML?!',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '13',
@@ -224,57 +224,56 @@ const ITEMS = [
     },
   },
   {
-    id: '051',
+    id: '052',
     time: '12:30',
-    title: 'Efficiency in Engineering: The Game-Changing Role of Developer Portals',
-    duration: '25 min',
+    title: 'The Daemonset in the Details - Pitfalls of OpenTelemetry Collector Deployments',
+    duration: '30 min',
     speakers: [
       {
-        id: '9',
-        name: 'Vincenzo Scamporlino',
-        company: 'Spotify',
-        photo: VincenzoScamporlinoPhoto,
+        id: '14',
+        name: 'Christopher Olsen',
+        company: 'Adobe',
+        photo: GenericSpeakerPhoto,
       },
     ],
     presentation:
-      'Developer Experience is all about the process of software creation. Currently, developers are forced to navigate through an array of tools, APIs, frameworks, and languages, which, over time, can hamper their pace.' +
+      "It's easy to run Otel collectors on K8S. But it's hard to observe engineering principles without faith and manual validation. Why is that so? I'll explain as I walk through my experiences deploying Otel collectors with the Otel Operator with complex configurations." +
       '<br/><br/>' +
-      'A few years ago, Spotify faced and resolved this issue by integrating all the tools into a unified interface. This was achieved through the creation of Backstage, a Developer Portal which, in 2020, was open-sourced and donated to the CNCF, thus becoming a framework for building Developer Portals. Today, Backstage is adopted by over 2.5k companies, boosting productivity and tackling issues such as Discoverability, System Ownership, Fragmentation, Duplication, and Context Switching.' +
+      "This talk is about Unit-Testing. It's specific to Helm, K8S and Otel but it should have lessons for anyone doing SRE. It is a lesson of why you must learn the language of the technology you are using to be able to do your job effectively." +
       '<br/><br/>' +
-      'In this talk, we will explore the benefits a developer portal can bring to your organization, explaining how you can build your own Developer Portal using Backstage. We will also share insights into how Spotify uses Backstage and provide the latest tips from hundreds of Backstage adopters.',
-
+      'The setting:' +
+      '<br/>' +
+      'Your company has hundreds of K8s clusters, deployed with ArgoCD using Helm charts. You are responsible for deploying Otel collectors on all clusters. You use the Otel Operator. You ARE the Otel Operator.' +
+      '<br/><br/>' +
+      "I'll walk through 4 days of your life, 3 ending in failure with demos and code. Each failure shows the dangers that await you and I'll show working code how to protect yourself." +
+      '<br/><br/>' +
+      'This talk is a plea for better unit tests, a rant about Helm and an ode to the Otel engineers.',
     secondTrack: {
-      id: '052',
+      id: '051',
       time: '12:30',
-      title: 'The Daemonset in the Details - Pitfalls of OpenTelemetry Collector Deployments',
-      duration: '25 min',
+      title: 'Efficiency in Engineering: The Game-Changing Role of Developer Portals',
+      duration: '30 min',
       speakers: [
         {
-          id: '14',
-          name: 'Christopher Olsen',
-          company: 'Adobe',
-          photo: GenericSpeakerPhoto,
+          id: '9',
+          name: 'Vincenzo Scamporlino',
+          company: 'Spotify',
+          photo: VincenzoScamporlinoPhoto,
         },
       ],
       presentation:
-        "It's easy to run Otel collectors on K8S. But it's hard to observe engineering principles without faith and manual validation. Why is that so? I'll explain as I walk through my experiences deploying Otel collectors with the Otel Operator with complex configurations." +
+        'Developer Experience is all about the process of software creation. Currently, developers are forced to navigate through an array of tools, APIs, frameworks, and languages, which, over time, can hamper their pace.' +
         '<br/><br/>' +
-        "This talk is about Unit-Testing. It's specific to Helm, K8S and Otel but it should have lessons for anyone doing SRE. It is a lesson of why you must learn the language of the technology you are using to be able to do your job effectively." +
+        'A few years ago, Spotify faced and resolved this issue by integrating all the tools into a unified interface. This was achieved through the creation of Backstage, a Developer Portal which, in 2020, was open-sourced and donated to the CNCF, thus becoming a framework for building Developer Portals. Today, Backstage is adopted by over 2.5k companies, boosting productivity and tackling issues such as Discoverability, System Ownership, Fragmentation, Duplication, and Context Switching.' +
         '<br/><br/>' +
-        'The setting:' +
-        '<br/>' +
-        'Your company has hundreds of K8s clusters, deployed with ArgoCD using Helm charts. You are responsible for deploying Otel collectors on all clusters. You use the Otel Operator. You ARE the Otel Operator.' +
-        '<br/><br/>' +
-        "I'll walk through 4 days of your life, 3 ending in failure with demos and code. Each failure shows the dangers that await you and I'll show working code how to protect yourself." +
-        '<br/><br/>' +
-        'This talk is a plea for better unit tests, a rant about Helm and an ode to the Otel engineers.',
+        'In this talk, we will explore the benefits a developer portal can bring to your organization, explaining how you can build your own Developer Portal using Backstage. We will also share insights into how Spotify uses Backstage and provide the latest tips from hundreds of Backstage adopters.',
     },
 
     thirdTrack: {
       id: '053',
       time: '12:30',
       title: 'Future-Proof Your Platform’s CI/CD Without Developers Noticing a Thing',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '15',
@@ -299,7 +298,7 @@ const ITEMS = [
     time: '14:00',
     title:
       'Dynamic Large Scale Spark on Kubernetes:Empowering the Community with Argo Workflows and Argo Events',
-    duration: '25 min',
+    duration: '30 min',
     speakers: [
       {
         id: '16',
@@ -317,7 +316,7 @@ const ITEMS = [
       id: '062',
       time: '14:00',
       title: 'Closing the Loop: Applying Least Privilege and Ensuring We Did It Well',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '17',
@@ -338,7 +337,7 @@ const ITEMS = [
       id: '063',
       time: '14:00',
       title: 'Bare metal Kubernetes on mixed x64 and ARM64',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '18',
@@ -365,7 +364,7 @@ const ITEMS = [
     id: '071',
     time: '14:45',
     title: 'CD and GitOps with flux @AdoreMe',
-    duration: '25 min',
+    duration: '30 min',
     speakers: [
       {
         id: '20',
@@ -383,7 +382,7 @@ const ITEMS = [
       id: '072',
       time: '14:45',
       title: "Mastering Cloud Kubernetes: Navigating Azure's Kubernetes Service Maze",
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '8',
@@ -404,7 +403,7 @@ const ITEMS = [
       id: '073',
       time: '14:45',
       title: 'Using Unikernels to deploy real-world apps',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '21',
@@ -424,7 +423,7 @@ const ITEMS = [
     id: '081',
     time: '15:30',
     title: 'Challenges of Migrating a High Traffic Mobile Game to Kubernetes',
-    duration: '25 min',
+    duration: '30 min',
     speakers: [
       {
         id: '22',
@@ -444,7 +443,7 @@ const ITEMS = [
       id: '082',
       time: '15:30',
       title: 'From Code to Cluster: Orchestrating 10,000+ Kubernetes deployments with 1 pipeline',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '23',
@@ -471,7 +470,7 @@ const ITEMS = [
       id: '083',
       time: '15:30',
       title: 'Histology Augmentation: Scaling Federated Learning Solutions with Kubernetes',
-      duration: '25 min',
+      duration: '30 min',
       speakers: [
         {
           id: '24',
@@ -514,18 +513,18 @@ const ITEMS = [
     thirdTrack: {
       id: '092',
       time: '16:20',
-      title: 'DevOps Lessons from a Primary School Teacher',
-      duration: '25 min',
+      title: "2024: I Don't Know K8S and at This Point, I'm Too Afraid To Ask",
+      duration: '30 min',
       speakers: [
         {
           id: '25',
-          name: 'Timothy Mamo',
-          company: 'DigitalOcean',
-          photo: TimothyMamoPhoto,
+          name: 'Alexandru Dejanu',
+          company: 'Systematic',
+          photo: AlexandruDejanuPhoto,
         },
       ],
       presentation:
-        'The ability to run stateful applications in general, and RDMS in particular, on Kubernetes is relatively new, but brings new and exciting capabilities to developers, DBAs and devops teams alike. Think of self-service cluster creation and management, self-service backup and restore, automatic configuration of point-in-time recovery scenarios, etc. On top of that, by making Postgres clusters Kubernetes resources, you can now apply GitOps, CI/CD pipelines like Tekton and policy frameworks to your database.',
+        "It's 2024 and everybody has used or at least heard about Kubernetes… If you're at the start of the journey into Kubernetes, or you'd like to understand why Kubernetes is a compute abstraction and a platform for building platforms, then this talk is for you.",
     },
   },
   {
@@ -605,7 +604,7 @@ const ITEMS = [
     isKeynote: true,
     speakers: [
       {
-        id: '4',
+        id: '3',
         name: 'Claudiu Hobjila',
         company: 'Google Cloud',
         photo: ClaudiuHobjilaPhoto,
@@ -617,22 +616,22 @@ const ITEMS = [
   {
     id: '141',
     time: '17:15',
-    title: 'Keynote: Empowerment Through Adversity: Leading with Personal Dragons',
+    title: 'DevOps Lessons from a Primary School Teacher',
     duration: '30 min',
     isKeynote: true,
     speakers: [
       {
-        id: '3',
-        name: 'Sarah Gruneisen',
-        company: 'Novoda',
-        photo: SarahGruneisenPhoto,
+        id: '4',
+        name: 'Timothy Mamo',
+        company: 'DigitalOcean',
+        photo: TimothyMamoPhoto,
       },
     ],
     presentation:
-      'Embrace the odyssey of confronting personal dragons—those challenges that test resilience, growth, and leadership. This talk is an anthem for harnessing personal adversities to fuel team empowerment and innovation. Combining rich narratives, data insights, and triumphs over adversity, it offers a holistic approach to leadership in tech. Learn to leverage your journey to inspire effective leadership, cultivating an environment where challenges are met with courage and transformed into collective strength and unity.',
+      'The ability to run stateful applications in general, and RDMS in particular, on Kubernetes is relatively new, but brings new and exciting capabilities to developers, DBAs and devops teams alike. Think of self-service cluster creation and management, self-service backup and restore, automatic configuration of point-in-time recovery scenarios, etc. On top of that, by making Postgres clusters Kubernetes resources, you can now apply GitOps, CI/CD pipelines like Tekton and policy frameworks to your database.',
   },
   {
-    time: '17:15',
+    time: '17:45',
     title: 'Closing Remarks from the Organizers',
     duration: '15 min',
   },

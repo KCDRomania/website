@@ -11,7 +11,7 @@ import Button from '../button';
 import Link from '../link';
 import Modal from '../modal';
 
-import Logo from './images/kcd-romania.png';
+import Logo from './images/kcd-romania.svg';
 
 const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage }) => {
   const getAnchor = (str) => slugify(str).toLocaleLowerCase();
