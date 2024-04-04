@@ -76,6 +76,7 @@ const ITEMS = [
     ],
     presentation:
       "We celebrate the milestone of ten years of Kubernetes; this keynote explores the journey from its inception to becoming the backbone of cloud-native technology. We'll look back at its history and the pivotal factor behind Kubernetes' success: its vibrant, innovative community." +
+      '<br/><br/>' +
       "This talk delves into how the collective passion, expertise, and collaborative spirit of the Kubernetes community have not only propelled the platform's advancements but also shaped the very future of cloud computing. Looking ahead, we'll discuss the crucial role the community will play in steering Kubernetes through the next decade of challenges and opportunities, ensuring its continued relevance and leadership in the tech landscape.",
   },
   {
@@ -93,7 +94,9 @@ const ITEMS = [
       },
     ],
     presentation:
-      'This talk highlights the importance of contributing to open-source projects and the impact of community engagement on both personal growth and the development of the tech industry. Andrei will share his journey from co-founding RoEduNet, which provided free internet to students, to becoming a serial entrepreneur.',
+      'This talk highlights the importance of contributing to open-source projects and the impact of community engagement on both personal growth and the development of the tech industry.' +
+      '<br/><br/>' +
+      'Andrei will share his journey from co-founding RoEduNet, which provided free internet to students, to becoming a serial entrepreneur.',
   },
   {
     time: '10:40',
