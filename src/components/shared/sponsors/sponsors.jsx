@@ -5,7 +5,7 @@ import React from 'react';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
 import Adobe from 'icons/adobe-logo.png';
-import AdoreMe from 'icons/adoreme-logo.svg';
+import AdoreMe from 'icons/adoreme-logo.png';
 import CloudHero from 'icons/cloudhero-logo.png';
 import Dynatrace from 'icons/dynatrace-logo.png';
 import GoogleCloud from 'icons/google-cloud.svg';
