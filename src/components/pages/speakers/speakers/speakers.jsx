@@ -119,7 +119,7 @@ const ITEMS = [
     instagramUrl: '',
     websiteUrl: '',
     time: '16:20',
-    title: 'DevOps Lessons from a Primary School Teacher',
+    title: 'Keynote: DevOps Lessons from a Primary School Teacher',
     duration: '30 min',
   },
   {
