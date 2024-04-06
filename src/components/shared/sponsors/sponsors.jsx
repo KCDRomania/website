@@ -8,6 +8,7 @@ import Adobe from 'icons/adobe-logo.png';
 import AdoreMe from 'icons/adoreme-logo.png';
 import CloudHero from 'icons/cloudhero-logo.png';
 import Dynatrace from 'icons/dynatrace-logo.png';
+import FikaWorks from 'icons/fikaworks-logo.png';
 import GoogleCloud from 'icons/google-cloud.svg';
 import IngHubs from 'icons/inghubs.png';
 import Kluger from 'icons/kluger-logo.png';
@@ -52,6 +53,7 @@ const ITEMS = [
     logos: [
       { icon: Kluger, url: 'https://www.kluger.ro/' },
       { icon: VictoriaSecrets, url: 'https://www.victoriassecret.com/' },
+      { icon: FikaWorks, url: 'https://fika.works/' },
     ],
     cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',
