@@ -36,7 +36,7 @@ import StefanProdanPhoto from './images/stefan-prodan-photo.jpeg';
 import TimothyMamoPhoto from './images/timothy-mamo-photo.jpg';
 import VincenzoScamporlinoPhoto from './images/vincenzo-scamporlino-photo.jpeg';
 import YujinKimPhoto from './images/yujin-kim-photo.jpg';
-import ChevronDown from './svg/arrow-down.inline.svg';
+// import ChevronDown from './svg/arrow-down.inline.svg';
 
 const TITLE = 'Speakers';
 const ITEMS = [
@@ -600,7 +600,7 @@ const ITEMS = [
 ];
 
 const Speakers = ({ location }) => {
-  const [isSpeakersOpen, setIsSpeakersOpen] = useState(false);
+  // const [isSpeakersOpen, setIsSpeakersOpen] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [modalDataId, setModalDataId] = useState(0);
 
@@ -616,9 +616,9 @@ const Speakers = ({ location }) => {
     setModalDataId(0);
   };
 
-  const handleShowMoreClick = () => {
-    setIsSpeakersOpen((isSpeakersOpen) => !isSpeakersOpen);
-  };
+  // const handleShowMoreClick = () => {
+  //   setIsSpeakersOpen((isSpeakersOpen) => !isSpeakersOpen);
+  // };
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
@@ -631,9 +631,9 @@ const Speakers = ({ location }) => {
           top: window.pageYOffset + element.getBoundingClientRect().top,
         });
 
-        if (Number(state.modalId) > 7) {
-          handleShowMoreClick();
-        }
+        // if (Number(state.modalId) > 7) {
+        //   handleShowMoreClick();
+        // }
 
         handleModalShow(Number(state.modalId));
       } else {
@@ -655,8 +655,8 @@ const Speakers = ({ location }) => {
           {ITEMS.map(({ name, photo, position }, index) => (
             <li
               className={clsx(
-                'group flex w-[240px] cursor-pointer flex-col lg:w-52 md:w-48 sm:w-auto sm:max-w-[200px]',
-                index > 7 && !isSpeakersOpen ? 'hidden' : 'flex'
+                'group flex w-[240px] cursor-pointer flex-col lg:w-52 md:w-48 sm:w-auto sm:max-w-[200px]'
+                // index > 7 && !isSpeakersOpen ? 'hidden' : 'flex'
               )}
               key={index}
               onClick={() => handleModalShow(index)}
@@ -676,7 +676,7 @@ const Speakers = ({ location }) => {
             </li>
           ))}
         </ul>
-        <button
+        {/* <button
           className="mx-auto mt-10 flex items-center px-5 py-2 text-center text-lg font-bold leading-none text-primary-1 transition-colors duration-200"
           type="button"
           onClick={handleShowMoreClick}
@@ -688,7 +688,7 @@ const Speakers = ({ location }) => {
               isSpeakersOpen ? 'rotate-180' : ''
             )}
           />
-        </button>
+        </button> */}
         <Modal
           modalData={ITEMS[modalDataId]}
           isVisible={isModalVisible}
