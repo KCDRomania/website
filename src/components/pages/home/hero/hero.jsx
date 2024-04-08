@@ -60,7 +60,7 @@ const Hero = () => (
         // src={illustration}
         // loading="eager"
         // alt="Illustration"
-        className="ml-[-5vw] h-[40rem] scale-125 object-contain 2xl:-mt-20 md:mt-1 md:h-96"
+        className="ml-[-5vw] h-[40rem] object-contain 2xl:-mt-20 md:mt-1 md:h-96"
         style={{ marginLeft: '0rem', width: '69%' }}
         src={illustration}
         loading="eager"
