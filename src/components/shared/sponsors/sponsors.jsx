@@ -15,6 +15,7 @@ import Kluger from 'icons/kluger-logo.png';
 import Stripe from 'icons/stripe-logo.png';
 import Systematic from 'icons/systematic-logo.png';
 import VictoriaSecrets from 'icons/victoriasecrets-logo.png';
+import EvolveMedia from 'icons/evolvemedia.png';
 
 const TITLE = 'Sponsors';
 
@@ -54,6 +55,7 @@ const ITEMS = [
       { icon: Kluger, url: 'https://www.kluger.ro/' },
       { icon: VictoriaSecrets, url: 'https://www.victoriassecret.com/' },
       { icon: FikaWorks, url: 'https://fika.works/' },
+      { icon: EvolveMedia, url: 'https://evolvemedia.co/' },
     ],
     cardClassname: 'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:min-h-[94px]',
     iconClassname: 'max-w-[330px] sm:min-w-[290px]',
