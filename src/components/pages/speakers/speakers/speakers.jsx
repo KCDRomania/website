@@ -540,7 +540,7 @@ const ITEMS = [
       'Yujin is a software engineer. She focuses on Kubernetes and infrastructure and has a keen interest in cloud-native solutions.',
     photo: YujinKimPhoto,
     twitterUrl: '',
-    linkedInUrl: 'https://www.linkedin.com/in/linkedin.com/in/yjink/',
+    linkedInUrl: 'https://www.linkedin.com/in/yjink/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
