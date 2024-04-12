@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
@@ -14,7 +15,7 @@ import VictorVarzaPhoto from './images/victor-varza-photo.png';
 import VladFratilaPhoto from './images/vlad-fratila-photo.png';
 import WouterLigtenbergPhoto from './images/wouter-ligtenberg-photo.png';
 
-const ITEMS = [
+const ORGANIZERS = [
   {
     name: 'Wouter Ligtenberg',
     position: 'Senior Engineering Manager at ING',
@@ -63,6 +64,9 @@ const ITEMS = [
     photo: AndreiPietricicaPhoto,
     url: 'https://www.linkedin.com/in/pietriii/',
   },
+];
+
+const VOLUNTEERS = [
   {
     name: 'Bogdan Lucaciu',
     position: 'CTO at Adore Me',
@@ -83,9 +87,37 @@ const LOGOS = [
 
 const Members = () => (
   <section className="safe-paddings relative bg-white pb-40 lg:pb-32 md:py-24 sm:py-16">
-    <div className="container">
+    <div className="container text-center">
+      <RenderMember title="Organizers" items={ORGANIZERS} />
+      <RenderMember title="Volunteers" items={VOLUNTEERS} />
+    </div>
+
+    <ul className="mx-auto mt-36 flex flex-wrap justify-center gap-x-4">
+      {LOGOS.map(({ icon, url, iconClassName }, index) => (
+        <li className="flex min-h-[80px] min-w-[280px] items-center justify-center" key={index}>
+          <Link className="flex h-full w-full items-center justify-center" to={url}>
+            <img
+              className={clsx(iconClassName, 'max-w-[260px] md:max-w-[220px]')}
+              src={icon}
+              width="auto"
+              height="auto"
+              loading="lazy"
+              alt=""
+            />
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </section>
+);
+
+const RenderMember = (props) => {
+  const { title, items } = props;
+  return (
+    <>
+      <h3 className="text-5xl font-bold leading-denser text-primary-1">{title}</h3>
       <ul className="mt-20 grid grid-cols-4 gap-8 lg:gap-6 md:flex md:flex-wrap md:justify-evenly [@media(max-width:900px)]:mx-auto [@media(max-width:900px)]:max-w-[570px]">
-        {ITEMS.map(({ name, position, photo, url }, index) => (
+        {items.map(({ name, position, photo, url }, index) => (
           <li
             className="flex w-[240px] flex-col lg:w-52 md:w-48 sm:w-auto sm:max-w-[200px]"
             key={index}
@@ -115,25 +147,15 @@ const Members = () => (
           </li>
         ))}
       </ul>
-    </div>
+      <br />
+      <br />
+    </>
+  );
+};
 
-    <ul className="mx-auto mt-36 flex flex-wrap justify-center gap-x-4">
-      {LOGOS.map(({ icon, url, iconClassName }, index) => (
-        <li className="flex min-h-[80px] min-w-[280px] items-center justify-center" key={index}>
-          <Link className="flex h-full w-full items-center justify-center" to={url}>
-            <img
-              className={clsx(iconClassName, 'max-w-[260px] md:max-w-[220px]')}
-              src={icon}
-              width="auto"
-              height="auto"
-              loading="lazy"
-              alt=""
-            />
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </section>
-);
+RenderMember.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
+};
 
 export default Members;
