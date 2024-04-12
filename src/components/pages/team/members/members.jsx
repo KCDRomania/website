@@ -64,15 +64,15 @@ const ORGANIZERS = [
     photo: AndreiPietricicaPhoto,
     url: 'https://www.linkedin.com/in/pietriii/',
   },
-];
-
-const VOLUNTEERS = [
   {
     name: 'Bogdan Lucaciu',
     position: 'CTO at Adore Me',
     photo: BogdanLucaciuPhoto,
     url: 'https://www.linkedin.com/in/bogdanlucaciu/',
   },
+];
+
+const VOLUNTEERS = [
   {
     name: 'Ionu Bradatan',
     position: 'Senior UX Designer at Visma',
