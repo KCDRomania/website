@@ -15,7 +15,7 @@ const Burger = ({ className, isToggled, onClick }) => (
       onClick={() => onClick()}
     >
       <m.span
-        className="absolute top-0 right-0 block h-0.5 w-full bg-current transition-colors duration-200"
+        className="absolute right-0 top-0 block h-0.5 w-full bg-current transition-colors duration-200"
         variants={{
           initial: {
             top: 0,
@@ -30,7 +30,7 @@ const Burger = ({ className, isToggled, onClick }) => (
         }}
       />
       <m.span
-        className="absolute top-[10px] right-0 block h-0.5 w-full bg-current transition-colors duration-200"
+        className="absolute right-0 top-[10px] block h-0.5 w-full bg-current transition-colors duration-200"
         variants={{
           initial: {
             display: 'block',
@@ -58,7 +58,7 @@ const Burger = ({ className, isToggled, onClick }) => (
         }}
       />
       <m.span
-        className="absolute top-[9px] right-0 hidden h-0.5 w-full bg-current transition-colors duration-200"
+        className="absolute right-0 top-[9px] hidden h-0.5 w-full bg-current transition-colors duration-200"
         variants={{
           initial: {
             rotate: '0deg',
@@ -73,7 +73,7 @@ const Burger = ({ className, isToggled, onClick }) => (
         }}
       />
       <m.span
-        className="absolute top-[9px] right-0 hidden h-0.5 w-full bg-current transition-colors duration-200"
+        className="absolute right-0 top-[9px] hidden h-0.5 w-full bg-current transition-colors duration-200"
         variants={{
           initial: {
             rotate: '0deg',

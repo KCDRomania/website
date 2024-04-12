@@ -8,6 +8,7 @@ import Adobe from 'icons/adobe-logo.png';
 import AdoreMe from 'icons/adoreme-logo.png';
 import CloudHero from 'icons/cloudhero-logo.png';
 import Dynatrace from 'icons/dynatrace-logo.png';
+import EvolveMedia from 'icons/evolvemedia.png';
 import FikaWorks from 'icons/fikaworks-logo.png';
 import GoogleCloud from 'icons/google-cloud.svg';
 import IngHubs from 'icons/inghubs.png';
@@ -15,7 +16,6 @@ import Kluger from 'icons/kluger-logo.png';
 import Stripe from 'icons/stripe-logo.png';
 import Systematic from 'icons/systematic-logo.png';
 import VictoriaSecrets from 'icons/victoriasecrets-logo.png';
-import EvolveMedia from 'icons/evolvemedia.png';
 
 const TITLE = 'Sponsors';
 

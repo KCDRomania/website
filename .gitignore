@@ -66,6 +66,7 @@ public
 .DS_Store
 
 .idea/
+*.iml
 
 # Yarn
 yarn-error.log
