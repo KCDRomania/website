@@ -117,7 +117,11 @@ const ITEMS = [
       },
     ],
     presentation:
-      'Developer experience finally gets the attention it deserves. Many organisations have adopted different frameworks and technologies to help enhance it. Join this session to learn how to write secure, well-architected Kubernetes applications and learn how cdk8s leverages third-party integrations to combat misconfigurations, all that while improving your developers experience and productivity. A key benefit of cdk8s is its environment agnosticism. It generates portable YAML manifests that can be readily deployed to any Kubernetes cluster, whether self-managed on-premises or managed services on public clouds. Overall, cdk8s has the potential to revolutionise how cloud native development teams define, deploy, and manage modern distributed applications on Kubernetes. Its abstractions enable developers to focus on business logic rather than YAML Engineering.',
+      'Developer experience finally gets the attention it deserves. Many organisations have adopted different frameworks and technologies to help enhance it.' +
+      '<br/><br/>' +
+      'Join this session to learn how to write secure, well-architected Kubernetes applications and learn how cdk8s leverages third-party integrations to combat misconfigurations, all that while improving your developers experience and productivity.' +
+      '<br/><br/>' +
+      'A key benefit of cdk8s is its environment agnosticism. It generates portable YAML manifests that can be readily deployed to any Kubernetes cluster, whether self-managed on-premises or managed services on public clouds. Overall, cdk8s has the potential to revolutionise how cloud native development teams define, deploy, and manage modern distributed applications on Kubernetes. Its abstractions enable developers to focus on business logic rather than YAML Engineering.',
     secondTrack: {
       id: '032',
       time: '11:00',
@@ -133,9 +137,9 @@ const ITEMS = [
       ],
       presentation:
         'We live in a brave new world of cyber attacks, state-sponsored hacking and global instability fueled by (cyber and not) wars; perimeter security is just not up to the task of securing the modern digital infrastructure.' +
-        '<br/>' +
+        '<br/><br/>' +
         'Zero Trust Security Model assumes that an enterprise-owned environment is not different or trustworthy than any non enterprise-owned environment. In this paradigm, an enterprise must assume no implicit trust and continually analyze and evaluate the risks to its assets.' +
-        '<br/>' +
+        '<br/><br/>' +
         'We will show how we can simply and scalably implement new ways to perform the necessary steps towards achieving perfect zero-trust architecture, and what entails for operations and development.',
     },
     thirdTrack: {
@@ -153,9 +157,9 @@ const ITEMS = [
       ],
       presentation:
         'In this presentation, we will dive deep into the world of Kubernetes operators and how they can be leveraged to empower platform engineering teams and extend Kubernetes as the platform of platforms.' +
-        '<br/>' +
+        '<br/><br/>' +
         'We will start by introducing the concept of Kubernetes operators, their architecture, as well as how their development becomes easier leveraging the Operator Framework. We will then explore the advantages of using Kubernetes operators to manage complex applications and how they can streamline the deployment, scaling, and management of these applications. We will also provide real-world examples of operators that have been successfully deployed by platform engineering teams in the process of building an IDP.' +
-        '<br/>' +
+        '<br/><br/>' +
         'We will then demonstrate how an architecture of an IDP leveraging operators would look like and how this integrates with other CNCF tools, like Tekton, ArgoCD, Istio, and more as well as how infrastructure as code can be simplified with this approach.',
     },
   },
@@ -201,11 +205,11 @@ const ITEMS = [
       ],
       presentation:
         "Although the current market shift inclines towards public cloud adoption, how can you manage the situation if your business model requires your product to operate with citizens' data and state-level affairs?" +
-        '<br/>' +
+        '<br/><br/>' +
         'Well, the straightforward answer will be on-prem infrastructure, and what doesn’t work better with on-prem infrastructure than open-source technologies? We will see how this approach has been working for us so far.' +
-        '<br/>' +
+        '<br/><br/>' +
         'At STS we provide secure networks, IT&C services and support for the Romanian public government authorities and institutions.' +
-        '<br/>' +
+        '<br/><br/>' +
         'During this talk, we will outline the implementation of specific operations on our on-premises K8s infrastructure, along with the challenges that arise. Our focus will be primarily on the adoption process of the GitOps concept, the implementation of the Continuous Delivery ecosystem across multiple projects, and the networking challenges at the container level. We will also delve into the processes encountered within a self-managed infrastructure.',
     },
     thirdTrack: {
@@ -217,6 +221,7 @@ const ITEMS = [
         {
           id: '13',
           name: 'Matthias Bertschy',
+          company: 'ARMO',
           photo: MatthiasBertschyPhoto,
         },
       ],
@@ -500,22 +505,6 @@ const ITEMS = [
     time: '16:00',
     title: ' Break',
     duration: '20 min',
-  },
-  {
-    id: '091',
-    time: '16:20',
-    title: '⚡️ Lightning Talk: Github Actions on Kubernetes',
-    duration: '5 min',
-    speakers: [
-      {
-        id: '26',
-        name: 'Alex Raiu',
-        company: 'Adobe',
-        photo: AlexRaiuPhoto,
-      },
-    ],
-    presentation:
-      'GitHub Actions workflows for CI/CD with the power of multitenant Kubernetes clusters for enhanced scalability, security and resource utilization.',
     secondTrack: {},
     thirdTrack: {
       id: '092',
@@ -535,6 +524,22 @@ const ITEMS = [
     },
   },
   {
+    id: '091',
+    time: '16:20',
+    title: '⚡️ Lightning Talk: Github Actions on Kubernetes',
+    duration: '5 min',
+    speakers: [
+      {
+        id: '26',
+        name: 'Alex Raiu',
+        company: 'Adobe',
+        photo: AlexRaiuPhoto,
+      },
+    ],
+    presentation:
+      'GitHub Actions workflows for CI/CD with the power of multitenant Kubernetes clusters for enhanced scalability, security and resource utilization.',
+  },
+  {
     id: '101',
     time: '16:25',
     title: '⚡️ Lightning Talk: Kubernetes: A journey from Deckhand to Captain by passing CKA',
@@ -549,11 +554,11 @@ const ITEMS = [
     ],
     presentation:
       'Kubernetes is like a ship, you either learn how to dock it and control it over seas or you shipwreck and drown. Being a DevOps Engineer controlling Kubernetes for the past 5 years I’ve been asked multiple times to dock the ship to port and thus to be the captain, but without an official rank I questioned myself over and over again.' +
-      '<br/>' +
+      '<br/><br/>' +
       'I want to share my journey with you on achieving the rank of captain Kubernetes (CKA).' +
-      '<br/>' +
+      '<br/><br/>' +
       'With this talk I hope to shed some light on the journey to come. I will tell you what I did to get ready in terms of trainings, playgrounds, and how to use the official documentation to your advantage, how to plan for a better study schedule, and how I made sure I was ready on the exam day and most importantly how I overcome my emotions.' +
-      '<br/>' +
+      '<br/><br/>' +
       'It is not easy but if you practice, you will get to be captain K.',
   },
   {
@@ -604,8 +609,13 @@ const ITEMS = [
       'We designed Forester, an app that spreads awareness and handles automatic detection and monitoring of deforestation globally, leveraging AI, open-source software and publicly available data such as satellite imagery.',
   },
   {
+    time: '16:45',
+    title: 'Break',
+    duration: '15 min',
+  },
+  {
     id: '131',
-    time: '16:40',
+    time: '17:00',
     title: 'Sponsored Keynote: May the Pods Be With You: A GKE Odyssey',
     duration: '30 min',
     isKeynote: true,
@@ -622,7 +632,7 @@ const ITEMS = [
   },
   {
     id: '141',
-    time: '17:15',
+    time: '17:30',
     title: 'Keynote: DevOps Lessons from a Primary School Teacher',
     duration: '30 min',
     isKeynote: true,
@@ -630,20 +640,22 @@ const ITEMS = [
       {
         id: '4',
         name: 'Timothy Mamo',
-        company: 'DigitalOcean',
+        company: 'Community Enthusiast',
         photo: TimothyMamoPhoto,
       },
     ],
     presentation:
-      'The ability to run stateful applications in general, and RDMS in particular, on Kubernetes is relatively new, but brings new and exciting capabilities to developers, DBAs and devops teams alike. Think of self-service cluster creation and management, self-service backup and restore, automatic configuration of point-in-time recovery scenarios, etc. On top of that, by making Postgres clusters Kubernetes resources, you can now apply GitOps, CI/CD pipelines like Tekton and policy frameworks to your database.',
+      'The ability to run stateful applications in general, and RDMS in particular, on Kubernetes is relatively new, but brings new and exciting capabilities to developers, DBAs and devops teams alike.' +
+      '<br/><br/>' +
+      'Think of self-service cluster creation and management, self-service backup and restore, automatic configuration of point-in-time recovery scenarios, etc. On top of that, by making Postgres clusters Kubernetes resources, you can now apply GitOps, CI/CD pipelines like Tekton and policy frameworks to your database.',
   },
   {
-    time: '17:45',
+    time: '18:00',
     title: 'Closing Remarks from the Organizers',
     duration: '15 min',
   },
   {
-    time: '18:00',
+    time: '18:15',
     title: 'Mingle and Networking',
     duration: '1 hour',
   },
@@ -856,7 +868,7 @@ const Schedule = ({ location }) => {
                                     alt={`${name} photo`}
                                     loading="lazy"
                                   />
-                                  {speakers.length < 3 && (
+                                  {secondTrack.speakers.length < 3 && (
                                     <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
                                       {name}, {company}
                                     </figcaption>
@@ -925,7 +937,7 @@ const Schedule = ({ location }) => {
                                     alt={`${name} photo`}
                                     loading="lazy"
                                   />
-                                  {speakers.length < 3 && (
+                                  {thirdTrack.speakers.length < 3 && (
                                     <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
                                       {name}, {company}
                                     </figcaption>
