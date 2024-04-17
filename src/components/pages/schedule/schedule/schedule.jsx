@@ -508,9 +508,9 @@ const ITEMS = [
     secondTrack: {},
     thirdTrack: {
       id: '092',
-      time: '16:20',
+      time: '16:00',
       title: "2024: I Don't Know K8S and at This Point, I'm Too Afraid To Ask",
-      duration: '30 min',
+      duration: '20 min',
       speakers: [
         {
           id: '25',
