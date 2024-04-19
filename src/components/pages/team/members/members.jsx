@@ -4,6 +4,7 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import AlinaBratuPhoto from './images/alina-bratu-photo.jpg';
 import AndreiPietricicaPhoto from './images/andrei-pietricica-photo.png';
 import BogdanLucaciuPhoto from './images/bogdan-lucaciu-photo.png';
 import BogdanPopaPhoto from './images/bogdan-popa-photo.jpg';
@@ -13,6 +14,7 @@ import ElifSamedinPhoto from './images/elif-samedin-photo.png';
 import IonMeitoiuPhoto from './images/ion-meitoiu-photo.png';
 import IonutBradatanPhoto from './images/ionut-bradatan-photo.png';
 import MariaSecareanuPhoto from './images/maria-secareanu-photo.png';
+import MihaiPrunareanuPhoto from './images/mihai-prunareanu-photo.jpg';
 import RominaDrutaPhoto from './images/romina-druta-photo.png';
 import VictorVarzaPhoto from './images/victor-varza-photo.png';
 import VladFratilaPhoto from './images/vlad-fratila-photo.png';
@@ -83,10 +85,22 @@ const VOLUNTEERS = [
     url: 'https://www.linkedin.com/in/bradatanionut/',
   },
   {
+    name: 'Alina Bratu',
+    position: 'Export Sales Advisor at Michelin',
+    photo: AlinaBratuPhoto,
+    url: 'https://www.linkedin.com/in/alina-bratu-32a0bb103',
+  },
+  {
     name: 'Bogdan Popa',
     position: 'Software Engineer at Adobe',
     photo: BogdanPopaPhoto,
     url: 'https://linkedin.com/in/bogdan-popa-8a940313',
+  },
+  {
+    name: 'Catalin Costras',
+    position: 'Senior DevOps Engineer at London Stock Exchange Group',
+    photo: CatalinCostrasPhoto,
+    url: 'hhttps://www.linkedin.com/in/catalin-costras/',
   },
   {
     name: 'Maria Secareau',
@@ -95,10 +109,10 @@ const VOLUNTEERS = [
     url: 'https://www.linkedin.com/in/maria-secareanu-7728b512/',
   },
   {
-    name: 'Catalin Costras',
-    position: 'Senior DevOps Engineer at London Stock Exchange Group',
-    photo: CatalinCostrasPhoto,
-    url: 'hhttps://www.linkedin.com/in/catalin-costras/',
+    name: 'Mihai Prunareanu',
+    position: 'IT Service Management Engineer at ING Hubs Romania',
+    photo: MihaiPrunareanuPhoto,
+    url: 'https://www.linkedin.com/in/mihai-prunareanu/',
   },
 ];
 
