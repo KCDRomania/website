@@ -7,8 +7,8 @@ import LINKS from 'constants/links';
 
 import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
-import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
-import AlexRaiuPhoto from './images/alex-raiu-photo.png';
+import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
+import AlexRaiuPhoto from './images/alex-raiu-photo.jpg';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
@@ -413,7 +413,9 @@ const ITEMS = [
     name: 'Andreia-Irina Ocanoaia',
     position: 'Genezio - Software Engineer, Open Source Passionate',
     content:
-      'Andreia joined Genezio, bringing along a lot of enthusiasm and passion for open-source software development. Since then, she has been involved in developing major features on the main product and helped grow the ecosystem around it by writing tutorials and examples for newcomers. Before joining Genezio, Andreia worked in academia, contributing to and improving the usability of open-source security tools.',
+      'Andreia joined Genezio, bringing along a lot of enthusiasm and passion for open-source software development. Since then, she has been involved in developing major features on the main product and helped grow the ecosystem around it by writing tutorials and examples for newcomers. ' +
+      '<br/><br/>' +
+      'Before joining Genezio, Andreia worked in academia, contributing to and improving the usability of open-source security tools.',
     photo: AndreiaIrinaOcanoaiaPhoto,
     twitterUrl: '',
     linkedInUrl: 'https://linkedin.com/in/andreia-irina-ocanoaia/',

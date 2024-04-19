@@ -7,8 +7,8 @@ import Modal from 'components/shared/modal';
 
 import AdrianVladuPhoto from './images/adrian-vladu-photo.jpg';
 import AlessandroPilottiPhoto from './images/alessandro-pilotti-photo.jpg';
-import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
-import AlexRaiuPhoto from './images/alex-raiu-photo.png';
+import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.jpg';
+import AlexRaiuPhoto from './images/alex-raiu-photo.jpg';
 import AlexandruDejanuPhoto from './images/alexandru-dejanu-photo.jpg';
 import AndraSomesanPhoto from './images/andra-somesan-photo.jpg';
 import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
@@ -76,6 +76,7 @@ const ITEMS = [
     ],
     presentation:
       "We celebrate the milestone of ten years of Kubernetes; this keynote explores the journey from its inception to becoming the backbone of cloud-native technology. We'll look back at its history and the pivotal factor behind Kubernetes' success: its vibrant, innovative community." +
+      '<br/><br/>' +
       "This talk delves into how the collective passion, expertise, and collaborative spirit of the Kubernetes community have not only propelled the platform's advancements but also shaped the very future of cloud computing. Looking ahead, we'll discuss the crucial role the community will play in steering Kubernetes through the next decade of challenges and opportunities, ensuring its continued relevance and leadership in the tech landscape.",
   },
   {
@@ -93,7 +94,9 @@ const ITEMS = [
       },
     ],
     presentation:
-      'This talk highlights the importance of contributing to open-source projects and the impact of community engagement on both personal growth and the development of the tech industry. Andrei will share his journey from co-founding RoEduNet, which provided free internet to students, to becoming a serial entrepreneur.',
+      'This talk highlights the importance of contributing to open-source projects and the impact of community engagement on both personal growth and the development of the tech industry.' +
+      '<br/><br/>' +
+      'Andrei will share his journey from co-founding RoEduNet, which provided free internet to students, to becoming a serial entrepreneur.',
   },
   {
     time: '10:40',
@@ -413,9 +416,13 @@ const ITEMS = [
         },
       ],
       presentation:
-        'Andreia joined Genezio, bringing along a lot of enthusiasm and passion for open-source software development. Since then, she has been involved in developing major features on the main product and helped grow the ecosystem around it by writing tutorials and examples for newcomers. ' +
+        'In this presentation, we will dive deep into the practical aspects of using unikernels to deploy production environments. Unikernels bring a fresh perspective to how we deploy applications promising significant increase in efficiency, security, and resource utilization.' +
         '<br/><br/>' +
-        'Before joining Genezio, Andreia worked in academia, contributing to and improving the usability of open-source security tools.',
+        'But how can we practically harness this power to run real world applications?' +
+        '<br/><br/>' +
+        "That's the question we'll answer together in this talk." +
+        '<br/><br/>' +
+        "Whether you're a seasoned Node.js developer, a DevOps enthusiast, or just curious about the next frontier in cloud architectures, this talk is a great introduction to the challenges of running in a different and more lightweight architecture.",
     },
   },
 
@@ -616,7 +623,7 @@ const ITEMS = [
   {
     id: '141',
     time: '17:15',
-    title: 'DevOps Lessons from a Primary School Teacher',
+    title: 'Keynote: DevOps Lessons from a Primary School Teacher',
     duration: '30 min',
     isKeynote: true,
     speakers: [
