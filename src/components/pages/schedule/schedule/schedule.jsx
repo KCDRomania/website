@@ -131,7 +131,7 @@ const ITEMS = [
         {
           id: '7',
           name: 'Alessandro Vozza',
-          company: 'Solo.io',
+          company: 'CNCF Ambassador',
           photo: AlessandroVozzaPhoto,
         },
       ],
