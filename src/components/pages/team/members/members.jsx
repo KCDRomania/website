@@ -84,15 +84,15 @@ const ORGANIZERS = [
     photo: BogdanLucaciuPhoto,
     url: 'https://www.linkedin.com/in/bogdanlucaciu/',
   },
-];
-
-const VOLUNTEERS = [
   {
     name: 'Ionu Bradatan',
     position: 'Senior UX Designer at Visma',
     photo: IonutBradatanPhoto,
     url: 'https://www.linkedin.com/in/bradatanionut/',
   },
+];
+
+const VOLUNTEERS = [
   {
     name: 'Alina Bratu',
     position: 'Export Sales Advisor at Michelin',
@@ -106,10 +106,16 @@ const VOLUNTEERS = [
     url: 'https://linkedin.com/in/bogdan-popa-8a940313',
   },
   {
+    name: 'Claudia Licu',
+    position: 'Dev Chapter Lead at ING Hubs Romania',
+    photo: ClaudiaLicuPhoto,
+    url: 'https://www.linkedin.com/in/claudia-licu-13148610a',
+  },
+  {
     name: 'Catalin Costras',
     position: 'Senior DevOps Engineer at London Stock Exchange Group',
     photo: CatalinCostrasPhoto,
-    url: 'hhttps://www.linkedin.com/in/catalin-costras/',
+    url: 'https://www.linkedin.com/in/catalin-costras/',
   },
   {
     name: 'Maria Secareau',
@@ -122,12 +128,6 @@ const VOLUNTEERS = [
     position: 'IT Service Management Engineer at ING Hubs Romania',
     photo: MihaiPrunareanuPhoto,
     url: 'https://www.linkedin.com/in/mihai-prunareanu/',
-  },
-  {
-    name: 'Claudia Licu',
-    position: 'Dev Chapter Lead at ING Hubs Romania',
-    photo: ClaudiaLicuPhoto,
-    url: 'https://www.linkedin.com/in/claudia-licu-13148610a',
   },
   {
     name: 'Buddhika Kandamulla',
