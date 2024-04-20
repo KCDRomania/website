@@ -6,6 +6,7 @@ import Link from 'components/shared/link';
 
 import AndreiPietricicaPhoto from './images/andrei-pietricica-photo.png';
 import BogdanLucaciuPhoto from './images/bogdan-lucaciu-photo.png';
+import BogdanPopaPhoto from './images/bogdan-popa-photo.jpg';
 import CatalinJoraPhoto from './images/catalin-jora-photo.png';
 import ElifSamedinPhoto from './images/elif-samedin-photo.png';
 import IonMeitoiuPhoto from './images/ion-meitoiu-photo.png';
@@ -78,6 +79,12 @@ const VOLUNTEERS = [
     position: 'Senior UX Designer at Visma',
     photo: IonutBradatanPhoto,
     url: 'https://www.linkedin.com/in/bradatanionut/',
+  },
+  {
+    name: 'Bogdan Popa',
+    position: 'Software Engineer at Adobe',
+    photo: BogdanPopaPhoto,
+    url: 'https://linkedin.com/in/bogdan-popa-8a940313',
   },
 ];
 
