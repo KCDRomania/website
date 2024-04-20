@@ -150,7 +150,7 @@ const SPEAKERS = [
   {
     id: '7',
     name: 'Alessandro Vozza',
-    position: 'DevRel at Solo.io',
+    position: 'CNCF Ambassador',
     content:
       "Community leader and CNCF ambassador, Alessandro has spent the last few years building cloud native infrastructures for Microsoft customers, animating the Dutch community, and training others to pass the CKx exams. He has passion for all things cloud native, he's been around open source for 25 years and recently moved to a new Developer Relations role. Twitter handle: @bongo",
     photo: AlessandroVozzaPhoto,
@@ -159,7 +159,7 @@ const SPEAKERS = [
     githubUrl: '',
     communityUrl: 'https://dev.to/ams0',
     instagramUrl: 'https://www.instagram.com/cloudnativeams/',
-    websiteUrl: 'https://solo.io',
+    websiteUrl: '',
     time: '11.00',
     title: 'Trust no one: implementing zero trust security with Ambient Service Mesh',
     duration: '30 min',
