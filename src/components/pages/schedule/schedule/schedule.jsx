@@ -654,11 +654,6 @@ const ITEMS = [
     title: 'Closing Remarks from the Organizers',
     duration: '15 min',
   },
-  {
-    time: '18:15',
-    title: 'Mingle and Networking',
-    duration: '1 hour',
-  },
 ];
 
 const Schedule = ({ location }) => {
