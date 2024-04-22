@@ -84,7 +84,7 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
           size="sm"
           onClick={() => handleModalShow()}
         >
-          CNCF Video
+          KCD Romania 2024 Video
         </Button>
 
         <Burger
