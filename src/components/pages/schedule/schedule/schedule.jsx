@@ -15,6 +15,7 @@ import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
 import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
 import AndreiPitisPhoto from './images/andrei-pitis-photo.jpg';
+import AndreiStefaniePhoto from './images/andrei-stefanie-photo.jpg';
 import AndreiaIrinaOcanoaiaPhoto from './images/andreia-irina-ocanoaia-photo.jpg';
 import CarmenBobeiPhoto from './images/carmen-bobei-photo.jpg';
 import ClaudiuHobjilaPhoto from './images/claudiu-hobjila-photo.jpg';
@@ -26,7 +27,6 @@ import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import JosephSandovalPhoto from './images/joseph-sandoval-photo.jpg';
 import KatharinaSickPhoto from './images/katharina-sick-photo.jpg';
 import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
-import MatthiasBertschyPhoto from './images/matthias-bertschy-photo.jpeg';
 import MihaiGoguPhoto from './images/mihai-gogu-photo.png';
 import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo.jpg';
 import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
@@ -215,20 +215,20 @@ const ITEMS = [
     thirdTrack: {
       id: '043',
       time: '11:45',
-      title: 'Who the Helm Owns this YAML?!',
+      title: "Cyscale's Journey on Kubernetes",
       duration: '30 min',
       speakers: [
         {
           id: '13',
-          name: 'Matthias Bertschy',
-          company: 'ARMO',
-          photo: MatthiasBertschyPhoto,
+          name: 'Andrei Stefanie',
+          company: 'Cyscale',
+          photo: AndreiStefaniePhoto,
         },
       ],
       presentation:
-        'Security scanners are great, by catching important security issues and misconfigurations before they reach production. But sometimes, they actually flag security issues in your production runtime––and then things start to get sketchy.' +
+        "Starting from humble origins with clusters created through ClickOps, a single umbrella Helm chart, and an inclination towards the 'latest tag' mentality, Cyscale's infrastructure has evolved into a fully-fledged GitOps platform (based on Argo CD)." +
         '<br/><br/>' +
-        "Who owns this YAML? Who needs to fix it? How do I propagate this fix to my hundreds of clusters in production?! Enter ArgoCD + Helm. In this talk we'll share how to track ownership of resources using ArgoCD's powerful GitOps capabilities, and propagating fixes to multiple locations through a single source using Helm. We'll demonstrate how these tools together can provide greater governance without losing control.",
+        "In this session, we will delve into our decision-making process behind the adoption of pivotal technologies such as service meshes (Linkerd vs Istio) and messaging systems (NATS). We'll also explore the gradual evolution of our deployment processes and secrets management over time. Learn how the CNCF landscape played a crucial role in enabling us to maintain the platform's portability.",
     },
   },
   {

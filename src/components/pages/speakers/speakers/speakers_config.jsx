@@ -8,6 +8,7 @@ import AndradaRaducanuPhoto from './images/andrada-raducanu-photo.jpg';
 import AndreiCiocPhoto from './images/andrei-cioc-photo.jpg';
 import AndreiPetrescuPhoto from './images/andrei-petrescu-photo.jpg';
 import AndreiPitisPhoto from './images/andrei-pitis-photo.jpg';
+import AndreiStefaniePhoto from './images/andrei-stefanie-photo.jpg';
 import AndreiaIrinaOcanoaiaPhoto from './images/andreia-irina-ocanoaia-photo.jpg';
 import CarmenBobeiPhoto from './images/carmen-bobei-photo.jpg';
 import ClaudiuHobjilaPhoto from './images/claudiu-hobjila-photo.jpg';
@@ -19,7 +20,6 @@ import IulianTaiatuPhoto from './images/iulian-taiatu-photo.png';
 import JosephSandovalPhoto from './images/joseph-sandoval-photo.jpg';
 import KatharinaSickPhoto from './images/katharina-sick-photo.jpg';
 import MarkSagiKazarPhoto from './images/mark-sagi-kazar-photo.jpg';
-import MatthiasBertschyPhoto from './images/matthias-bertschy-photo.jpeg';
 import MihaiGoguPhoto from './images/mihai-gogu-photo.png';
 import MihalceaMihaiAlexandruPhoto from './images/mihalcea-mihai-alexandru-photo.jpg';
 import OctavianPetrePhoto from './images/octavian-petre-photo.jpg';
@@ -256,20 +256,21 @@ const SPEAKERS = [
   },
   {
     id: '13',
-    name: 'Matthias Bertschy',
-    position: 'Senior Kubernetes Engineer at ARMO',
+    name: 'Andrei Stefanie',
+    position: 'Lead Engineer at Cyscale',
     content:
-      'Matthias is a Senior Kubernetes Developer at ARMO working on Kubescape. In 2011 he joined a leading security solution provider in Switzerland to become a Security System Engineer. Certified as an Ethical Hacker in 2012 (GPEN certification) and a CISSP in 2015.' +
-      'He has become a regular contributor, member of SIG Node and a reviewer for the kubelet and test-infra. For the last 5 years, he has helped Swiss banks udergo digital transformations as a Senior DevOps Engineer and Platform Architect.',
-    photo: MatthiasBertschyPhoto,
+      'Andrei is passionate about helping people perform at their best through teaching, tools, and writing. He is leading the product team at Cyscale in delivering the platform that helps organizations understand and secure their cloud environments. ' +
+      '<br/>' +
+      'One of his favorite activities is walking while listening to talks about the cloud, software, and startups.',
+    photo: AndreiStefaniePhoto,
     twitterUrl: '',
-    linkedInUrl: 'https://linkedin.com/in/matthias-bertschy-b427b815/',
+    linkedInUrl: 'https://www.linkedin.com/in/andreistefanie/',
     githubUrl: '',
     communityUrl: '',
     instagramUrl: '',
-    websiteUrl: '',
+    websiteUrl: 'https://cyscale.com',
     time: '11:45',
-    title: 'Who the Helm Owns this YAML?!',
+    title: "Cyscale's Journey on Kubernetes",
     duration: '30 min',
   },
   {
