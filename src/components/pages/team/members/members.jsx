@@ -133,7 +133,7 @@ const VOLUNTEERS = [
     name: 'Buddhika Kandamulla',
     position: 'DevOps Engineer',
     photo: BuddhikaKandamullaPhoto,
-    url: '',
+    url: 'https://www.linkedin.com/in/buddhipriyashan/',
   },
   {
     name: 'Liviu Costea',
