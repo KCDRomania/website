@@ -63,7 +63,7 @@ export default {
   },
   // Social-links
   photos: {
-    to: 'https://drive.google.com/drive',
+    to: 'https://photos.app.goo.gl/imqRXYBo7Po1Kte16',
     target: '_blank',
   },
   survey: {

@@ -8,7 +8,8 @@ import illustration from './images/romania.svg';
 const TITLE = 'Kubernetes Community Days Romania';
 
 const DESCRIPTION =
-  'The Kubernetes & Cloud Native community will gather at the Radison Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. KCD Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies. This community event is supported by the CNCF.';
+  'Thank you for attending KCD Romania 2024. We hope you enjoyed the event and look forward to seeing you again next year! Below, you can find the photos from the event.';
+// 'The Kubernetes & Cloud Native community will gather at the Radison Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. KCD Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies. This community event is supported by the CNCF.';
 const Hero = () => (
   /*
     const cloudsBack = {
@@ -45,11 +46,12 @@ const Hero = () => (
             className="border-nonemd:hidden group relative inline-flex w-fit items-center justify-center overflow-hidden"
             theme="primary"
             size="lg"
-            {...LINKS.tickets}
+            // {...LINKS.tickets}
+            {...LINKS.photos}
           >
             <span className="absolute h-full w-full bg-gradient-to-br from-[#3333ff] via-[#3333ff] to-[#3333ff] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05]" />
             <span className="bg-gray-900 duration-400 relative rounded-md px-6 py-3 transition-all ease-out group-hover:bg-opacity-0">
-              <span className="relative font-bold text-white">Get your tickets now</span>
+              <span className="relative font-bold text-white">Photos</span>
             </span>
           </Button>
         </div>
