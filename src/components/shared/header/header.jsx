@@ -54,7 +54,7 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
     >
       <div className="container flex items-center justify-between pb-2 pt-5">
         <Link className="z-50 ml-2" to="/">
-          <img className="h-20 md:h-14" src={Logo} alt="KCD Romania" />
+          <img className="h-20 md:h-14" src={Logo} alt="KND Romania" />
         </Link>
 
         <nav>
@@ -84,7 +84,7 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
           size="sm"
           onClick={() => handleModalShow()}
         >
-          KCD Romania 2024 Video
+          2024 Video
         </Button>
 
         <Burger

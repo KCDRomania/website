@@ -3,7 +3,7 @@ import slugify from 'slugify';
 
 import LINKS from 'constants/links.js';
 import MENUS from 'constants/menus';
-import CloudNative from 'icons/cloudnative-logo.inline.svg';
+// import CloudNative from 'icons/cloudnative-logo.inline.svg';
 import GoogleMaps from 'icons/google-maps-icon.inline.svg';
 import LinkedIn from 'icons/linkedin-logo.inline.svg';
 import Twitter from 'icons/twitter-logo.inline.svg';
@@ -40,9 +40,9 @@ const Footer = () => {
   return (
     <footer className="safe-paddings border-t border-t-gray-10 bg-white">
       <div className="container flex items-center justify-between pb-5 pt-5 sm:flex-col sm:justify-around">
-        <Link className="ml-2" to="https://cncf.io">
+        {/* <Link className="ml-2" to="https://cncf.io">
           <CloudNative className="h-12 w-44" />
-        </Link>
+        </Link> */}
 
         <nav className="mt-4 flex">
           <ul className="grid min-w-fit grid-cols-2 grid-rows-2 gap-x-3 gap-y-4 xl:gap-x-1 lg:mr-6 lg:gap-x-4 sm:mx-auto [@media(max-width:375px)]:grid-cols-1 [@media(max-width:375px)]:justify-items-center">
@@ -65,9 +65,9 @@ const Footer = () => {
           <Link
             className="ml-2 font-semibold transition-colors duration-200"
             theme="primary"
-            to="mailto:kcdromania@gmail.com"
+            to="mailto:cloudnativedaysromania@gmail.com"
           >
-            kcdromania@gmail.com
+            cloudnativedaysromania@gmail.com
           </Link>
           <ul className="mt-4 flex min-w-fit gap-x-2.5">
             {items.map(({ icon, iconClassName, url }, index) => {

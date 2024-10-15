@@ -31,12 +31,16 @@ export default {
     to: '/team',
     homeTo: '/team',
   },
+  archive2024: {
+    to: 'https://2024.cloudnativedays.ro',
+    target: '_blank',
+  },
   tickets: {
     to: 'https://www.iabilet.ro/bilete-kcd-romania-94389/',
     target: '_blank',
   },
   cfp: {
-    to: 'https://forms.gle/JyrTeEJuk2PVAT7d9',
+    to: 'https://sessionize.com/app/organizer/event/13464',
     target: '_blank',
   },
   mission: {

@@ -4,29 +4,16 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
-import AlinaBratuPhoto from './images/alina-bratu-photo.jpg';
 import AndreiPietricicaPhoto from './images/andrei-pietricica-photo.png';
-import ArthurBerezinPhoto from './images/arthur-berezin-photo.jpeg';
+import BettyHalaszPhoto from './images/betty-halasz-photo.jpg';
 import BogdanLucaciuPhoto from './images/bogdan-lucaciu-photo.png';
-import BogdanPopaPhoto from './images/bogdan-popa-photo.jpg';
-import BuddhikaKandamullaPhoto from './images/buddhika-kandamulla-photo.jpeg';
-import CatalinCostrasPhoto from './images/catalin-costras-photo.png';
 import CatalinJoraPhoto from './images/catalin-jora-photo.png';
-import ClaudiaLicuPhoto from './images/claudia-licu-photo.jpeg';
-import DanielDrackPhoto from './images/daniel-drack-photo.jpeg';
+import DorianaSimandanPhoto from './images/doriana-simandan-photo.png';
 import ElifSamedinPhoto from './images/elif-samedin-photo.png';
 import IonMeitoiuPhoto from './images/ion-meitoiu-photo.png';
-import IonutBradatanPhoto from './images/ionut-bradatan-photo.png';
-import JacopoNardielloPhoto from './images/jacopo-nardiello-photo.jpeg';
-import LiviuCosteaPhoto from './images/liviu-costea-photo.jpeg';
-import MariaSecareanuPhoto from './images/maria-secareanu-photo.png';
-import MichelMurabitoPhoto from './images/michel-murabito-photo.jpeg';
-import MihaiPrunareanuPhoto from './images/mihai-prunareanu-photo.jpg';
-import OrlinVasilevPhoto from './images/orlin-vasilev-photo.jpeg';
 import RominaDrutaPhoto from './images/romina-druta-photo.png';
 import VictorVarzaPhoto from './images/victor-varza-photo.png';
 import VladFratilaPhoto from './images/vlad-fratila-photo.png';
-import WilliamRizzoPhoto from './images/william-rizzo-photo.jpeg';
 import WouterLigtenbergPhoto from './images/wouter-ligtenberg-photo.png';
 
 const ORGANIZERS = [
@@ -85,99 +72,21 @@ const ORGANIZERS = [
     url: 'https://www.linkedin.com/in/bogdanlucaciu/',
   },
   {
-    name: 'Ionut Bradatan',
-    position: 'Senior UX Designer at Visma',
-    photo: IonutBradatanPhoto,
-    url: 'https://www.linkedin.com/in/bradatanionut/',
+    name: 'Doriana Simandan',
+    position: 'Marketing Lead at Visma',
+    photo: DorianaSimandanPhoto,
+    url: 'https://www.linkedin.com/in/doriana-simandan/',
+  },
+  {
+    name: 'Betty Halasz',
+    position: 'Junior Content Creator at Visma',
+    photo: BettyHalaszPhoto,
+    url: 'https://www.linkedin.com/in/betty-halasz-44806a208/',
   },
 ];
 
-const VOLUNTEERS = [
-  {
-    name: 'Alina Bratu',
-    position: 'Export Sales Advisor at Michelin',
-    photo: AlinaBratuPhoto,
-    url: 'https://www.linkedin.com/in/alina-bratu-32a0bb103',
-  },
-  {
-    name: 'Bogdan Popa',
-    position: 'Software Engineer at Adobe',
-    photo: BogdanPopaPhoto,
-    url: 'https://linkedin.com/in/bogdan-popa-8a940313',
-  },
-  {
-    name: 'Claudia Licu',
-    position: 'Dev Chapter Lead at ING Hubs Romania',
-    photo: ClaudiaLicuPhoto,
-    url: 'https://www.linkedin.com/in/claudia-licu-13148610a',
-  },
-  {
-    name: 'Catalin Costras',
-    position: 'Senior DevOps Engineer at London Stock Exchange Group',
-    photo: CatalinCostrasPhoto,
-    url: 'https://www.linkedin.com/in/catalin-costras/',
-  },
-  {
-    name: 'Maria Secareau',
-    position: 'Senior Program Manager at Adobe',
-    photo: MariaSecareanuPhoto,
-    url: 'https://www.linkedin.com/in/maria-secareanu-7728b512/',
-  },
-  {
-    name: 'Mihai Prunareanu',
-    position: 'IT Service Management Engineer at ING Hubs Romania',
-    photo: MihaiPrunareanuPhoto,
-    url: 'https://www.linkedin.com/in/mihai-prunareanu/',
-  },
-  {
-    name: 'Buddhika Kandamulla',
-    position: 'DevOps Engineer',
-    photo: BuddhikaKandamullaPhoto,
-    url: 'https://www.linkedin.com/in/buddhipriyashan/',
-  },
-  {
-    name: 'Liviu Costea',
-    position: 'Staff Reliability Engineer at Juni',
-    photo: LiviuCosteaPhoto,
-    url: 'https://www.linkedin.com/in/liviucostea/',
-  },
-  {
-    name: 'Daniel Drack',
-    position: 'Senior DevOps Engineer at FullStackS',
-    photo: DanielDrackPhoto,
-    url: 'https://www.linkedin.com/in/drackthor/',
-  },
-  {
-    name: 'Jacopo Nardiello',
-    position: 'Founder & CEO at SIGHUP',
-    photo: JacopoNardielloPhoto,
-    url: 'https://www.linkedin.com/in/jnardiello/',
-  },
-  {
-    name: 'Michel Murabito',
-    position: 'Developer Advocate at Mia-Platform',
-    photo: MichelMurabitoPhoto,
-    url: 'https://www.linkedin.com/in/mich-murabito/',
-  },
-  {
-    name: 'Orlin Vasilev',
-    position: 'Senior Technology Evangelist at SUSE',
-    photo: OrlinVasilevPhoto,
-    url: 'https://www.linkedin.com/in/orlinvasilev/',
-  },
-  {
-    name: 'Arthur Berezin',
-    position: 'CEO, Co-Founder at StageCentral',
-    photo: ArthurBerezinPhoto,
-    url: 'https://www.linkedin.com/in/arthurberezin/',
-  },
-  {
-    name: 'William Rizzo',
-    position: 'Lead Architect Consultant at SUSE',
-    photo: WilliamRizzoPhoto,
-    url: 'https://www.linkedin.com/in/william-rizzo/',
-  },
-];
+// const VOLUNTEERS = [
+// ];
 
 const LOGOS = [
   // { icon: ArchCloud, url: 'https://arch.cloud/', iconClassName: 'w-[260px] h-auto' },
@@ -187,7 +96,7 @@ const Members = () => (
   <section className="safe-paddings relative bg-white pb-40 lg:pb-32 md:py-24 sm:py-16">
     <div className="container text-center">
       <RenderMember title="Organizers" items={ORGANIZERS} />
-      <RenderMember title="Volunteers" items={VOLUNTEERS} />
+      {/* <RenderMember title="Volunteers" items={VOLUNTEERS} /> */}
     </div>
 
     <ul className="mx-auto mt-36 flex flex-wrap justify-center gap-x-4">

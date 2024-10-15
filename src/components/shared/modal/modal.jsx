@@ -106,8 +106,8 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
               <>
                 <iframe
                   allow="autoplay; picture-in-picture; web-share"
-                  src="https://www.youtube.com/embed/6YaJz2MMa38?autoplay=1&mute=0&rel=0"
-                  title="Kubernetes Community Days Romania 2024"
+                  src="https://www.youtube.com/embed/XhCeE2V2YfU?autoplay=1&mute=0&rel=0"
+                  title="KCD Romania 2024"
                   width="100%"
                   height="520"
                   allowFullScreen

@@ -5,8 +5,8 @@ require('dotenv').config();
 module.exports = {
   flags: { DEV_SSR: process.env.GATSBY_DEV_SSR || false },
   siteMetadata: {
-    siteTitle: 'Kubernetes Community Days Romania',
-    siteDescription: 'Kubernetes Community Days Romania website',
+    siteTitle: 'Cloud Native Days Romania',
+    siteDescription: 'Cloud Native Days Romania website',
     siteImage: '/images/social-preview.png',
     siteLanguage: 'en',
     siteUrl: process.env.GATSBY_DEFAULT_SITE_URL || 'http://localhost:8000',
