@@ -36,7 +36,7 @@ export default {
     target: '_blank',
   },
   tickets: {
-    to: 'https://www.iabilet.ro/bilete-kcd-romania-94389/',
+    to: null,
     target: '_blank',
   },
   cfp: {

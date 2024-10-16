@@ -11,16 +11,16 @@ import Button from '../button';
 import Link from '../link';
 import Modal from '../modal';
 
-import Logo from './images/kcd-romania-logo.svg';
+import Logo from './images/cnd-romania-logo.svg';
 
 const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage }) => {
   const getAnchor = (str) => slugify(str).toLocaleLowerCase();
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const handleModalShow = () => {
-    document.body.classList.add('overflow-hidden');
-    setIsModalVisible(true);
-  };
+  // const handleModalShow = () => {
+  //   document.body.classList.add('overflow-hidden');
+  //   setIsModalVisible(true);
+  // };
 
   const handleModalHide = () => {
     document.body.classList.remove('overflow-hidden');
@@ -78,14 +78,14 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
             ))}
           </ul>
         </nav>
-        <Button
+        {/* <Button
           className="-mr-2 md:hidden"
           theme="primary"
           size="sm"
           onClick={() => handleModalShow()}
         >
           2024 Video
-        </Button>
+        </Button> */}
 
         <Burger
           className="z-50 hidden md:block"

@@ -19,7 +19,7 @@ const MENUS = {
     // { text: 'Schedule', ...LINKS.schedule },
     // { text: 'Sponsors', ...LINKS.sponsors },
     { text: 'Team', ...LINKS.team },
-    { text: 'Archive', ...LINKS.archive },
+    { text: 'Archive 2024', ...LINKS.archive2024 },
   ],
 };
 
