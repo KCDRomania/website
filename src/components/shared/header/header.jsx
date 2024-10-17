@@ -13,7 +13,7 @@ import Modal from '../modal';
 
 import Logo from './images/cnd-romania-logo.svg';
 
-const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage }) => {
+const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName }) => {
   const getAnchor = (str) => slugify(str).toLocaleLowerCase();
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -61,19 +61,9 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
           <ul className="-ml-8 flex space-x-8 text-white lg:ml-0 lg:space-x-6 md:hidden">
             {MENUS.header.map(({ text, to, homeTo }, index) => (
               <li className="text-[15px] font-semibold text-primary-1" key={index}>
-                {homepage ? (
-                  <Button
-                    to={homeTo}
-                    theme="link-primary"
-                    onClick={homeTo ? undefined : handleAnchorClick}
-                  >
-                    {text}
-                  </Button>
-                ) : (
-                  <Button to={to} theme="link-primary">
-                    {text}
-                  </Button>
-                )}
+                <Button to={to || `/#${homeTo}`} theme="link-primary" onClick={handleAnchorClick}>
+                  {text}
+                </Button>
               </li>
             ))}
           </ul>
