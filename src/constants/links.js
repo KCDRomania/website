@@ -40,7 +40,7 @@ export default {
     target: '_blank',
   },
   cfp: {
-    to: 'https://sessionize.com/app/organizer/event/13464',
+    to: 'https://sessionize.com/',
     target: '_blank',
   },
   mission: {
@@ -62,7 +62,7 @@ export default {
 
   // Social-links
   linkedin: {
-    to: 'https://www.linkedin.com/company/kcd-romania/',
+    to: 'https://www.linkedin.com/company/cloudnativedaysromania/',
     target: '_blank',
   },
   // Social-links
@@ -75,7 +75,7 @@ export default {
     target: '_blank',
   },
   twitter: {
-    to: 'https://twitter.com/kcdromania',
+    to: 'https://x.com/cloudnativero',
     target: '_blank',
   },
   googlemaps: {
@@ -88,6 +88,10 @@ export default {
   },
   youtube: {
     to: 'https://www.youtube.com/@cncf',
+    target: '_blank',
+  },
+  sponsorProspectus: {
+    to: 'https://bit.ly/4f3XmmM',
     target: '_blank',
   },
 };

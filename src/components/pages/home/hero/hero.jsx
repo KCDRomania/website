@@ -46,7 +46,7 @@ const Hero = () => (
             className="mt-7 text-white shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="blue"
             size="lg"
-            {...LINKS.photos}
+            {...LINKS.sponsorProspectus}
           >
             Sponsor prospectus
           </Button>
@@ -54,7 +54,7 @@ const Hero = () => (
             className="ml-3 mt-7 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
             theme="primary"
             size="lg"
-            {...LINKS.survey}
+            {...LINKS.cfp}
           >
             CFP - coming soon
           </Button>
