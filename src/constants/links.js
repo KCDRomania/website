@@ -78,8 +78,12 @@ export default {
     to: 'https://x.com/cloudnativero',
     target: '_blank',
   },
+  instagram: {
+    to: 'https://www.instagram.com/cloudnativedaysromania/',
+    target: '_blank',
+  },
   googlemaps: {
-    to: 'https://www.google.com/maps/search/Radisson+Blu+Hotel,+Bucharest',
+    to: 'https://www.google.com/maps/search/Bucharest',
     target: '_blank',
   },
   parkingInfo: {
@@ -87,7 +91,7 @@ export default {
     target: '_blank',
   },
   youtube: {
-    to: 'https://www.youtube.com/@cncf',
+    to: 'https://www.youtube.com/watch?v=IKBuAP1Ybw8&list=PLj6h78yzYM2OK5BDO7YeVGQjfIJydLfyU&ab_channel=CloudNativeDaysRomania',
     target: '_blank',
   },
   sponsorProspectus: {

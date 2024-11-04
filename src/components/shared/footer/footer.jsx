@@ -3,8 +3,8 @@ import slugify from 'slugify';
 
 import LINKS from 'constants/links.js';
 import MENUS from 'constants/menus';
-// import CloudNative from 'icons/cloudnative-logo.inline.svg';
 import GoogleMaps from 'icons/google-maps-icon.inline.svg';
+import Instagram from 'icons/instagram-icon.inline.svg';
 import LinkedIn from 'icons/linkedin-logo.inline.svg';
 import Twitter from 'icons/twitter-logo.inline.svg';
 import Youtube from 'icons/youtube.inline.svg';
@@ -13,10 +13,11 @@ import Button from '../button';
 import Link from '../link';
 
 const items = [
-  { icon: GoogleMaps, iconClassName: 'w-11 h-9', url: LINKS.googlemaps.to },
   { icon: LinkedIn, iconClassName: 'w-4 h-4', url: LINKS.linkedin.to },
+  { icon: Instagram, iconClassName: 'w-5 h-4', url: LINKS.instagram.to },
   { icon: Twitter, iconClassName: 'w-5 h-4', url: LINKS.twitter.to },
   { icon: Youtube, iconClassName: 'w-6 h-5', url: LINKS.youtube.to },
+  { icon: GoogleMaps, iconClassName: 'w-11 h-9', url: LINKS.googlemaps.to },
 ];
 
 const Footer = () => {
