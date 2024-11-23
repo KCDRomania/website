@@ -40,7 +40,7 @@ export default {
     target: '_blank',
   },
   cfp: {
-    to: 'https://sessionize.com/',
+    to: 'https://sessionize.com/cloud-native-days-2025',
     target: '_blank',
   },
   mission: {
@@ -83,7 +83,7 @@ export default {
     target: '_blank',
   },
   googlemaps: {
-    to: 'https://www.google.com/maps/search/Bucharest',
+    to: 'https://www.google.com/maps/search/Radisson+Blu+Hotel,+Bucharest',
     target: '_blank',
   },
   parkingInfo: {
