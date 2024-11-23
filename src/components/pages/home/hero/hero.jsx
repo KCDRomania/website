@@ -8,8 +8,7 @@ import illustration from './images/romania.svg';
 const TITLE = 'Cloud Native Days Romania';
 
 const DESCRIPTION =
-  // 'The Kubernetes & Cloud Native community will gather at the Radison Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. CND Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies.';
-  'The Kubernetes & Cloud Native community will gather in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. Cloud Native Days Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies.';
+  'The Kubernetes & Cloud Native community will gather at the Radison Blu in Bucharest, Romania. Join us for one day technical event loaded with exciting talks and networking opportunities. Cloud Native Days Romania is aimed at developers, platform people, and other IT professionals with an interest in cloud native technologies.';
 const Hero = () => (
   /*
     const cloudsBack = {
@@ -33,7 +32,7 @@ const Hero = () => (
     <div className="container flex flex-row md:flex-col md:items-center md:text-center">
       <div className="flex flex-col md:items-center md:text-center">
         <span className="w-fit rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black">
-          Coming soon, 2025
+          4-5 MAY 2025
         </span>
         <h1 className="mt-3 min-w-[38rem] max-w-[570px] text-8xl font-bold leading-denser text-primary-1 lg:max-w-[500px] md:min-w-min sm:text-7xl">
           {TITLE}
@@ -56,7 +55,7 @@ const Hero = () => (
             size="lg"
             {...LINKS.cfp}
           >
-            CFP - coming soon
+            Call For Proposals (CFP)
           </Button>
         </div>
         {/* <div style={{ marginTop: '3vh' }}>
