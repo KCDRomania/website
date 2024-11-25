@@ -32,7 +32,7 @@ const Hero = () => (
     <div className="container flex flex-row md:flex-col md:items-center md:text-center">
       <div className="flex flex-col md:items-center md:text-center">
         <span className="w-fit rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black">
-          4-5 MAY 2025
+          5-6 MAY 2025
         </span>
         <h1 className="mt-3 min-w-[38rem] max-w-[570px] text-8xl font-bold leading-denser text-primary-1 lg:max-w-[500px] md:min-w-min sm:text-7xl">
           {TITLE}
