@@ -25,11 +25,11 @@ const Venue = () => (
       </div>
       <br />
       <p>
-        <span className="font-bold">Cloud Native Days</span> (KNDs) are global, community-organized
+        <span className="font-bold">Cloud Native Days</span> (CNDs) are global, community-organized
         events that gather adopters and technologists from open source and cloud native communities.
       </p>
       <p className="mt-7">
-        This is the second Cloud Native Days in <span className="font-bold">Romania</span>, and
+        This is our second event in <span className="font-bold">Romania</span>, and
         we’re excited to bring the community together. We want to provide a platform for
         professionals and experts from all levels and backgrounds to learn, network, and share their
         knowledge on all things cloud native.
